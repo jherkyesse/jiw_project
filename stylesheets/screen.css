@@ -74,682 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
 }
 /*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
-/* line 22, ../sass/screen.scss */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background: #FFFFFF;
-  z-index: 9000;
-}
-/* line 29, ../sass/screen.scss */
-nav .navbar {
-  position: relative;
-  height: 60px;
-  padding: 0;
-}
-/* line 33, ../sass/screen.scss */
-nav .navbar .navbar-menu-icon {
-  position: absolute;
-  left: 16px;
-  top: 18px;
-}
-/* line 37, ../sass/screen.scss */
-nav .navbar .navbar-menu-icon img {
-  height: 24px;
-  width: auto;
-}
-/* line 40, ../sass/screen.scss */
-nav .navbar .navbar-menu-icon img:nth-child(1) {
-  display: block;
-}
-/* line 41, ../sass/screen.scss */
-nav .navbar .navbar-menu-icon img:nth-child(2) {
-  display: none;
-}
-/* line 42, ../sass/screen.scss */
-nav .navbar .navbar-menu-icon img:nth-child(3) {
-  display: none;
-}
-/* line 45, ../sass/screen.scss */
-nav .navbar .navbar-menu-span img:nth-child(1) {
-  display: none;
-}
-/* line 46, ../sass/screen.scss */
-nav .navbar .navbar-menu-span img:nth-child(2) {
-  display: block;
-}
-/* line 47, ../sass/screen.scss */
-nav .navbar .navbar-brand {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  padding: 0;
-  margin: 0;
-}
-@media (max-width: 767px) {
-  /* line 47, ../sass/screen.scss */
-  nav .navbar .navbar-brand {
-    left: 50%;
-    margin-left: -47.8045px;
-  }
-}
-/* line 57, ../sass/screen.scss */
-nav .navbar .navbar-brand img {
-  height: 40px;
-  width: auto;
-  /* 95.609px */
-}
-/* line 62, ../sass/screen.scss */
-nav .navbar .navbar-menu {
-  position: relative;
-  display: block;
-  width: 800px;
-  height: 60px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-}
-@media (max-width: 991px) and (min-width: 767px) {
-  /* line 62, ../sass/screen.scss */
-  nav .navbar .navbar-menu {
-    width: 500px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 62, ../sass/screen.scss */
-  nav .navbar .navbar-menu {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    overflow: hidden;
-  }
-}
-/* line 82, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  padding: 19px 0;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  /* line 89, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li:nth-child(1) {
-    display: none;
-  }
-  /* line 90, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li:nth-child(5) a {
-    border: none;
-  }
-}
-@media (max-width: 767px) {
-  /* line 82, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li {
-    display: block;
-    width: 100%;
-    height: 60px;
-    text-align: left;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    transition: 0.4s;
-  }
-  /* line 101, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li:after {
-    content: '';
-    position: absolute;
-    left: 40px;
-    bottom: 0;
-    border-bottom: 1px solid #dbdbdb;
-    width: calc(100% - 80px);
-  }
-}
-/* line 110, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > a {
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 500;
-  letter-spacing: 6px;
-  color: #26264f;
-  padding: 0 50px;
-  border-right: 1px solid #cccccc;
-  text-decoration: none;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  /* line 110, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > a {
-    padding: 0 10px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 110, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > a {
-    border: none;
-    padding: 0 0 0 40px;
-  }
-}
-/* line 128, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li:hover > a {
-  color: #5052a1;
-}
-@media (min-width: 767px) {
-  /* line 132, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li:hover > ul {
-    display: block;
-  }
-}
-/* line 137, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 52px;
-  background: #5052a1;
-  top: 60px;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  cursor: default;
-}
-@media (max-width: 767px) {
-  /* line 137, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul {
-    height: calc(100vh - 120px);
-    z-index: 9100;
-    top: 120px;
-    overflow-y: scroll;
-  }
-}
-/* line 155, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li {
-  position: relative;
-  display: inline-block;
-  height: 52px;
-  margin: 0 10px;
-  padding: 15px 13px;
-  vertical-align: top;
-  cursor: pointer;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  /* line 155, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li {
-    padding: 15px 5px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 155, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    padding: 0;
-    margin: 0;
-    background: #5052a1;
-    text-align: left;
-  }
-}
-@media (min-width: 767px) {
-  /* line 176, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li:hover:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-bottom: 2px solid #d1a593;
-  }
-}
-@media (min-width: 767px) {
-  /* line 187, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li:hover > ul {
-    display: block;
-  }
-}
-/* line 191, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul {
-  display: none;
-  background-color: rgba(38, 38, 79, 0.8);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  cursor: default;
-  z-index: 9300;
-}
-/* line 198, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block {
-  position: fixed;
-  top: 112px;
-  left: 0;
-  width: 100vw;
-  height: auto;
-  padding: 20px 0;
-}
-@media (max-width: 767px) {
-  /* line 198, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block {
-    background: #26264f;
-    position: relative;
-    top: 0;
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
-  }
-}
-/* line 212, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li {
-  position: relative;
-  display: inline-block;
-  min-width: 200px;
-  min-height: 323px;
-  vertical-align: top;
-  border-right: 1px solid #cccccc;
-  padding: 0 18px;
-}
-@media (max-width: 767px) {
-  /* line 212, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li {
-    border: none;
-    padding: 0 40px;
-  }
-}
-/* line 224, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li > ul > li {
-  position: relative;
-  display: block;
-  text-align: left;
-  padding: 10px 0;
-}
-/* line 229, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li > ul > li:nth-child(1) {
-  color: #d1a593;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  letter-spacing: 2px;
-}
-/* line 236, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li > ul > li > a {
-  font-size: 15px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  color: #ffffff;
-  font-weight: 300;
-  letter-spacing: 0;
-}
-/* line 246, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  padding: 20px;
-  margin: 0;
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-@media (max-width: 767px) {
-  /* line 246, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block {
-    background: #26264f;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
-    -ms-transform: none;
-    -o-transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    transform: none;
-  }
-}
-/* line 272, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block > li {
-  position: relative;
-  display: block;
-  padding: 10px 0;
-  text-align: left;
-}
-@media (max-width: 767px) {
-  /* line 272, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block > li {
-    padding: 10px 20px;
-  }
-}
-/* line 278, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block > li > a {
-  font-size: 15px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  color: #ffffff;
-  white-space: nowrap;
-}
-/* line 286, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block {
-  position: fixed;
-  top: 112px;
-  left: 0;
-  width: 100vw;
-  height: auto;
-  padding: 20px 0;
-}
-@media (max-width: 767px) {
-  /* line 286, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
-    background: #26264f;
-  }
-}
-/* line 301, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li {
-  position: relative;
-  display: inline-block;
-  min-width: 200px;
-  min-height: 278px;
-  width: auto;
-  height: auto;
-  border-right: 1px solid #cccccc;
-}
-@media (max-width: 767px) {
-  /* line 301, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li {
-    border: none;
-  }
-}
-/* line 312, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-}
-@media (min-width: 767px) {
-  /* line 317, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul:nth-child(2) {
-    padding-top: 35px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 312, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul {
-    display: block;
-  }
-}
-/* line 324, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li {
-  position: relative;
-  display: block;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 15px;
-  font-weight: 300;
-  color: #d1a593;
-  letter-spacing: 0;
-  text-align: left;
-  padding: 10px 0;
-}
-/* line 334, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li:nth-child(1) {
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 15px;
-  font-weight: bold;
-  color: #d1a593;
-  letter-spacing: 2px;
-}
-@media (max-width: 767px) {
-  /* line 324, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li {
-    padding: 10px 40px;
-  }
-}
-/* line 344, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li > a {
-  position: relative;
-  display: block;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 15px;
-  font-weight: 300;
-  color: #ffffff;
-  letter-spacing: 0;
-  text-align: left;
-  padding: 0 0 0 15px;
-}
-/* line 359, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block {
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  min-width: 278px;
-  width: auto;
-  height: auto;
-  padding: 20px;
-  margin: 0 0 0 -134px;
-}
-@media (max-width: 767px) {
-  /* line 359, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
-    background: #26264f;
-    width: 100%;
-    margin: 0;
-  }
-}
-/* line 378, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li {
-  position: relative;
-  display: inline-block;
-  width: 76px;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-@media (max-width: 767px) {
-  /* line 378, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li {
-    display: block;
-    width: 100%;
-  }
-}
-/* line 389, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li > ul > li {
-  position: relative;
-  display: block;
-  padding: 10px 0;
-}
-@media (max-width: 767px) {
-  /* line 389, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li > ul > li {
-    padding: 10px 20px;
-  }
-}
-/* line 396, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li > ul > li > a {
-  position: relative;
-  display: block;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 15px;
-  font-weight: 300;
-  color: #ffffff;
-  letter-spacing: 0;
-  text-align: left;
-}
-/* line 409, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  padding: 20px;
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-@media (max-width: 767px) {
-  /* line 409, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block {
-    background: #26264f;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
-    -ms-transform: none;
-    -o-transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    transform: none;
-  }
-}
-/* line 435, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block > li {
-  position: relative;
-  display: block;
-  text-align: left;
-  padding: 10px 0;
-  margin: 0;
-}
-@media (max-width: 767px) {
-  /* line 435, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block > li {
-    padding: 10px 20px;
-  }
-}
-/* line 444, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block > li > a {
-  position: relative;
-  display: block;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 15px;
-  font-weight: 300;
-  color: #ffffff;
-  white-space: nowrap;
-}
-/* line 456, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li > a {
-  color: #FFFFFF;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  letter-spacing: 2px;
-  border: none;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 22px;
-}
-@media (max-width: 767px) {
-  /* line 456, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li > a {
-    line-height: 60px;
-    padding: 0 0 0 40px;
-  }
-}
-/* line 469, ../sass/screen.scss */
-nav .navbar .navbar-menu > ul > li > ul > li img.arrow-white {
-  display: none;
-}
-@media (max-width: 767px) {
-  /* line 469, ../sass/screen.scss */
-  nav .navbar .navbar-menu > ul > li > ul > li img.arrow-white {
-    position: absolute;
-    display: block;
-    top: 18px;
-    right: 40px;
-    height: 24px;
-    width: auto;
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-  }
-}
-/* line 493, ../sass/screen.scss */
-nav .navbar .navbar-menu img.arrow {
-  display: none;
-}
-@media (max-width: 767px) {
-  /* line 493, ../sass/screen.scss */
-  nav .navbar .navbar-menu img.arrow {
-    display: block !important;
-    position: absolute;
-    right: 40px;
-    top: 16px;
-  }
-}
-/* line 503, ../sass/screen.scss */
-nav .navbar .navbar-cart {
-  position: absolute;
-  right: 0;
-  top: 18px;
-  padding: 0;
-  margin: 0;
-}
-/* line 509, ../sass/screen.scss */
-nav .navbar .navbar-cart img {
-  position: relative;
-  display: inline-block;
-  height: 24px;
-  width: auto;
-  padding: 0 16px;
-}
-/* line 515, ../sass/screen.scss */
-nav .navbar .navbar-cart img:nth-child(2) {
-  border-width: 0 1px;
-  border-color: #cccccc;
-  border-style: solid;
-}
-
-/* line 525, ../sass/screen.scss */
+/* line 8, ../sass/screen.scss */
 .search-block {
   position: relative;
   display: -webkit-flex;
@@ -767,13 +92,13 @@ nav .navbar .navbar-cart img:nth-child(2) {
   margin-top: 60px;
 }
 @media (max-width: 767px) {
-  /* line 525, ../sass/screen.scss */
+  /* line 8, ../sass/screen.scss */
   .search-block {
     height: 180px;
     margin-top: 132px;
   }
 }
-/* line 545, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .search-block .search-box h1 {
   font-size: 40px;
   line-height: 59px;
@@ -791,14 +116,14 @@ nav .navbar .navbar-cart img:nth-child(2) {
   margin: auto;
 }
 @media (max-width: 767px) {
-  /* line 545, ../sass/screen.scss */
+  /* line 28, ../sass/screen.scss */
   .search-block .search-box h1 {
     font-size: 22px;
     line-height: 41px;
     padding-bottom: 0;
   }
 }
-/* line 566, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .search-block .search-box h5 {
   font-size: 17px;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -812,14 +137,14 @@ nav .navbar .navbar-cart img:nth-child(2) {
   margin: 23px 0 60px;
 }
 @media (max-width: 767px) {
-  /* line 566, ../sass/screen.scss */
+  /* line 49, ../sass/screen.scss */
   .search-block .search-box h5 {
     margin: 20px 0 0;
     font-size: 13px;
     letter-spacing: 5px;
   }
 }
-/* line 583, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .search-block .search-box form.form-inline {
   position: relative;
   display: block;
@@ -832,7 +157,7 @@ nav .navbar .navbar-cart img:nth-child(2) {
   transition: 0.6s;
 }
 @media (max-width: 767px) {
-  /* line 583, ../sass/screen.scss */
+  /* line 66, ../sass/screen.scss */
   .search-block .search-box form.form-inline {
     padding: 12px;
     -o-transition: none !important;
@@ -841,7 +166,7 @@ nav .navbar .navbar-cart img:nth-child(2) {
     transition: none !important;
   }
 }
-/* line 601, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .search-block .search-box .searchbar-float {
   position: fixed !important;
   width: 100%;
@@ -855,7 +180,7 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -moz-transition: 0.6s;
   transition: 0.6s;
 }
-/* line 614, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .search-block .search-box .search-selector {
   position: relative;
   display: inline-block;
@@ -879,12 +204,12 @@ nav .navbar .navbar-cart img:nth-child(2) {
   padding: 0 0 0 5px;
 }
 @media (max-width: 767px) {
-  /* line 614, ../sass/screen.scss */
+  /* line 97, ../sass/screen.scss */
   .search-block .search-box .search-selector {
     width: 23%;
   }
 }
-/* line 638, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .search-block .search-box .search-selector option {
   font-size: 15px;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -895,7 +220,7 @@ nav .navbar .navbar-cart img:nth-child(2) {
   letter-spacing: 2px;
   color: #5052a1;
 }
-/* line 649, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .search-block .search-box .search-bar {
   position: relative;
   display: inline-block;
@@ -923,17 +248,17 @@ nav .navbar .navbar-cart img:nth-child(2) {
   white-space: nowrap;
 }
 @media (max-width: 767px) {
-  /* line 649, ../sass/screen.scss */
+  /* line 132, ../sass/screen.scss */
   .search-block .search-box .search-bar {
     width: 60%;
     padding: 0 10px;
   }
 }
-/* line 678, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .search-block .search-box .search-bar:focus {
   box-shadow: none;
 }
-/* line 682, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .search-block .search-box .search-btn {
   position: relative;
   display: inline-block;
@@ -947,13 +272,13 @@ nav .navbar .navbar-cart img:nth-child(2) {
   vertical-align: top;
 }
 @media (max-width: 767px) {
-  /* line 682, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   .search-block .search-box .search-btn {
     width: 12%;
   }
 }
 
-/* line 699, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .arrow-prev {
   position: absolute;
   width: 48px;
@@ -968,13 +293,13 @@ nav .navbar .navbar-cart img:nth-child(2) {
   box-shadow: 2px 2px 5px 2px #888888;
 }
 @media (max-width: 767px) {
-  /* line 699, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   .arrow-prev {
     opacity: 0.4;
   }
 }
 
-/* line 715, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .arrow-next {
   position: absolute;
   width: 48px;
@@ -989,13 +314,13 @@ nav .navbar .navbar-cart img:nth-child(2) {
   box-shadow: 2px 2px 5px 2px #888888;
 }
 @media (max-width: 767px) {
-  /* line 715, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   .arrow-next {
     opacity: 0.4;
   }
 }
 
-/* line 731, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .intro-block-text {
   position: relative;
   display: -webkit-flex;
@@ -1008,12 +333,12 @@ nav .navbar .navbar-cart img:nth-child(2) {
   padding: 60px 0;
 }
 @media (max-width: 767px) {
-  /* line 731, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   .intro-block-text {
     padding: 60px 10px;
   }
 }
-/* line 744, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .intro-block-text h2 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1027,7 +352,7 @@ nav .navbar .navbar-cart img:nth-child(2) {
   color: #5052a1;
   width: 100%;
 }
-/* line 757, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .intro-block-text h4 {
   width: 100%;
   max-width: 642px;
@@ -1042,14 +367,14 @@ nav .navbar .navbar-cart img:nth-child(2) {
   margin-top: 23px;
 }
 
-/* line 771, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .intro-block-content {
   position: relative;
   display: block;
   background: #f5f5f5;
   padding: 40px 0;
 }
-/* line 776, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .intro-block-content a.item-see-more {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1063,21 +388,678 @@ nav .navbar .navbar-cart img:nth-child(2) {
   color: #d1a593;
   padding-right: 8px;
 }
-/* line 789, ../sass/screen.scss */
-.intro-block-content .explore-block {
+/* line 272, ../sass/screen.scss */
+.intro-block-content .new-item-container {
+  position: relative;
+  overflow-x: scroll;
+}
+/* line 275, ../sass/screen.scss */
+.intro-block-content .new-item-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* line 278, ../sass/screen.scss */
+.intro-block-content .new-item-container::-webkit-scrollbar {
+  width: 0px;
+}
+/* line 281, ../sass/screen.scss */
+.intro-block-content .new-item-container::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+@media (max-width: 767px) {
+  /* line 285, ../sass/screen.scss */
+  .intro-block-content .new-item-block {
+    position: relative;
+    width: 360%;
+  }
+}
+
+/* line 293, ../sass/screen.scss */
+.country-card {
+  position: relative;
+  padding: 8px;
+}
+@media (max-width: 767px) {
+  /* line 297, ../sass/screen.scss */
+  .country-card:nth-child(odd) {
+    padding: 2.5px 0 2.5px 5px;
+  }
+  /* line 300, ../sass/screen.scss */
+  .country-card:nth-child(even) {
+    padding: 2.5px 5px 2.5px 0;
+  }
+}
+/* line 304, ../sass/screen.scss */
+.country-card img {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  /* line 304, ../sass/screen.scss */
+  .country-card img {
+    height: calc(50vw - 20px);
+  }
+}
+/* line 317, ../sass/screen.scss */
+.country-card img:hover {
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 326, ../sass/screen.scss */
+.country-card .country-card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  line-height: 41px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-bottom: 1px solid #d1a593;
+  margin: -24px 0 0 -48px;
+  pointer-events: none;
+}
+/* line 339, ../sass/screen.scss */
+.country-card .country-card-name {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 22px;
+  line-height: 41px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-bottom: 1px solid #d1a593;
+  pointer-events: none;
+}
+@media (max-width: 1170px) and (min-width: 768px) {
+  /* line 339, ../sass/screen.scss */
+  .country-card .country-card-name {
+    left: 20px;
+    bottom: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 4px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 339, ../sass/screen.scss */
+  .country-card .country-card-name {
+    left: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 4px;
+  }
+}
+
+/* line 366, ../sass/screen.scss */
+.investment-block {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(to bottom, #26264f, rgba(38, 38, 79, 0.15)), url("../image/picture/wine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+/* line 382, ../sass/screen.scss */
+.investment-block .investment-tag-box {
+  position: absolute;
+  top: 69px;
+  left: 106px;
+  border-right: 1px solid #FFFFFF;
+  padding-right: 12px;
+}
+/* line 388, ../sass/screen.scss */
+.investment-block .investment-tag-box th:nth-child(1) {
+  position: relative;
+  display: block;
+  margin-right: 30px;
+}
+/* line 393, ../sass/screen.scss */
+.investment-block .investment-tag-box th:nth-child(2) {
+  vertical-align: top;
+}
+/* line 396, ../sass/screen.scss */
+.investment-block .investment-tag-box .investment-tag-title {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #d1a593;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* line 405, ../sass/screen.scss */
+.investment-block .investment-tag-box ul li {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #d1a593;
+  margin: 5px 0;
+}
+/* line 412, ../sass/screen.scss */
+.investment-block .investment-tag-box ul li ul li {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #ffffff;
+  margin: 5px 0 5px 15px;
+}
+/* line 422, ../sass/screen.scss */
+.investment-block .investment-title {
+  font-size: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 41px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffd858;
+}
+/* line 430, ../sass/screen.scss */
+.investment-block .investment-subtitle {
+  width: 100%;
+  max-width: 560px;
+  line-height: 25px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 23px;
+}
+/* line 440, ../sass/screen.scss */
+.investment-block .investment-btn {
+  width: 100%;
+  max-width: 423px;
+  height: 65px;
+  border-radius: 4px;
+  background-color: #5052a1;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 60px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  margin-top: 79px;
+  outline: none;
+}
+/* line 457, ../sass/screen.scss */
+.investment-block img.investment-mobile-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 463, ../sass/screen.scss */
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #FFFFFF;
+}
+/* line 468, ../sass/screen.scss */
+footer .footer-first-block {
+  padding: 40px 0 140px 0;
+  background: #FFFFFF;
+}
+@media (max-width: 767px) {
+  /* line 468, ../sass/screen.scss */
+  footer .footer-first-block {
+    padding: 40px 0 40px 0;
+  }
+}
+/* line 475, ../sass/screen.scss */
+footer a.footer-title {
+  position: relative;
+  display: block;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  color: #26264f;
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 475, ../sass/screen.scss */
+  footer a.footer-title {
+    margin-bottom: 20px;
+  }
+}
+/* line 490, ../sass/screen.scss */
+footer a.footer-subtitle {
+  position: relative;
+  display: block;
+  height: 22px;
+  font-size: 13px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 22px;
+  color: #999999;
+}
+@media (max-width: 767px) {
+  /* line 490, ../sass/screen.scss */
+  footer a.footer-subtitle {
+    display: none;
+  }
+}
+/* line 502, ../sass/screen.scss */
+footer .footer-service-title {
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  color: #26264f;
+  text-align: right;
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 502, ../sass/screen.scss */
+  footer .footer-service-title {
+    margin-bottom: 20px;
+  }
+}
+/* line 516, ../sass/screen.scss */
+footer .footer-service-time {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: right;
+  color: #323142;
+}
+/* line 523, ../sass/screen.scss */
+footer img.footer-service-qrcode {
+  position: relative;
+  display: block;
+  text-align: right;
+  width: 100px;
+  height: auto;
+  float: right;
+  margin-top: 16px;
+}
+/* line 532, ../sass/screen.scss */
+footer .footer-second-block {
+  position: relative;
+  display: block;
+  padding: 0;
+  background: #5052a1;
+  width: 100%;
+  padding: 20px 0;
+}
+/* line 539, ../sass/screen.scss */
+footer .footer-second-block ul {
+  position: relative;
+  text-align: center;
+}
+/* line 542, ../sass/screen.scss */
+footer .footer-second-block ul li {
+  position: relative;
+  display: inline;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border-right: 1px solid #FFFFFF;
+  padding: 0 15px 0 10px;
+}
+/* line 551, ../sass/screen.scss */
+footer .footer-second-block ul li a {
+  color: #ffffff;
+}
+/* line 554, ../sass/screen.scss */
+footer .footer-second-block ul li:nth-child(5) {
+  border: none;
+}
+@media (max-width: 767px) {
+  /* line 558, ../sass/screen.scss */
+  footer .footer-second-block ul li:nth-child(1) {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  /* line 562, ../sass/screen.scss */
+  footer .footer-second-block ul li:nth-child(2) {
+    display: inline-block;
+    border: none;
+    margin-bottom: 20px;
+  }
+  /* line 567, ../sass/screen.scss */
+  footer .footer-second-block ul li:nth-child(3), footer .footer-second-block ul li:nth-child(4), footer .footer-second-block ul li:nth-child(5) {
+    display: block;
+    border: none;
+    text-align: left;
+    line-height: 22px;
+  }
+}
+
+/* line 578, ../sass/screen.scss */
+.item-box-block {
+  position: relative;
+  padding: 8px;
+  margin: 0;
+}
+/* line 582, ../sass/screen.scss */
+.item-box-block .item-box {
+  background: #FFFFFF;
+  padding: 12px 20px;
+}
+/* line 586, ../sass/screen.scss */
+.item-box-block img.item-img {
+  width: 100%;
+  height: 265px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 592, ../sass/screen.scss */
+.item-box-block .item-title {
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 25px;
+  height: 25px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #323142;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 16px 0 0 0;
+}
+/* line 606, ../sass/screen.scss */
+.item-box-block .item-subtitle {
+  font-size: 13px;
+  line-height: 19px;
+  height: 19px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  text-align: left;
+  color: #999999;
+}
+/* line 615, ../sass/screen.scss */
+.item-box-block .item-price-box {
+  position: relative;
+  display: block;
+}
+/* line 618, ../sass/screen.scss */
+.item-box-block .item-price-box .item-price {
+  font-size: 19px;
+  line-height: 28px;
+  height: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  text-align: left;
+  color: #933c42;
+}
+/* line 630, ../sass/screen.scss */
+.item-box-block .item-price-box .item-orginal-price {
+  height: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: left;
+  color: #999999;
+  text-decoration: line-through;
+  margin-left: 5px;
+  vertical-align: top;
+}
+/* line 644, ../sass/screen.scss */
+.item-box-block .item-price-box .item-discount {
+  position: relative;
+  height: 28px;
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+  background-color: #933c42;
+  padding: 0 5px 0 0;
+  margin-left: 15px;
+  vertical-align: top;
+}
+/* line 661, ../sass/screen.scss */
+.item-box-block .item-price-box .item-discount:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 0;
+  border-right: 11px solid #933c42;
+  border-top: 11px solid transparent;
+  border-bottom: 11.1px solid transparent;
+}
+/* line 673, ../sass/screen.scss */
+.item-box-block .item-price-box .item-bonus-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+/* line 677, ../sass/screen.scss */
+.item-box-block .item-price-box .item-bonus-box span {
+  position: relative;
+  height: 19px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: bold;
+  text-align: left;
+  color: #5052a1;
+  margin-left: 15px;
+}
+/* line 690, ../sass/screen.scss */
+.item-box-block .item-price-box .item-bonus-box span:before {
+  content: '';
+  position: absolute;
+  right: calc(100% + 5px);
+  bottom: 4px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #5052a1;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+/* line 704, ../sass/screen.scss */
+.item-box-block .item-score-box {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 22px;
+  margin: 30px 0 20px;
+}
+/* line 714, ../sass/screen.scss */
+.item-box-block .item-score-box .item-score {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 40px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 0.5px #999999;
+  overflow: hidden;
+}
+/* line 726, ../sass/screen.scss */
+.item-box-block .item-score-box .item-score span {
+  width: 20px;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #555555;
+}
+/* line 734, ../sass/screen.scss */
+.item-box-block .item-score-box .item-score span:nth-child(1) {
+  background: #f3f3f3;
+  border-right: 1px solid #999999;
+}
+/* line 741, ../sass/screen.scss */
+.item-box-block .item-info-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 23px;
+}
+/* line 746, ../sass/screen.scss */
+.item-box-block .item-info-box img.item-info-star-img {
+  width: 20px;
+  height: auto;
+}
+/* line 750, ../sass/screen.scss */
+.item-box-block .item-info-box .item-info-star-rate {
+  height: 20px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 20px;
+  color: #d1a593;
+  vertical-align: top;
+}
+/* line 761, ../sass/screen.scss */
+.item-box-block .item-info-box .item-btn-block {
+  position: absolute;
+  right: 0;
+}
+/* line 764, ../sass/screen.scss */
+.item-box-block .item-info-box .item-btn-block .item-presale-btn {
+  border-radius: 4px;
+  background-color: #df8d74;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  line-height: 20px;
+  height: 20px;
+  color: #ffffff;
+  padding: 0 8px;
+}
+/* line 778, ../sass/screen.scss */
+.item-box-block .item-info-box .item-btn-block .item-invest-btn {
+  border-radius: 4px;
+  background-color: #5052a1;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  line-height: 20px;
+  height: 20px;
+  color: #ffffff;
+  padding: 0 8px;
+  margin-right: 8px;
+}
+
+/* line 796, ../sass/screen.scss */
+.wine-block {
   position: relative;
   display: block;
   overflow: hidden;
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 789, ../sass/screen.scss */
-  .intro-block-content .explore-block {
+  /* line 796, ../sass/screen.scss */
+  .wine-block {
     padding-left: calc(5vw + 4px);
   }
 }
-/* line 797, ../sass/screen.scss */
-.intro-block-content .explore-block .explore-card-block {
+/* line 804, ../sass/screen.scss */
+.wine-block .wine-card-block {
   position: relative;
   display: block;
   width: 2000%;
@@ -1086,23 +1068,23 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -moz-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 807, ../sass/screen.scss */
-.intro-block-content .explore-card {
+
+/* line 814, ../sass/screen.scss */
+.wine-card {
   position: relative;
   display: inline-block;
   width: 292.5px;
-  padding: 0 8px;
+  padding: 8px;
   vertical-align: top;
-  margin-left: -4px;
 }
 @media (max-width: 767px) {
-  /* line 807, ../sass/screen.scss */
-  .intro-block-content .explore-card {
+  /* line 814, ../sass/screen.scss */
+  .wine-card {
     width: 90vw;
   }
 }
-/* line 817, ../sass/screen.scss */
-.intro-block-content .explore-card img.explore-card-intro {
+/* line 823, ../sass/screen.scss */
+.wine-card img.wine-card-intro {
   position: relative;
   display: block;
   width: 100%;
@@ -1110,8 +1092,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 825, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic {
+/* line 831, ../sass/screen.scss */
+.wine-card .wine-card-story-pic {
   position: relative;
   display: block;
   width: 100%;
@@ -1120,8 +1102,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   background-size: cover;
   overflow: hidden;
 }
-/* line 833, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic:after {
+/* line 839, ../sass/screen.scss */
+.wine-card .wine-card-story-pic:after {
   content: '';
   position: absolute;
   left: 0;
@@ -1131,12 +1113,12 @@ nav .navbar .navbar-cart img:nth-child(2) {
   background-image: linear-gradient(to top, rgba(38, 38, 79, 0.8), rgba(38, 38, 79, 0));
   z-index: 100;
 }
-/* line 843, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic:hover:after {
+/* line 849, ../sass/screen.scss */
+.wine-card .wine-card-story-pic:hover:after {
   background: rgba(38, 38, 79, 0.7);
 }
-/* line 846, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic:hover > * {
+/* line 852, ../sass/screen.scss */
+.wine-card .wine-card-story-pic:hover > * {
   -ms-transform: translateY(-160px);
   -o-transform: translateY(-160px);
   -webkit-transform: translateY(-160px);
@@ -1148,8 +1130,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 858, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic img.explore-card-author-pic {
+/* line 864, ../sass/screen.scss */
+.wine-card .wine-card-story-pic img.wine-card-author-pic {
   position: absolute;
   left: 14px;
   bottom: 14px;
@@ -1165,8 +1147,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 874, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic .explore-card-article-title {
+/* line 880, ../sass/screen.scss */
+.wine-card .wine-card-story-pic .wine-card-article-title {
   position: absolute;
   left: 68px;
   bottom: 32px;
@@ -1191,13 +1173,13 @@ nav .navbar .navbar-cart img:nth-child(2) {
   transition: 0.4s;
 }
 @media (max-width: 767px) {
-  /* line 874, ../sass/screen.scss */
-  .intro-block-content .explore-card .explore-card-story-pic .explore-card-article-title {
+  /* line 880, ../sass/screen.scss */
+  .wine-card .wine-card-story-pic .wine-card-article-title {
     width: calc(90vw - 88px);
   }
 }
-/* line 901, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic .explore-card-article-author {
+/* line 907, ../sass/screen.scss */
+.wine-card .wine-card-story-pic .wine-card-article-author {
   position: absolute;
   left: 68px;
   bottom: 12px;
@@ -1221,8 +1203,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 925, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-story-pic .explore-card-article-content {
+/* line 931, ../sass/screen.scss */
+.wine-card .wine-card-story-pic .wine-card-article-content {
   position: absolute;
   top: 100%;
   left: 0;
@@ -1250,8 +1232,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 954, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block {
+/* line 960, ../sass/screen.scss */
+.wine-card .wine-card-item-block {
   position: relative;
   display: block;
   width: 100%;
@@ -1259,37 +1241,37 @@ nav .navbar .navbar-cart img:nth-child(2) {
   background: #FFFFFF;
   padding: 8px 0 8px 4px;
 }
-/* line 961, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box-block {
+/* line 967, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block {
   position: relative;
   display: block;
   height: 240px;
   overflow-y: scroll;
 }
-/* line 966, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box-block::-webkit-scrollbar-track {
+/* line 972, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-track {
   background: transparent;
 }
-/* line 969, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box-block::-webkit-scrollbar {
+/* line 975, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar {
   width: 4px;
 }
-/* line 972, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box-block::-webkit-scrollbar-thumb {
+/* line 978, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-thumb {
   background: #999999;
 }
-/* line 976, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box {
+/* line 982, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box {
   width: 100%;
   padding: 8px;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 980, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box:hover {
+/* line 986, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box:hover {
   background: #f5f5f5;
 }
-/* line 983, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box img {
+/* line 989, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box img {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -1297,14 +1279,14 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 991, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box .explore-card-item-text {
+/* line 997, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-text {
   position: relative;
   display: inline-block;
   vertical-align: top;
 }
-/* line 996, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box .explore-card-item-title {
+/* line 1002, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-title {
   width: 11em;
   height: 25px;
   font-size: 17px;
@@ -1321,13 +1303,13 @@ nav .navbar .navbar-cart img:nth-child(2) {
   white-space: nowrap;
 }
 @media (max-width: 767px) {
-  /* line 996, ../sass/screen.scss */
-  .intro-block-content .explore-card .explore-card-item-block .explore-card-item-box .explore-card-item-title {
+  /* line 1002, ../sass/screen.scss */
+  .wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-title {
     width: calc(90vw - 110px);
   }
 }
-/* line 1015, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-item-box .explore-card-item-price {
+/* line 1021, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-price {
   font-size: 19px;
   line-height: 28px;
   font-weight: bold;
@@ -1339,16 +1321,16 @@ nav .navbar .navbar-cart img:nth-child(2) {
   font-smooth: always;
   margin-top: 4px;
 }
-/* line 1028, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-info-box {
+/* line 1034, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box {
   position: relative;
   display: block;
   width: 100%;
   height: 20px;
   padding: 4px 8px;
 }
-/* line 1034, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-info-box:after {
+/* line 1040, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box:after {
   content: '';
   position: absolute;
   bottom: 100%;
@@ -1358,8 +1340,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   background-image: linear-gradient(to top, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
 }
-/* line 1044, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-info-box img {
+/* line 1050, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box img {
   position: relative;
   display: inline-block;
   float: left;
@@ -1367,8 +1349,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   height: 20px;
   margin-right: 8px;
 }
-/* line 1052, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-info-box span {
+/* line 1058, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box span {
   position: relative;
   display: inline-block;
   height: 20px;
@@ -1383,8 +1365,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   color: #d1a593;
   vertical-align: top;
 }
-/* line 1067, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-item-block .explore-card-info-box div {
+/* line 1073, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box div {
   position: relative;
   display: inline-block;
   height: 20px;
@@ -1400,8 +1382,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   vertical-align: top;
   float: right;
 }
-/* line 1085, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-title-box {
+/* line 1091, ../sass/screen.scss */
+.wine-card .wine-card-title-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1413,8 +1395,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 1096, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-title-box .explore-card-title {
+/* line 1102, ../sass/screen.scss */
+.wine-card .wine-card-title-box .wine-card-title {
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -1427,14 +1409,14 @@ nav .navbar .navbar-cart img:nth-child(2) {
   height: 180px;
 }
 @media (max-width: 1170px) {
-  /* line 1096, ../sass/screen.scss */
-  .intro-block-content .explore-card .explore-card-title-box .explore-card-title {
+  /* line 1102, ../sass/screen.scss */
+  .wine-card .wine-card-title-box .wine-card-title {
     width: 200px;
     padding: 0 10px;
   }
 }
-/* line 1111, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-title-box .explore-card-title h4 {
+/* line 1117, ../sass/screen.scss */
+.wine-card .wine-card-title-box .wine-card-title h4 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1449,8 +1431,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   padding-bottom: 16px;
   margin: 16px auto 0;
 }
-/* line 1126, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-title-box .explore-card-title h5 {
+/* line 1132, ../sass/screen.scss */
+.wine-card .wine-card-title-box .wine-card-title h5 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1462,8 +1444,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   text-align: center;
   color: #ffd858;
 }
-/* line 1140, ../sass/screen.scss */
-.intro-block-content .explore-card img.explore-card-activity-pic {
+/* line 1146, ../sass/screen.scss */
+.wine-card img.wine-card-activity-pic {
   position: relative;
   display: block;
   width: 100%;
@@ -1471,8 +1453,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 1148, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box {
+/* line 1154, ../sass/screen.scss */
+.wine-card .wine-card-activity-box {
   position: relative;
   display: block;
   width: 100%;
@@ -1480,8 +1462,8 @@ nav .navbar .navbar-cart img:nth-child(2) {
   background: #FFFFFF;
   padding: 12px;
 }
-/* line 1155, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box .explore-card-activity-title {
+/* line 1161, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-title {
   width: 100%;
   white-space: nowrap;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -1497,651 +1479,73 @@ nav .navbar .navbar-cart img:nth-child(2) {
   text-overflow: ellipsis;
   margin-bottom: 12px;
 }
-/* line 1171, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box img {
-  width: 18px;
-  height: 18px;
-}
-/* line 1175, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box span {
+/* line 1177, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-info {
+  position: relative;
+  display: block;
   font-size: 15px;
   line-height: 18px;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #999999;
+}
+/* line 1186, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-info img {
+  width: 18px;
   height: 18px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  text-align: left;
-  color: #999999;
+  margin: 0 4px 0 0;
   vertical-align: top;
 }
-/* line 1187, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box .explore-card-activity-favorite {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-}
-/* line 1191, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box .explore-card-activity-favorite span {
-  color: #d1a593;
-}
-/* line 1195, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box .explore-card-activity-hashtag {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-}
-/* line 1199, ../sass/screen.scss */
-.intro-block-content .explore-card .explore-card-activity-box .explore-card-activity-hashtag span {
-  color: #d1a593;
-}
-/* line 1205, ../sass/screen.scss */
-.intro-block-content .new-item-container {
+/* line 1193, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-favorite {
   position: relative;
-  overflow-x: scroll;
-}
-/* line 1208, ../sass/screen.scss */
-.intro-block-content .new-item-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-/* line 1211, ../sass/screen.scss */
-.intro-block-content .new-item-container::-webkit-scrollbar {
-  width: 0px;
-}
-/* line 1214, ../sass/screen.scss */
-.intro-block-content .new-item-container::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-@media (max-width: 767px) {
-  /* line 1218, ../sass/screen.scss */
-  .intro-block-content .new-item-block {
-    position: relative;
-    width: 360%;
-  }
-}
-/* line 1224, ../sass/screen.scss */
-.intro-block-content .item-box-block {
-  position: relative;
-  padding: 8px;
-  margin: 0;
-}
-/* line 1228, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-box {
-  background: #FFFFFF;
-  padding: 12px 20px;
-}
-/* line 1232, ../sass/screen.scss */
-.intro-block-content .item-box-block img.item-img {
-  width: 100%;
-  height: 265px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-/* line 1238, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-title {
-  width: 100%;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 25px;
-  height: 25px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  text-align: left;
-  color: #323142;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 16px 0 0 0;
-}
-/* line 1255, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-subtitle {
-  font-size: 13px;
-  line-height: 19px;
-  height: 19px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  text-align: left;
-  text-align: left;
-  color: #999999;
-}
-/* line 1267, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box {
-  position: relative;
-  display: block;
-}
-/* line 1270, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-price {
-  font-size: 19px;
-  line-height: 28px;
-  height: 28px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-weight: bold;
-  text-align: left;
-  color: #933c42;
-}
-/* line 1282, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-orginal-price {
-  height: 28px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 13px;
-  line-height: 28px;
-  text-align: left;
-  color: #999999;
-  text-decoration: line-through;
-  margin-left: 5px;
-  vertical-align: top;
-}
-/* line 1296, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-discount {
-  position: relative;
-  height: 28px;
-  font-size: 15px;
-  line-height: 28px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 0 4px 4px 0;
-  background-color: #933c42;
-  padding: 0 5px 0 0;
-  margin-left: 15px;
-  vertical-align: top;
-}
-/* line 1313, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-discount:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  right: 100%;
-  top: 0;
-  border-right: 11px solid #933c42;
-  border-top: 11px solid transparent;
-  border-bottom: 11.1px solid transparent;
-}
-/* line 1325, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-bonus-box {
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-/* line 1329, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-bonus-box span {
-  position: relative;
-  height: 19px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 13px;
-  line-height: 19px;
-  font-weight: bold;
-  text-align: left;
-  color: #5052a1;
-  margin-left: 15px;
-}
-/* line 1342, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-price-box .item-bonus-box span:before {
-  content: '';
-  position: absolute;
-  right: calc(100% + 5px);
-  bottom: 4px;
-  width: 0;
-  height: 0;
-  border-bottom: 8px solid #5052a1;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-}
-/* line 1356, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-info-box {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin-top: 23px;
-}
-/* line 1361, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-info-box img.item-info-star-img {
-  width: 20px;
-  height: auto;
-}
-/* line 1365, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-info-box .item-info-star-rate {
+  display: inline-block;
   height: 20px;
+  margin: 18px 0 0;
+}
+/* line 1198, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-favorite img {
+  height: 20px;
+  width: auto;
+}
+/* line 1202, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-favorite span {
+  color: #d1a593;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
+  vertical-align: top;
   font-size: 13px;
   line-height: 20px;
-  color: #d1a593;
-  vertical-align: top;
-}
-/* line 1376, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-info-box .item-btn-block {
-  position: absolute;
-  right: 0;
-}
-/* line 1379, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-info-box .item-btn-block .item-presale-btn {
-  border-radius: 4px;
-  background-color: #df8d74;
-  font-size: 15px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-weight: bold;
-  line-height: 20px;
   height: 20px;
-  color: #ffffff;
-  padding: 0 8px;
-}
-/* line 1393, ../sass/screen.scss */
-.intro-block-content .item-box-block .item-info-box .item-btn-block .item-invest-btn {
-  border-radius: 4px;
-  background-color: #5052a1;
-  font-size: 15px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-weight: bold;
-  line-height: 20px;
-  height: 20px;
-  color: #ffffff;
-  padding: 0 8px;
-  margin-right: 8px;
-}
-
-/* line 1413, ../sass/screen.scss */
-.country-card {
-  position: relative;
-  padding: 8px;
-}
-@media (max-width: 767px) {
-  /* line 1417, ../sass/screen.scss */
-  .country-card:nth-child(odd) {
-    padding: 2.5px 0 2.5px 5px;
-  }
-  /* line 1420, ../sass/screen.scss */
-  .country-card:nth-child(even) {
-    padding: 2.5px 5px 2.5px 0;
-  }
-}
-/* line 1424, ../sass/screen.scss */
-.country-card img {
-  position: relative;
-  width: 100%;
-  height: 240px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-@media (max-width: 767px) {
-  /* line 1424, ../sass/screen.scss */
-  .country-card img {
-    height: calc(50vw - 20px);
-  }
-}
-/* line 1437, ../sass/screen.scss */
-.country-card img:hover {
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
-  -o-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-/* line 1446, ../sass/screen.scss */
-.country-card .country-card-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 22px;
-  line-height: 41px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  letter-spacing: 2px;
-  color: #ffffff;
-  border-bottom: 1px solid #d1a593;
-  margin: -24px 0 0 -48px;
-  pointer-events: none;
-}
-/* line 1462, ../sass/screen.scss */
-.country-card .country-card-name {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  font-size: 22px;
-  line-height: 41px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  letter-spacing: 2px;
-  color: #ffffff;
-  border-bottom: 1px solid #d1a593;
-  pointer-events: none;
-}
-@media (max-width: 1170px) and (min-width: 768px) {
-  /* line 1462, ../sass/screen.scss */
-  .country-card .country-card-name {
-    left: 20px;
-    bottom: 20px;
-    font-size: 22px;
-    line-height: 26px;
-    padding-bottom: 4px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 1462, ../sass/screen.scss */
-  .country-card .country-card-name {
-    left: 10px;
-    bottom: 10px;
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 4px;
-  }
-}
-
-/* line 1492, ../sass/screen.scss */
-.investment-block {
-  position: relative;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 480px;
-  background: linear-gradient(to bottom, #26264f, rgba(38, 38, 79, 0.15)), url("../image/picture/wine.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 15px;
-}
-/* line 1508, ../sass/screen.scss */
-.investment-block .investment-tag-box {
-  position: absolute;
-  top: 69px;
-  left: 106px;
-  border-right: 1px solid #FFFFFF;
-  padding-right: 12px;
-}
-/* line 1514, ../sass/screen.scss */
-.investment-block .investment-tag-box th:nth-child(1) {
-  position: relative;
-  display: block;
-  margin-right: 30px;
-}
-/* line 1519, ../sass/screen.scss */
-.investment-block .investment-tag-box th:nth-child(2) {
-  vertical-align: top;
-}
-/* line 1522, ../sass/screen.scss */
-.investment-block .investment-tag-box .investment-tag-title {
-  font-size: 15px;
-  line-height: 22px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
+  font-weight: 500;
   text-align: left;
   color: #d1a593;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
-/* line 1534, ../sass/screen.scss */
-.investment-block .investment-tag-box ul li {
-  font-size: 15px;
-  line-height: 22px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  text-align: left;
-  color: #d1a593;
-  margin: 5px 0;
-}
-/* line 1544, ../sass/screen.scss */
-.investment-block .investment-tag-box ul li ul li {
-  font-size: 15px;
-  line-height: 22px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  text-align: left;
-  color: #ffffff;
-  margin: 5px 0 5px 15px;
-}
-/* line 1557, ../sass/screen.scss */
-.investment-block .investment-title {
-  font-size: 28px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  line-height: 41px;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #ffd858;
-}
-/* line 1568, ../sass/screen.scss */
-.investment-block .investment-subtitle {
-  width: 100%;
-  max-width: 560px;
-  line-height: 25px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 17px;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 23px;
-}
-/* line 1581, ../sass/screen.scss */
-.investment-block .investment-btn {
-  width: 100%;
-  max-width: 423px;
-  height: 65px;
-  border-radius: 4px;
-  background-color: #5052a1;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
-  font-size: 22px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  line-height: 60px;
-  letter-spacing: 4px;
-  text-align: center;
-  color: #ffffff;
-  border: 0;
-  margin-top: 79px;
-  outline: none;
-}
-/* line 1601, ../sass/screen.scss */
-.investment-block img.investment-mobile-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-/* line 1607, ../sass/screen.scss */
-footer {
+/* line 1215, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-hashtag {
   position: relative;
-  display: block;
-  padding: 40px 0 0;
-}
-/* line 1611, ../sass/screen.scss */
-footer .footer-first-block {
-  padding: 0 0 140px 0;
-  background: #FFFFFF;
-}
-@media (max-width: 767px) {
-  /* line 1611, ../sass/screen.scss */
-  footer .footer-first-block {
-    padding: 0 0 40px 0;
-  }
-}
-/* line 1618, ../sass/screen.scss */
-footer a.footer-title {
-  position: relative;
-  display: block;
-  height: 22px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 6px;
-  color: #26264f;
-  margin-bottom: 8px;
-  padding: 0;
-}
-@media (max-width: 767px) {
-  /* line 1618, ../sass/screen.scss */
-  footer a.footer-title {
-    margin-bottom: 20px;
-  }
-}
-/* line 1636, ../sass/screen.scss */
-footer a.footer-subtitle {
-  position: relative;
-  display: block;
-  height: 22px;
-  font-size: 13px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  line-height: 22px;
-  color: #999999;
-}
-@media (max-width: 767px) {
-  /* line 1636, ../sass/screen.scss */
-  footer a.footer-subtitle {
-    display: none;
-  }
-}
-/* line 1651, ../sass/screen.scss */
-footer .footer-service-title {
-  height: 22px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 6px;
-  color: #26264f;
-  text-align: right;
-  margin-bottom: 8px;
-  padding: 0;
-}
-@media (max-width: 767px) {
-  /* line 1651, ../sass/screen.scss */
-  footer .footer-service-title {
-    margin-bottom: 20px;
-  }
-}
-/* line 1668, ../sass/screen.scss */
-footer .footer-service-time {
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
-  font-size: 17px;
-  line-height: 25px;
-  text-align: right;
-  color: #323142;
-}
-/* line 1678, ../sass/screen.scss */
-footer img.footer-service-qrcode {
-  position: relative;
-  display: block;
-  text-align: right;
-  width: 100px;
-  height: auto;
+  display: inline-block;
   float: right;
-  margin-top: 16px;
+  height: 20px;
+  margin: 18px 0 0;
 }
-/* line 1687, ../sass/screen.scss */
-footer .footer-second-block {
-  position: relative;
-  display: block;
-  padding: 0;
-  background: #5052a1;
-  width: 100%;
-  padding: 20px 0;
-}
-/* line 1694, ../sass/screen.scss */
-footer .footer-second-block ul {
-  position: relative;
-  text-align: center;
-}
-/* line 1697, ../sass/screen.scss */
-footer .footer-second-block ul li {
-  position: relative;
-  display: inline;
+/* line 1221, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-hashtag span {
+  color: #d1a593;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
-  font-size: 15px;
-  text-align: center;
-  color: #ffffff;
-  border-right: 1px solid #FFFFFF;
-  padding: 0 15px 0 10px;
-}
-/* line 1709, ../sass/screen.scss */
-footer .footer-second-block ul li a {
-  color: #ffffff;
-}
-/* line 1712, ../sass/screen.scss */
-footer .footer-second-block ul li:nth-child(5) {
-  border: none;
-}
-@media (max-width: 767px) {
-  /* line 1716, ../sass/screen.scss */
-  footer .footer-second-block ul li:nth-child(1) {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  /* line 1720, ../sass/screen.scss */
-  footer .footer-second-block ul li:nth-child(2) {
-    display: inline-block;
-    border: none;
-    margin-bottom: 20px;
-  }
-  /* line 1725, ../sass/screen.scss */
-  footer .footer-second-block ul li:nth-child(3), footer .footer-second-block ul li:nth-child(4), footer .footer-second-block ul li:nth-child(5) {
-    display: block;
-    border: none;
-    text-align: left;
-    line-height: 22px;
-  }
+  font-size: 13px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #d1a593;
 }

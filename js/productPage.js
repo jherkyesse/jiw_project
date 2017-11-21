@@ -1,8 +1,12 @@
 document.querySelector('.new-winelist-btn').onclick=function(){
-    document.querySelector('.new-winelist-sub').classList.remove('hidden')
+    document.querySelector('.new-winelist-sub').classList.toggle('hidden')
 }
 document.querySelector('.new-wine-cancel-btn').onclick=function(){
     document.querySelector('.new-winelist-sub').classList.add('hidden')
+}
+
+document.querySelector('.product-new-winelist > img').onclick=function(){
+    document.querySelector('.new-winelist').classList.toggle('hidden-xs')
 }
 
 function scrollToRelatedWinelist(){
@@ -21,7 +25,4 @@ function scrollTo(element, to) {
         if (element.scrollTop+perTick >= to) return;
         scrollTo(element, to);
     }, 10);
-}
-document.querySelector('.navbar-cart > img:nth-child(3)').onclick=function(){
-    document.querySelector('.cart-list').classList.toggle('hidden')
 }

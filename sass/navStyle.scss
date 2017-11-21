@@ -7,6 +7,7 @@ nav{
     height: 60px;
     background: #FFFFFF;
     z-index: 9000;
+    box-shadow: 0 1px 0 0 #cccccc;
     .navbar{
         position: relative;
         height: 60px;
@@ -25,6 +26,8 @@ nav{
         }
         .navbar-menu-span img:nth-child(1){ display: none; }
         .navbar-menu-span img:nth-child(2){ display: block; }
+        .navbar-menu-span.navbar-menu-span-all img:nth-child(2){ display: none; }
+        .navbar-menu-span.navbar-menu-span-all img:nth-child(3){ display: block; }
         .navbar-brand{
             position: absolute;
             left: 15px;
@@ -128,6 +131,7 @@ nav{
                     text-align: center;
                     cursor: default;
                     @media(max-width:767px){
+                        display: block;
                         height: calc(100vh - 120px);
                         z-index: 9100;
                         top: 120px;
@@ -152,7 +156,6 @@ nav{
                             margin: 0;
                             background: #5052a1;
                             text-align: left;
-
                         }
                         &:hover:after{
                             @media(min-width:767px){
@@ -176,6 +179,7 @@ nav{
                             backdrop-filter: blur(20px);
                             cursor: default;
                             z-index: 9300;
+                            @media(max-width:767px){ display: block; }
                             &.li-1-block{
                                 position: fixed;
                                 top: 112px;
@@ -605,6 +609,12 @@ nav{
                             border: 0.5px solid #999999;
                             border-radius: 2px;
                             outline: none;
+                            @media(max-width:767px){
+                                height: 26px; 
+                                bottom: 10px; 
+                                font-size: 13px; 
+                                line-height: 19px;
+                            }
                         }
                         .cart-list-item-add{
                             position: absolute;

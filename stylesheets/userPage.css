@@ -1,0 +1,133 @@
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Noto Sans CJK TC";
+  src: url(../fonts/Noto/NotoSansCJKtc-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+/* line 4, ../sass/userPage.scss */
+.user-head {
+  position: relative;
+  display: block;
+  margin-top: 60px;
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 14, ../sass/userPage.scss */
+.user-profile-block {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  background: #FFFFFF;
+  padding: 40px 0 0;
+  margin: 0 auto;
+}
+/* line 22, ../sass/userPage.scss */
+.user-profile-block .user-profile-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 100%;
+}
+/* line 32, ../sass/userPage.scss */
+.user-profile-block .user-profile-info {
+  height: 200px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+/* line 35, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-name {
+  position: relative;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #323142;
+  margin: 0 16px 0 0;
+}
+/* line 45, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-name .user-profile-edit {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: auto;
+  margin: 8px 0;
+}

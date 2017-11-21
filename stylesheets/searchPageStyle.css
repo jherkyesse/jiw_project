@@ -155,15 +155,15 @@ body {
   .search-all-block .search-class-box .search-class:hover {
     color: #5052a1;
   }
-}
-/* line 64, ../sass/searchPageStyle.scss */
-.search-all-block .search-class-box .search-class:hover:after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px solid #5052a1;
+  /* line 63, ../sass/searchPageStyle.scss */
+  .search-all-block .search-class-box .search-class:hover:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #5052a1;
+  }
 }
 /* line 73, ../sass/searchPageStyle.scss */
 .search-all-block .search-class-box .search-class-active {

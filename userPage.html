@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<link rel="icon" href="./image/icon/favicon.png">
+<head>
+    <title>酒飲網</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=3">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=8">
+    <link rel="stylesheet" href="./stylesheets/userPage.css?i=1">
+</head>
+
+<body>
+<nav>
+    <div class="container navbar">
+        <div class="hidden-sm hidden-md hidden-lg navbar-menu-icon" id="nav-menu-icon">
+            <img src="./image/icon/menu.png" id="navmenustart">
+            <img src="./image/icon/close.png" id="navmenuclose">
+            <img src="./image/icon/back.png">
+        </div>
+        <div class="navbar-brand">
+            <a href=""><img src="./image/icon/favicon.png"></a>
+        </div>
+        <div class="hidden-xs navbar-menu" id="nav-menu">
+            <ul>
+                <li><a>首頁</a></li>
+                <li id="all-wine-menu">
+                    <a>全部酒品</a><img class="arrow" src="./image/icon/arrow.png">
+                    <ul id="nav-submenu" class="hidden-xs">
+                        <li id="all-wine-dropmenu"><a>發現</a><img class="arrow-white" src="./image/icon/arrow-white.png">
+                            <ul class="li-1-block hidden-xs">
+                                <li>
+                                    <ul>
+                                        <li>熱門關鍵字</li>
+                                        <li><a href="">2018 春季</a></li>
+                                        <li><a href="">萬聖節</a></li>
+                                        <li><a href="">聖誕節葡萄酒</a></li>
+                                        <li><a href="">送禮</a></li>
+                                        <li><a href="">西西里島紅酒</a></li>
+                                        <li><a href="">波爾多紅酒</a></li>
+                                        <li><a href="">維多莉亞高貴酒</a></li>
+                                        <li><a href="">香檳與發泡葡萄酒</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>熱門品牌</li>
+                                        <li><a href="">ShaferVineyards</a></li>
+                                        <li><a href="">Beringer Vineyards</a></li>
+                                        <li><a href="">Dominus Estate</a></li>
+                                        <li><a href="">Opus One Winery</a></li>
+                                        <li><a href="">Harlan Estate</a></li>
+                                        <li><a href="">Screaming Eagle Winery</a></li>
+                                        <li><a href="">Stag'sLeap Wine Cellars</a></li>
+                                        <li><a href="">Caymus Vineyards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>新鮮貨</li>
+                                        <li><a href="">ShaferVineyards</a></li>
+                                        <li><a href="">Beringer Vineyards</a></li>
+                                        <li><a href="">Dominus Estate</a></li>
+                                        <li><a href="">Opus One Winery</a></li>
+                                        <li><a href="">Harlan Estate</a></li>
+                                        <li><a href="">Screaming Eagle Winery</a></li>
+                                        <li><a href="">Stag'sLeap Wine Cellars</a></li>
+                                        <li><a href="">Caymus Vineyards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>殘酷限量</li>
+                                        <li><a href="">1855梅多克列級莊園</a></li>
+                                        <li><a href="">聖愛美儂列級莊園</a></li>
+                                        <li><a href="">蘇玳巴薩克列級莊園</a></li>
+                                        <li><a href="">格拉夫列級莊園</a></li>
+                                        <li><a href="">波美侯AOC</a></li>
+                                        <li><a href="">勃艮第AOC</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="all-wine-dropmenu"><a>種類</a><img class="arrow-white" src="./image/icon/arrow-white.png">
+                            <ul class="li-2-block hidden-xs">
+                                <li><a href="">紅葡萄酒</a></li>
+                                <li><a href="">白葡萄酒</a></li>
+                                <li><a href="">桃紅葡萄酒</a></li>
+                                <li><a href="">起泡葡萄酒</a></li>
+                                <li><a href="">加強葡萄酒</a></li>
+                                <li><a href="">甜型葡萄酒</a></li>
+                            </ul>
+                        </li>
+                        <li id="all-wine-dropmenu"><a>品牌</a><img class="arrow-white" src="./image/icon/arrow-white.png">
+                            <ul class="li-1-block hidden-xs">
+                                <li>
+                                    <ul>
+                                        <li><a href="">ShaferVineyards</a></li>
+                                        <li><a href="">Beringer Vineyards</a></li>
+                                        <li><a href="">Dominus Estate</a></li>
+                                        <li><a href="">Opus One Winery</a></li>
+                                        <li><a href="">Harlan Estate</a></li>
+                                        <li><a href="">Screaming Eagle Winery</a></li>
+                                        <li><a href="">Stag'sLeap Wine Cellars</a></li>
+                                        <li><a href="">Caymus Vineyards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="">ShaferVineyards</a></li>
+                                        <li><a href="">Beringer Vineyards</a></li>
+                                        <li><a href="">Dominus Estate</a></li>
+                                        <li><a href="">Opus One Winery</a></li>
+                                        <li><a href="">Harlan Estate</a></li>
+                                        <li><a href="">Screaming Eagle Winery</a></li>
+                                        <li><a href="">Stag'sLeap Wine Cellars</a></li>
+                                        <li><a href="">Caymus Vineyards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="">ShaferVineyards</a></li>
+                                        <li><a href="">Beringer Vineyards</a></li>
+                                        <li><a href="">Dominus Estate</a></li>
+                                        <li><a href="">Opus One Winery</a></li>
+                                        <li><a href="">Harlan Estate</a></li>
+                                        <li><a href="">Screaming Eagle Winery</a></li>
+                                        <li><a href="">Stag'sLeap Wine Cellars</a></li>
+                                        <li><a href="">Caymus Vineyards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="">ShaferVineyards</a></li>
+                                        <li><a href="">Beringer Vineyards</a></li>
+                                        <li><a href="">Dominus Estate</a></li>
+                                        <li><a href="">Opus One Winery</a></li>
+                                        <li><a href="">Harlan Estate</a></li>
+                                        <li><a href="">Screaming Eagle Winery</a></li>
+                                        <li><a href="">Stag'sLeap Wine Cellars</a></li>
+                                        <li><a href="">Caymus Vineyards</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="all-wine-dropmenu"><a>國家/產區</a><img class="arrow-white" src="./image/icon/arrow-white.png">
+                            <ul class="li-4-block hidden-xs">
+                                <li>
+                                    <ul>
+                                        <li>美國</li>
+                                        <li>加州</li>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li>厄勒岡州</li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>洛蒂</li>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                    </ul>     
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>法國</li>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                    </ul>  
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>義大利</li>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                    </ul>  
+                                </li>
+                                <li>
+                                <ul>
+                                    <li>西班牙</li>
+                                        <li>加州</li>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li>厄勒岡州</li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>洛蒂</li>
+                                        <li><a href="">考施拉</a></li>
+                                        <li><a href="">蒙特瑞</a></li>
+                                        <li><a href="">弗瑞斯諾</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">納帕</a></li>
+                                        <li><a href="">加州</a></li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="all-wine-dropmenu"><a>品種</a><img class="arrow-white" src="./image/icon/arrow-white.png">
+                            <ul class="li-5-block hidden-xs">
+                                <li>
+                                    <ul>
+                                        <li><a href="">赤霞珠</a></li>
+                                        <li><a href="">雷司令</a></li>
+                                        <li><a href="">西拉</a></li>
+                                        <li><a href="">桑嬌維塞</a></li>
+                                        <li><a href="">仙粉黛</a></li>
+                                        <li><a href="">美樂</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="">赤霞珠</a></li>
+                                        <li><a href="">雷司令</a></li>
+                                        <li><a href="">西拉</a></li>
+                                        <li><a href="">桑嬌維塞</a></li>
+                                        <li><a href="">仙粉黛</a></li>
+                                        <li><a href="">美樂</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="">赤霞珠</a></li>
+                                        <li><a href="">雷司令</a></li>
+                                        <li><a href="">西拉</a></li>
+                                        <li><a href="">桑嬌維塞</a></li>
+                                        <li><a href="">仙粉黛</a></li>
+                                        <li><a href="">美樂</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="all-wine-dropmenu"><a>等級</a><img class="arrow-white" src="./image/icon/arrow-white.png">
+                            <ul class="li-6-block hidden-xs">
+                                <li><a href="">1855梅多克列級莊園</a></li>
+                                <li><a href="">聖愛美儂列級莊園</a></li>
+                                <li><a href="">蘇玳巴薩克列級莊園</a></li>
+                                <li><a href="">格拉夫列級莊園</a></li>
+                                <li><a href="">波美侯AOC</a></li>
+                                <li><a href="">勃艮第AOC</a></li>
+                            </ul>
+                        </li>
+                        <li><a>場景</a><img class="arrow-white" src="./image/icon/arrow-white.png"></li>
+                        <li><a>配餐</a><img class="arrow-white" src="./image/icon/arrow-white.png"></li>
+                        <li><a>酒評</a><img class="arrow-white" src="./image/icon/arrow-white.png"></li>
+                    </ul>
+                </li>
+                <li><a>搜酒單</a></li>
+                <li><a>找活動</a></li>
+                <li><a>來投資</a></li>
+                <li class="hidden-sm hidden-md hidden-lg"><a>個人中心</a></li>
+                <li class="hidden-sm hidden-md hidden-lg"><a>使用指南</a></li>                
+            </ul>
+        </div>
+        <div class="navbar-cart">
+            <img class="hidden-xs" src="./image/icon/heart.png">
+            <img class="hidden-xs" src="./image/icon/user.png">
+            <img src="./image/icon/cart.png"><span id="navbar-cart-count">6</span>
+            <div class="cart-list hidden">
+                <div class="cart-list-item-box-block">
+                    <div class="cart-list-item-box">   
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="cart-list-item-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="cart-list-item-reduce"><img src="./image/icon/less.png"></div>
+                        <input class="cart-list-item-count" value="1">
+                        <div class="cart-list-item-add"><img src="./image/icon/more-icon.png"></div>
+                        <div class="cart-list-item-price">¥ 155.00</div>
+                        <div class="cart-list-item-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="cart-list-item-box">   
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="cart-list-item-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="cart-list-item-reduce"><img src="./image/icon/less.png"></div>
+                        <input class="cart-list-item-count" value="1">
+                        <div class="cart-list-item-add"><img src="./image/icon/more-icon.png"></div>
+                        <div class="cart-list-item-price">¥ 155.00</div>
+                        <div class="cart-list-item-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="cart-list-item-box">   
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="cart-list-item-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="cart-list-item-reduce"><img src="./image/icon/less.png"></div>
+                        <input class="cart-list-item-count" value="2">
+                        <div class="cart-list-item-add"><img src="./image/icon/more-icon.png"></div>
+                        <div class="cart-list-item-price">¥ 155.00</div>
+                        <div class="cart-list-item-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="cart-list-item-box">   
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="cart-list-item-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="cart-list-item-reduce"><img src="./image/icon/less.png"></div>
+                        <input class="cart-list-item-count" value="3">
+                        <div class="cart-list-item-add"><img src="./image/icon/more-icon.png"></div>
+                        <div class="cart-list-item-price">¥ 155.00</div>
+                        <div class="cart-list-item-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="cart-list-item-box">   
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="cart-list-item-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="cart-list-item-reduce"><img src="./image/icon/less.png"></div>
+                        <input class="cart-list-item-count" value="4">
+                        <div class="cart-list-item-add"><img src="./image/icon/more-icon.png"></div>
+                        <div class="cart-list-item-price">¥ 155.00</div>
+                        <div class="cart-list-item-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="cart-list-item-box">   
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="cart-list-item-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="cart-list-item-reduce"><img src="./image/icon/less.png"></div>
+                        <input class="cart-list-item-count" value="5">
+                        <div class="cart-list-item-add"><img src="./image/icon/more-icon.png"></div>
+                        <div class="cart-list-item-price">¥ 155.00</div>
+                        <div class="cart-list-item-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                </div>
+                <div class="cart-list-item-mount">共 5 項商品</div>
+                <div class="cart-list-item-total-price">¥ 9923.00</div>
+                <div class="cart-list-item-all-delete-btn"><img src="./image/icon/clear.png">全部清空</div>
+                <div class="cart-list-item-invest-btn"><img src="./image/icon/invest.png">切換投資車</div>
+                <button class="cart-item-list-more">查看購物車</div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="user-head" style="background-image:url('./image/picture/mp5.jpg')"></div>
+
+<div class="row user-profile-block">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <div class="user-profile-img" style="background-image:url('./image/picture/profilepic.jpg')"></div>
+    </div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 user-profile-info">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="user-profile-name">李太太</div>
+                <img src="./image/icon/edit.png">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="user-profile-">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="./js/bootstrap.min.js" ></script>
+<script src="./js/menuInit.js?i=8"></script>
+</body>
+</html>

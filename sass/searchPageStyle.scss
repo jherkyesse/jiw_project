@@ -60,14 +60,14 @@ body{
             cursor: pointer;
             @media(min-width: 1200px){
                 &:hover{ color: #5052a1; }
-            }
-            &:hover:after{
-                content: '';
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                border-bottom: 2px solid #5052a1;
+                &:hover:after{
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    border-bottom: 2px solid #5052a1;
+                }
             }
         }
         .search-class-active{

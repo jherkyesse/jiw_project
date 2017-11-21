@@ -1,0 +1,1020 @@
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Noto Sans CJK TC";
+  src: url(../fonts/Noto/NotoSansCJKtc-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+/* line 3, ../sass/navStyle.scss */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  z-index: 9000;
+}
+/* line 10, ../sass/navStyle.scss */
+nav .navbar {
+  position: relative;
+  height: 60px;
+  padding: 0;
+}
+/* line 14, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-icon {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+}
+/* line 18, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-icon img {
+  height: 24px;
+  width: auto;
+}
+/* line 21, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-icon img:nth-child(1) {
+  display: block;
+}
+/* line 22, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-icon img:nth-child(2) {
+  display: none;
+}
+/* line 23, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-icon img:nth-child(3) {
+  display: none;
+}
+/* line 26, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-span img:nth-child(1) {
+  display: none;
+}
+/* line 27, ../sass/navStyle.scss */
+nav .navbar .navbar-menu-span img:nth-child(2) {
+  display: block;
+}
+/* line 28, ../sass/navStyle.scss */
+nav .navbar .navbar-brand {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 28, ../sass/navStyle.scss */
+  nav .navbar .navbar-brand {
+    left: 50%;
+    margin-left: -47.8045px;
+  }
+}
+/* line 38, ../sass/navStyle.scss */
+nav .navbar .navbar-brand img {
+  height: 40px;
+  width: auto;
+  /* 95.609px */
+}
+/* line 43, ../sass/navStyle.scss */
+nav .navbar .navbar-menu {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+@media (max-width: 991px) and (min-width: 767px) {
+  /* line 43, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu {
+    width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 43, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+  }
+}
+/* line 63, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 19px 0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  /* line 70, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li:nth-child(1) {
+    display: none;
+  }
+  /* line 71, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li:nth-child(5) a {
+    border: none;
+  }
+}
+@media (max-width: 767px) {
+  /* line 63, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li {
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+  }
+  /* line 82, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    border-bottom: 1px solid #dbdbdb;
+    width: calc(100% - 80px);
+  }
+}
+/* line 91, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > a {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  color: #26264f;
+  padding: 0 50px;
+  border-right: 1px solid #cccccc;
+  text-decoration: none;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  /* line 91, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > a {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 91, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > a {
+    border: none;
+    padding: 0 0 0 40px;
+  }
+}
+/* line 109, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li:hover > a {
+  color: #5052a1;
+}
+@media (min-width: 767px) {
+  /* line 113, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li:hover > ul {
+    display: block;
+  }
+}
+/* line 118, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 52px;
+  background: #5052a1;
+  top: 60px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: default;
+}
+@media (max-width: 767px) {
+  /* line 118, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul {
+    height: calc(100vh - 120px);
+    z-index: 9100;
+    top: 120px;
+    overflow-y: scroll;
+  }
+}
+/* line 136, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li {
+  position: relative;
+  display: inline-block;
+  height: 52px;
+  margin: 0 10px;
+  padding: 15px 13px;
+  vertical-align: top;
+  cursor: pointer;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  /* line 136, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li {
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 136, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    background: #5052a1;
+    text-align: left;
+  }
+}
+@media (min-width: 767px) {
+  /* line 157, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li:hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #d1a593;
+  }
+}
+@media (min-width: 767px) {
+  /* line 168, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li:hover > ul {
+    display: block;
+  }
+}
+/* line 172, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul {
+  display: none;
+  background-color: rgba(38, 38, 79, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  cursor: default;
+  z-index: 9300;
+}
+/* line 179, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block {
+  position: fixed;
+  top: 112px;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  /* line 179, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block {
+    background: #26264f;
+    position: relative;
+    top: 0;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+  }
+}
+/* line 193, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 323px;
+  vertical-align: top;
+  border-right: 1px solid #cccccc;
+  padding: 0 18px;
+}
+@media (max-width: 767px) {
+  /* line 193, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li {
+    border: none;
+    padding: 0 40px;
+  }
+}
+/* line 205, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li > ul > li {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+}
+/* line 210, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li > ul > li:nth-child(1) {
+  color: #d1a593;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 2px;
+}
+/* line 217, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-1-block > li > ul > li > a {
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+/* line 227, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  /* line 227, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block {
+    background: #26264f;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+/* line 253, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block > li {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  /* line 253, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block > li {
+    padding: 10px 20px;
+  }
+}
+/* line 259, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-2-block > li > a {
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  color: #ffffff;
+  white-space: nowrap;
+}
+/* line 267, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block {
+  position: fixed;
+  top: 112px;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  /* line 267, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+    background: #26264f;
+  }
+}
+/* line 282, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 278px;
+  width: auto;
+  height: auto;
+  border-right: 1px solid #cccccc;
+}
+@media (max-width: 767px) {
+  /* line 282, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li {
+    border: none;
+  }
+}
+/* line 293, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+@media (min-width: 767px) {
+  /* line 298, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul:nth-child(2) {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 293, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul {
+    display: block;
+  }
+}
+/* line 305, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li {
+  position: relative;
+  display: block;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  font-weight: 300;
+  color: #d1a593;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 10px 0;
+}
+/* line 315, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li:nth-child(1) {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  font-weight: bold;
+  color: #d1a593;
+  letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+  /* line 305, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li {
+    padding: 10px 40px;
+  }
+}
+/* line 325, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-4-block > li > ul > li > a {
+  position: relative;
+  display: block;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 0 0 0 15px;
+}
+/* line 340, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  min-width: 278px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: 0 0 0 -134px;
+}
+@media (max-width: 767px) {
+  /* line 340, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+    background: #26264f;
+    width: 100%;
+    margin: 0;
+  }
+}
+/* line 359, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li {
+  position: relative;
+  display: inline-block;
+  width: 76px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  /* line 359, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 370, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li > ul > li {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+}
+@media (max-width: 767px) {
+  /* line 370, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li > ul > li {
+    padding: 10px 20px;
+  }
+}
+/* line 377, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-5-block > li > ul > li > a {
+  position: relative;
+  display: block;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
+}
+/* line 390, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  /* line 390, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block {
+    background: #26264f;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+/* line 416, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block > li {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 416, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block > li {
+    padding: 10px 20px;
+  }
+}
+/* line 425, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > ul.li-6-block > li > a {
+  position: relative;
+  display: block;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  white-space: nowrap;
+}
+/* line 437, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li > a {
+  color: #FFFFFF;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 2px;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 22px;
+}
+@media (max-width: 767px) {
+  /* line 437, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li > a {
+    line-height: 60px;
+    padding: 0 0 0 40px;
+  }
+}
+/* line 450, ../sass/navStyle.scss */
+nav .navbar .navbar-menu > ul > li > ul > li img.arrow-white {
+  display: none;
+}
+@media (max-width: 767px) {
+  /* line 450, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu > ul > li > ul > li img.arrow-white {
+    position: absolute;
+    display: block;
+    top: 18px;
+    right: 40px;
+    height: 24px;
+    width: auto;
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+/* line 474, ../sass/navStyle.scss */
+nav .navbar .navbar-menu img.arrow {
+  display: none;
+}
+@media (max-width: 767px) {
+  /* line 474, ../sass/navStyle.scss */
+  nav .navbar .navbar-menu img.arrow {
+    display: block !important;
+    position: absolute;
+    right: 40px;
+    top: 16px;
+  }
+}
+/* line 484, ../sass/navStyle.scss */
+nav .navbar .navbar-cart {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 484, ../sass/navStyle.scss */
+  nav .navbar .navbar-cart {
+    right: 10px;
+  }
+}
+/* line 491, ../sass/navStyle.scss */
+nav .navbar .navbar-cart > img {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: auto;
+  cursor: pointer;
+  padding: 0 16px;
+}
+/* line 498, ../sass/navStyle.scss */
+nav .navbar .navbar-cart > img:nth-child(2) {
+  border-width: 0 1px;
+  border-color: #cccccc;
+  border-style: solid;
+}
+/* line 504, ../sass/navStyle.scss */
+nav .navbar .navbar-cart #navbar-cart-count {
+  position: relative;
+  display: inline-block;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: right;
+  color: #5052a1;
+  margin-left: -8px;
+  padding-top: 2px;
+  vertical-align: top;
+}
+/* line 517, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 300px;
+  height: 500px;
+  background: #FFFFFF;
+  border: solid 0.5px #999999;
+  border-radius: 4px;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 10100;
+}
+@media (max-width: 767px) {
+  /* line 517, ../sass/navStyle.scss */
+  nav .navbar .navbar-cart .cart-list {
+    height: 360px;
+  }
+}
+/* line 529, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list:before {
+  content: '';
+  position: absolute;
+  right: 24px;
+  top: -10px;
+  border-bottom: 10px solid #FFFFFF;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+/* line 538, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media (max-width: 767px) {
+  /* line 538, ../sass/navStyle.scss */
+  nav .navbar .navbar-cart .cart-list .cart-list-item-box-block {
+    height: 210px;
+  }
+}
+/* line 546, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block::-webkit-scrollbar {
+  border-radius: 3.5px;
+  width: 4px;
+}
+/* line 550, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block::-webkit-scrollbar-track {
+  width: 4px;
+  background: #555555;
+}
+/* line 554, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block::-webkit-scrollbar-thumb {
+  width: 4px;
+  background: #dbdbdb;
+}
+/* line 558, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 70px;
+  border-bottom: 0.5px solid #999999;
+}
+/* line 564, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box > img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 50px;
+  width: auto;
+}
+/* line 571, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-name {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  width: 200px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+}
+/* line 584, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-reduce {
+  position: absolute;
+  left: 70px;
+  bottom: 8px;
+  cursor: pointer;
+}
+/* line 589, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-reduce > img {
+  height: 22px;
+  width: auto;
+}
+/* line 594, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box input.cart-list-item-count {
+  position: absolute;
+  left: 105px;
+  bottom: 10px;
+  width: 50px;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: top;
+  border: 0.5px solid #999999;
+  border-radius: 2px;
+  outline: none;
+}
+/* line 609, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-add {
+  position: absolute;
+  left: 168px;
+  bottom: 8px;
+  cursor: pointer;
+}
+/* line 614, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-add > img {
+  height: 22px;
+  width: auto;
+}
+/* line 619, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-price {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: left;
+  color: #933c42;
+}
+/* line 630, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* line 635, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-delete > img {
+  height: 16px;
+  width: auto;
+}
+/* line 642, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-mount {
+  position: absolute;
+  left: 10px;
+  bottom: 104px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  color: #323142;
+}
+/* line 651, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-total-price {
+  position: absolute;
+  right: 10px;
+  bottom: 104px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: left;
+  color: #933c42;
+}
+/* line 662, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-all-delete-btn {
+  position: absolute;
+  left: 10px;
+  bottom: 62px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999999;
+  cursor: pointer;
+}
+/* line 671, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-all-delete-btn > img {
+  height: 22px;
+  width: auto;
+  vertical-align: top;
+}
+/* line 677, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-invest-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 62px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  color: #5052a1;
+  cursor: pointer;
+}
+/* line 686, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-list-item-invest-btn > img {
+  height: 22px;
+  width: auto;
+  vertical-align: top;
+}
+/* line 692, ../sass/navStyle.scss */
+nav .navbar .navbar-cart .cart-list .cart-item-list-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  background: #933c42;
+  color: #FFFFFF;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+}

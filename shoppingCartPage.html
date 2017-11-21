@@ -8,17 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="./stylesheets/navStyle.css?i=3">
-    <link rel="stylesheet" href="./stylesheets/screen.css?i=6">
-    <link rel="stylesheet" href="./stylesheets/searchboxStyle.css?i=1">
-    <link rel="stylesheet" href="./stylesheets/shoppingCartPageStyle.css?i=1">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=8">
+    <link rel="stylesheet" href="./stylesheets/searchboxStyle.css?i=2">
+    <link rel="stylesheet" href="./stylesheets/shoppingCartPageStyle.css?i=3">
 </head>
 
 <body>
 <nav>
     <div class="container navbar">
         <div class="hidden-sm hidden-md hidden-lg navbar-menu-icon" id="nav-menu-icon">
-            <img src="./image/icon/menu.png">
-            <img src="./image/icon/close.png">
+            <img src="./image/icon/menu.png" id="navmenustart">
+            <img src="./image/icon/close.png" id="navmenuclose">
             <img src="./image/icon/back.png">
         </div>
         <div class="navbar-brand">
@@ -29,9 +29,9 @@
                 <li><a>首頁</a></li>
                 <li id="all-wine-menu">
                     <a>全部酒品</a><img class="arrow" src="./image/icon/arrow.png">
-                    <ul id="nav-submenu">
+                    <ul id="nav-submenu" class="hidden-xs">
                         <li id="all-wine-dropmenu"><a>發現</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-1-block">
+                            <ul class="li-1-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li>熱門關鍵字</li>
@@ -85,7 +85,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>種類</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-2-block">
+                            <ul class="li-2-block hidden-xs">
                                 <li><a href="">紅葡萄酒</a></li>
                                 <li><a href="">白葡萄酒</a></li>
                                 <li><a href="">桃紅葡萄酒</a></li>
@@ -95,7 +95,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>品牌</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-1-block">
+                            <ul class="li-1-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li><a href="">ShaferVineyards</a></li>
@@ -147,7 +147,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>國家/產區</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-4-block">
+                            <ul class="li-4-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li>美國</li>
@@ -239,7 +239,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>品種</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-5-block">
+                            <ul class="li-5-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li><a href="">赤霞珠</a></li>
@@ -273,7 +273,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>等級</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-6-block">
+                            <ul class="li-6-block hidden-xs">
                                 <li><a href="">1855梅多克列級莊園</a></li>
                                 <li><a href="">聖愛美儂列級莊園</a></li>
                                 <li><a href="">蘇玳巴薩克列級莊園</a></li>
@@ -398,8 +398,8 @@
                 <th class="th-5">小計</th>
                 <th class="th-6">操作</th>
             </tr>
-            <tr colspan="6">
-                <td>
+            <tr>
+                <td colspan="6">
                     <input type="checkbox" checked="checked"><label>貝爾莊園</label>
                 </td>
             </tr>
@@ -431,8 +431,8 @@
                 <td data-th="小計">¥ 155.00</td>
                 <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
             </tr>
-            <tr colspan="6">
-                <td>
+            <tr>
+                <td colspan="6">
                     <input class="cart-delete-checkbox" type="checkbox" checked="checked"><label>貝斯里莊園</label>
                 </td>
             </tr>
@@ -443,6 +443,20 @@
                 <td data-th="單位">6瓶一箱</td>
                 <td data-th="單價">¥ 155.00</td>
                 <td data-th="數量">已下架</td>
+                <td data-th="小計">¥ 155.00</td>
+                <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
+            </tr>
+            <tr class="cart-delete-item-tr">
+                <td data-th="商品">
+                    <input class="cart-delete-checkbox" type="checkbox" checked="checked"><img src="./image/picture/wine1.jpg"><label>美國原裝原瓶進口美國原裝原原裝</label>
+                </td>
+                <td data-th="單位"></td>
+                <td data-th="單價">¥ 155.00</td>
+                <td data-th="數量">
+                    <div class="cart-item-reduce"><img src="./image/icon/less.png"></div>
+                    <input class="cart-item-count" value="1">
+                    <div class="cart-item-add"><img src="./image/icon/more-icon.png"></div>
+                </td>
                 <td data-th="小計">¥ 155.00</td>
                 <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
             </tr>
@@ -459,13 +473,71 @@
                 <div class="cart-item-price">¥ 9923.00</div>
             </div>
         </div>
-        <div class="cart-checkout-btn">訂單結算</div>
+        <button class="cart-checkout-btn">訂單結算</button>
     </div>
 </div>
+<footer>
+    <div class="container footer-first-block">
+        <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a class="footer-title">关于我们</a>
+                <a class="footer-subtitle">平台特色</a>
+                <a class="footer-subtitle">公司介绍</a>
+                <a class="footer-subtitle">入驻酒庄</a>
+                <a class="footer-subtitle">入驻指南</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a class="footer-title">登入注册</a>
+                <a class="footer-subtitle">社群收藏</a>
+                <a class="footer-subtitle">购物流程</a>
+                <a class="footer-subtitle">投资流程</a>
+                <a class="footer-subtitle">会员升级</a>
+                <a class="footer-subtitle">返利指导</a>
+                <a class="footer-subtitle">提现指导</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a class="footer-title">常见问题</a>
+                <a class="footer-subtitle">买家</a>
+                <a class="footer-subtitle">投资客</a>
+                <a class="footer-subtitle">帐户管理</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a class="footer-title">加入我们</a>
+                <a class="footer-subtitle">招聘讯息</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a class="footer-title">联系我们</a>
+                <a class="footer-subtitle">联系表单</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a class="footer-title">關注</a>
+                <a class="footer-subtitle">微信公众号</a>         
+                <a class="footer-subtitle">小程序</a>                
+                <a class="footer-subtitle">微博</a>
+            </div>
+        </div>        
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-service-title">服务热线</div>
+                <div class="footer-service-time">400-655-1212<br>周一至周日<br>8:00-21:00</div>
+                <img class="footer-service-qrcode" src="./image/icon/qrcode.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="footer-second-block">
+        <ul>
+            <li><a href="">服务协议</a></li>
+            <li><a href="">隐私政策</a></li>
+            <li>食品流通许可证：SP1101081110120639</li>
+            <li>营业执照：9111010858442448XQ</li>
+            <li>公司地址：北京市海淀区学院南路68号20号楼1层126室</li>
+         </ul>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="./js/bootstrap.min.js" ></script>
-<script src="./js/menuInit.js?i=6"></script>
-<script src="./js/shoppingCartPage.js?i=1"></script>
+<script src="./js/menuInit.js?i=7"></script>
+<script src="./js/shoppingCartPage.js?i=3"></script>
 </body>
 </html>

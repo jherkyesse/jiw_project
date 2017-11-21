@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "compass/reset";
 @import "./setting.scss";
 
@@ -774,4 +775,782 @@
         text-align: left;
         color: #323142;
     }
+=======
+@import "compass/reset";
+@import "./setting.scss";
+
+.product-transaction-block{
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    margin-top: 120px;
+    padding: 0 0 62px;
+    border-bottom: 1px solid #cccccc;
+    .product-classify{
+        position: relative;
+        display: block;
+        height: 22px;
+        @include font-setting;
+        font-size: 15px;
+        text-align: left;
+        color: #999999;
+        margin: 24px 0 0;
+    }
+    .product-main-content{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 60px auto 0;
+    }
+    img#main-pic{
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 553px;
+        border: solid 0.5px #999999;
+        padding: 40px;
+        margin: auto;
+    }
+    .product-pic-box{
+        position: relative;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        max-width: 553px;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
+        margin: 12px auto;
+        & > img{
+            width: 97px;
+            height: auto;
+            border: solid 0.5px #999999;
+            padding: 12px;
+            @media(max-width:1200px){
+                width: 20% !important;
+            }
+        }
+    }
+    .product-share-block{
+        position: relative;
+        display: block;
+        .product-new-winelist{
+            position: relative;
+            display: inline-block;
+            padding-right: 16px;
+            border-right: 1px solid #cccccc;
+            @include font-setting;
+            z-index: 555;
+            cursor: pointer;
+            .new-winelist{
+                position: absolute;
+                top: 100%;
+                width: 203px;
+                height: auto;
+                border-radius: 4px;
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                background-color: rgba(255, 255, 255, 0.9);
+                box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.1);
+                border: solid 0.5px #999999;
+                cursor: default;
+                padding: 16px 24px;
+                @media(min-width:1200px){ display: none; }
+                .new-winelist-btn{
+                    position: relative;
+                    display: block;
+                    font-size: 15px;
+                    line-height: 22px;
+                    text-align: left;
+                    color: #323142;
+                    cursor: pointer;
+                    & > img{
+                        height: 18px;
+                        width: auto;
+                        vertical-align: top;
+                        margin: 2px 6px 0 0;
+                    }
+                }
+                .new-winelist-text{
+                    position: relative;
+                    display: block;
+                    height: 19px;
+                    font-size: 13px;
+                    text-align: left;
+                    color: #323142;
+                }
+                .new-winelist-option{
+                    position: relative;
+                    display: block;
+                    margin-top: 5px;
+                    & > input[type="checkbox"]{
+                        width: 16px;
+                        height: 16px;
+                        margin: 5px 0;
+                        -webkit-appearance: none;
+                        outline: none;
+                        background-image: url('../image/icon/check-02.png');
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        cursor: pointer;
+                        padding: 0;
+                        -o-transition: 0.3s;
+                        -moz-transition: 0.3s;
+                        -webkit-transition: 0.3s;
+                        transition: 0.3s;
+                        &:checked{
+                            background-image: url('../image/icon/check-01.png');                            }
+                        }
+                    span{
+                        position: relative;
+                        display: inline-block;
+                        width: calc(100% - 30px);
+                        min-height: 22px;
+                        font-size: 15px;
+                        text-align: left;
+                        color: #323142;
+                        margin: 5px 0 0 5px;
+                        vertical-align: top;
+                    }
+                }
+                .new-winelist-sub{
+                    width: 203px;
+                    height: auto;
+                    border-radius: 4px;
+                    -webkit-backdrop-filter: blur(20px);
+                    backdrop-filter: blur(20px);
+                    background-color: rgba(255, 255, 255, 0.9);
+                    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.1);
+                    border: solid 0.5px #999999;
+                    padding: 16px 24px;
+                    position: absolute;
+                    left: 100%;
+                    top: 0;
+                    width: 100%;
+                    @media(max-width:767px){
+                        top: 100%;
+                        left: 0;
+                    }
+                    & > input[type="text"]{
+                        width: 100%;
+                        border-width: 0 0 1px 0;
+                        border-color: #cccccc;
+                        border-style: solid;
+                        outline: none;
+                        font-size: 13px;
+                        text-align: left;
+                        color: #999999;
+                        padding: 2px 0 6px 0;
+                        margin: 0 0 16px 0;
+                    }
+                    & > input[type="radio"]{
+                        position: relative;
+                        height: 16px;
+                        width: 16px;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border: 1px solid #323142;
+                        cursor: pointer;
+                        outline: none;
+                        border-radius: 10px;
+                        margin-right: 5px;
+                        &:checked:after{
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 10px;
+                            height: 10px;
+                            border: 1px solid #5052a1;
+                            border-radius: 12px;
+                            background: #5052a1;
+                            margin-top: -5px;
+                            margin-left: -5px;
+                        }
+                    }
+                    span{
+                        position: relative;
+                        display: inline-block;
+                        width: calc(100% - 30px);
+                        min-height: 22px;
+                        font-size: 15px;
+                        text-align: left;
+                        color: #323142;
+                        margin: 5px 0 0 5px;
+                        vertical-align: top;
+                    }
+                    .new-wine-cancel-btn{
+                        position: relative;
+                        display: inline-block;
+                        font-size: 15px;
+                        text-align: left;
+                        color: #323142;
+                        cursor: pointer;
+                    }
+                    .new-wine-create-btn{
+                        position: relative;
+                        display: inline-block;
+                        float: right;
+                        font-size: 15px;
+                        text-align: left;
+                        color: #933c42;
+                        cursor: pointer;
+                    }
+                }
+                hr{
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background: #cccccc;
+                    padding: 0;
+                    margin: 12px 0;
+                }
+            }
+            @media(min-width:1200px){
+                &:hover > .new-winelist{ display: block; }
+            }
+
+        }
+        .product-share{
+            position: relative;
+            display: inline-block;
+            padding-left: 8px;
+        }
+        .product-sales-info{
+            position: relative;
+            display: inline-block;
+            float: right;
+            .product-star{
+                position: relative;
+                display: inline-block;
+                border-right: 1px solid #cccccc;
+                padding-right: 16px;
+                span{
+                    font-size: 13px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    @include font-setting;
+                    color: #d1a593;
+                    vertical-align: top;
+                    padding-left: 6px;
+                }
+            }
+            .product-sales{
+                position: relative;
+                display: inline-block;
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 500;
+                @include font-setting;
+                color: #d1a593;
+                vertical-align: top;
+                padding-left: 10px;
+            }
+        }
+        img{
+            height: 24px;
+            width: auto;
+        }
+    }
+    .product-name{
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        @include font-setting;
+        text-align: left;
+        color: #323142;
+        @media(min-width:1200px){ max-width: 500px; }
+        @media(max-width:767px){ 
+            font-size: 24px;
+            line-height: 28px;
+            margin-top: 30px;
+        }
+        & > span{
+            position: relative;
+            display: inline-block;
+            height: 24px;
+            border-radius: 4px;
+            background: #df8d74;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            vertical-align: top;
+            letter-spacing: 0;
+            padding: 0 8px;
+            margin: 5px 2px;
+            
+        }
+    }
+    .product-subname{
+        @include font-setting;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+        color: #999999;
+    }
+    .product-listbox{
+        position: relative;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row;
+        width: 100%;
+        border-bottom: 1px solid #dbdbdb;
+        vertical-align: middle;
+        min-height: 60px;
+        & > div:nth-child(1){
+            min-width: 70px;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: left;
+            color: #999999;
+        }
+        @media(min-width:1200px){ max-width: 508px; }
+        @media(max-width:767px){
+            & > div:nth-child(2){
+                position: relative;
+                display: block;
+            }
+        }
+        .product-orginal-price{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 21px;
+            line-height: 31px;
+            text-align: left;
+            color: #999999;
+            text-decoration: line-through;
+        }
+        .product-member-price{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 28px;
+            line-height: 41px;
+            font-weight: bold;
+            text-align: left;
+            color: #933c42;
+            vertical-align: middle;
+            margin: 8px 8px 8px 0;
+        }
+        .product-discount{
+            position: relative;
+            display: inline-block;
+            font-size: 15px;
+            line-height: 22px;
+            @include font-setting;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 0 4px 4px 0;
+            background-color: #933c42;
+            vertical-align: middle;
+            padding: 2px 5px 2px 0;
+            margin: 8px 8px 8px 13px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 0; 
+                height: 0;
+                right: 100%;
+                top: 0;
+                border-right: 13px solid #933c42;
+                border-top: 13px solid transparent;
+                border-bottom: 13.1px solid transparent;
+            }
+        }
+        .product-activity-tag{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 4px;
+            background: #e7a6a9;
+            vertical-align: middle;
+            padding: 2px 6px;
+            margin-left: 8px;
+            margin: 8px 8px 8px 0;
+        }
+        .product-invest-price{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 28px;
+            line-height: 41px;
+            font-weight: bold;
+            text-align: left;
+            color: #5052a1;
+            vertical-align: middle;
+            margin: 8px 8px 8px 0;
+        }
+        .product-invest-btn{
+            position: relative;
+            display: inline-block;
+            border-radius: 20px;
+            border: solid 0.5px #5052a1;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-align: left;
+            color: #5052a1;
+            text-decoration: none;
+            padding: 6px 16px;
+            margin: 8px 8px 8px 0;
+            &:hover{
+                color: #FFFFFF;
+                background: #5052a1;
+                & > img{
+                    filter: brightness(10);
+                }
+            }
+            & > img{
+                height: 22px;
+                width: auto;
+                vertical-align: middle;
+            }
+        }
+        .product-delivery-from,.product-delivery-text,.product-delivery-to{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: left;
+            color: #323142;
+        }
+        .product-delivery-text{
+            position: relative;
+            display: inline-block;
+            margin: 8px;
+        }
+        .product-delivery-to{
+            position: relative;
+            display: inline-block;
+            text-decoration: underline;
+            margin: 8px 16px 8px 0;
+        }
+        .product-delivery-fee{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            color: #933c42;
+            margin: 8px 8px 8px 0;
+        }
+        .product-weight,.product-unit{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: left;
+            color: #323142;
+            margin: 8px 16px 8px 0;
+        }
+        .product-weight-unit{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: left;
+            color: #323142;
+            margin: 8px 16px 8px 0;
+        }
+        input[type="radio"]{
+            position: relative;
+            display: inline-block;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            border: none !important;
+            &:checked{ width: 0; height: 0; }
+            &:checked+label{
+                border-color: #5052a1;
+                background: #5052a1;
+                color: #FFFFFF;
+            }
+            &+label{
+                border-radius: 4px;
+                border: solid 0.5px #999999;
+                font-size: 15px;
+                @include font-setting;
+                line-height: 22px;
+                height: 28px;
+                text-align: left;
+                color: #323142;
+                cursor: pointer;
+                padding: 3px 6px;
+                margin: 8px 8px 8px 0;
+            }
+
+        }
+        .product-count-reduce,.product-count-add{
+            position: relative;
+            display: inline-block;
+            height: auto;
+            width: auto;
+            outline: none;
+            border: none;
+            background: none;
+            margin: 8px 16px 8px 0;
+            padding: 0;
+            vertical-align: middle;
+            & > img{
+                height: 24px;
+                width: auto;
+            }
+        }
+        .product-count{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            width: 68px;
+            height: 28px;
+            border-radius: 2px;
+            border: solid 0.5px #999999;
+            font-size: 17px;
+            line-height: 25px;
+            text-align: center;
+            color: #323142;
+            padding: 1.5px 0;
+            outline: none;
+            margin: 8px 16px 8px 0;
+            vertical-align: middle;
+        }
+        .product-count-left{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            text-align: left;
+            color: #999999;
+            margin: 8px 8px 8px 0;
+        }
+        .product-service-box{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            height: 24px;
+            border-radius: 4px;
+            background: #f2f2f2;
+            font-size: 13px;
+            line-height: 19px;
+            text-align: left;
+            color: #323142;
+            vertical-align: middle;
+            padding: 2.5px 8px;
+            margin: 8px 8px 8px 0;
+            & > img{
+                height: 18px;
+                width: auto;
+                margin: 0 6px 0 0; 
+                vertical-align: middle;
+            }
+        }
+        .product-reference-img{
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            margin: 8px 8px 8px 0;
+            vertical-align: middle;
+        }
+        .product-reference-text{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            text-align: left;
+            color: #323142;
+            margin: 8px 8px 8px 0;
+            vertical-align: middle;
+        }
+    }
+    .product-add-cart-btn{
+        position: relative;
+        display: inline-block;
+        height: 48px;
+        border-radius: 4px;
+        background: #933c42;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: bold;
+        @include font-setting;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        padding: 12px 60px;
+        margin-top: 20px;
+        z-index: 600;
+        & > img{
+            height: 24px;
+            width: auto;
+            vertical-align: top;
+            margin-right: 16px;
+        }
+    }
+    .product-no-inventory-btn{
+        position: relative;
+        display: inline-block;
+        height: 48px;
+        border-radius: 4px;
+        background: #dbdbdb;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: bold;
+        @include font-setting;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        padding: 12px 98px;
+        margin-top: 20px;
+        cursor: not-allowed;
+    }
+}
+.product-info-block{
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 0;
+    margin: 0 auto;
+    .product-info-menu-box{
+        position: relative;
+        display: block;
+        @media(max-width:991px){ text-align: center; }
+        .product-info-menu-active{
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-top: 2px solid #933c42;
+            }
+        }
+        .product-info-menu{
+            position: relative;
+            display: inline-block;
+            @include font-setting;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            color: #323142;
+            cursor: pointer;
+            padding: 8px 15px;
+            margin-right: 16px;
+            @media(max-width:991px){ padding: 8px; margin-right: 8px; }
+            @media(min-width:1200px){
+                &:hover:after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    border-top: 2px solid #933c42;
+                }
+            }
+
+        }
+    }
+    .product-info-list-block{
+        position: relative;
+        display: block;
+        margin-top: 60px;
+        .product-info-list-box{
+            position: relative;
+            display: inline-block;
+            padding: 0 4px;
+            margin: 0 0 0 -4px;
+            z-index: 40;
+            float: none;
+        }
+        .product-info-list{
+            position: relative;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            border-bottom: 1px solid #dbdbdb;
+            height: 54px;
+            margin: 0;
+            & > div:nth-child(1){
+                position: relative;
+                display: inline;
+                @include font-setting;
+                font-size: 15px;
+                min-width: 54px;
+                text-align: left;
+                color: #999999;
+            }
+            & > div:nth-child(2){
+                position: relative;
+                display: inline;
+                @include font-setting;
+                font-size: 15px;
+                height: auto;
+                text-align: left;
+                color: #323142;
+            }
+            .item-score{
+                position: relative;
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #ffffff;
+                border: solid 0.5px #999999;
+                overflow: hidden;
+                margin-right: 8px;
+                span{
+                    @include font-setting;
+                    font-size: 13px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #555555;
+                    padding: 0 3px;
+                    &:nth-child(1){
+                        background: #f3f3f3;
+                        border-right: 1px solid #999999;
+                    }
+                }
+            }
+        }
+    }
+    .product-info-article{
+        position: relative;
+        display: block;
+        margin: 40px 0 100px;
+        @include font-setting;
+        font-size: 15px;
+        line-height: 27px;
+        text-align: left;
+        color: #323142;
+    }
+>>>>>>> f51633ea255059a6467ca036bc06ba0c74c620f5
 }

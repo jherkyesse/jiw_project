@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "compass/reset";
 @font-face{
     font-family: "Noto Sans CJK TC";
@@ -13,3 +14,20 @@
 }
 /*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
 $font-family-os: "Noto Sans CJK TC","kozgopr6n","PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+=======
+@import "compass/reset";
+@font-face{
+    font-family: "Noto Sans CJK TC";
+    src: url(../fonts/Noto/NotoSansCJKtc-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@mixin font-setting{
+    font-family: $font-family-os;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    font-smooth: always;
+}
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+$font-family-os: "Noto Sans CJK TC","kozgopr6n","PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+>>>>>>> f51633ea255059a6467ca036bc06ba0c74c620f5

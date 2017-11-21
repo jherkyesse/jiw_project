@@ -66,7 +66,6 @@
             z-index: 555;
             cursor: pointer;
             .new-winelist{
-                display: none;
                 position: absolute;
                 top: 100%;
                 width: 203px;
@@ -79,6 +78,7 @@
                 border: solid 0.5px #999999;
                 cursor: default;
                 padding: 16px 24px;
+                @media(min-width:1200px){ display: none; }
                 .new-winelist-btn{
                     position: relative;
                     display: block;
@@ -150,6 +150,10 @@
                     left: 100%;
                     top: 0;
                     width: 100%;
+                    @media(max-width:767px){
+                        top: 100%;
+                        left: 0;
+                    }
                     & > input[type="text"]{
                         width: 100%;
                         border-width: 0 0 1px 0;
@@ -227,9 +231,10 @@
                     margin: 12px 0;
                 }
             }
-            &:hover > .new-winelist{
-                display: block;
+            @media(min-width:1200px){
+                &:hover > .new-winelist{ display: block; }
             }
+
         }
         .product-share{
             position: relative;
@@ -500,6 +505,8 @@
             -moz-appearance: none;
             -webkit-appearance: none;
             appearance: none;
+            border: none !important;
+            &:checked{ width: 0; height: 0; }
             &:checked+label{
                 border-color: #5052a1;
                 background: #5052a1;
@@ -681,14 +688,17 @@
             padding: 8px 15px;
             margin-right: 16px;
             @media(max-width:991px){ padding: 8px; margin-right: 8px; }
-            &:hover:after{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                border-top: 2px solid #933c42;
+            @media(min-width:1200px){
+                &:hover:after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    border-top: 2px solid #933c42;
+                }
             }
+
         }
     }
     .product-info-list-block{

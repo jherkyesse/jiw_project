@@ -380,100 +380,198 @@
     </form>
 </div>
 
-<div class="cart-block">
-    <div class="cart-menu-block">
-        <div class="container cart-menu-box">
-            <div class="cart-menu cart-menu-active">購物車</div>
-            <div class="cart-menu">投資車</div>
+<div class="checkout-block">
+    <div class="checkout-menu-block">
+        <div class="container checkout-menu-box">
+            <div class="checkout-menu checkout-menu-active">購物車<img src="./image/icon/arrow.png"></div>
+            <div class="checkout-menu">收貨資訊<img src="./image/icon/arrow.png"></div>
+            <div class="checkout-menu">付款方式<img src="./image/icon/arrow.png"></div>
+            <div class="checkout-menu">確認收貨<img src="./image/icon/arrow.png"></div>
+            <div class="checkout-menu">評價</div>
         </div>
     </div>
-    <div class="container cart-content">
-        <input type="checkbox"><label>全選</label>
-        <table>
+    <div class="container checkout-table">
+        <div class="checkout-address-text">選擇收貨地址</div>
+        <table class="checkout-address-table">
             <tr>
-                <th class="th-1">商品</th>
-                <th class="th-2">單位</th>
-                <th class="th-3">單價</th>
-                <th class="th-4">數量</th>
-                <th class="th-5">小計</th>
-                <th class="th-6">操作</th>
+                <th>收貨人</th>
+                <th>地址</th>
+                <th>電話</th>
+                <th>操作</th>
             </tr>
-            <tr>
-                <td colspan="6">
-                    <input type="checkbox" checked="checked"><label>貝爾莊園</label>
+            <tr id="rwdtr">
+                <td data-th="收貨人"><input type="radio" name="address-option"><label>陳小姐</label></td>
+                <td data-th="地址">浙江杭州 餘杭五常文一西路969号 5号小邮局 </td>
+                <td data-th="電話">71-18668414281</td>
+                <td data-th="操作">
+                    <div class="address-alter"><div>修改</div><div>移除</div></div>
                 </td>
             </tr>
-            <tr class="cart-item-tr">
-                <td data-th="商品">
-                    <input type="checkbox" checked="checked"><img src="./image/picture/wine1.jpg"><label>美國原裝原瓶進口美國原裝原原裝</label>
+            <tr id="rwdtr">
+                <td data-th="收貨人"><input type="radio" name="address-option"><label>陳小姐</label></td>
+                <td data-th="地址">浙江杭州 餘杭五常文一西路969号 5号小邮局 </td>
+                <td data-th="電話">71-18668414281</td>
+                <td data-th="操作">
+                    <div class="address-alter"><div>修改</div><div>移除</div></div>
                 </td>
-                <td data-th="單位"></td>
-                <td data-th="單價">¥ 155.00</td>
-                <td data-th="數量">
-                    <div class="cart-item-reduce"><img src="./image/icon/less.png"></div>
-                    <input class="cart-item-count" value="1">
-                    <div class="cart-item-add"><img src="./image/icon/more-icon.png"></div>
-                </td>
-                <td data-th="小計">¥ 155.00</td>
-                <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
-            </tr>
-            <tr class="cart-item-tr">
-                <td data-th="商品">
-                    <input type="checkbox" checked="checked"><img src="./image/picture/wine1.jpg"><label>美國原裝原瓶進口美國原裝原原裝</label>
-                </td>
-                <td data-th="單位"></td>
-                <td data-th="單價">¥ 155.00</td>
-                <td data-th="數量">
-                    <div class="cart-item-reduce"><img src="./image/icon/less.png"></div>
-                    <input class="cart-item-count" value="1">
-                    <div class="cart-item-add"><img src="./image/icon/more-icon.png"></div>
-                </td>
-                <td data-th="小計">¥ 155.00</td>
-                <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
             </tr>
             <tr>
-                <td colspan="6">
-                    <input class="cart-delete-checkbox" type="checkbox" checked="checked"><label>貝斯里莊園</label>
-                </td>
-            </tr>
-            <tr class="cart-delete-item-tr">
-                <td data-th="商品">
-                    <input class="cart-delete-checkbox" type="checkbox" checked="checked"><img src="./image/picture/wine1.jpg"><label>美國原裝原瓶進口美國原裝原原裝美國原裝原瓶進口美國原裝原原裝美過</label>
-                </td>
-                <td data-th="單位">6瓶一箱</td>
-                <td data-th="單價">¥ 155.00</td>
-                <td data-th="數量">已下架</td>
-                <td data-th="小計">¥ 155.00</td>
-                <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
-            </tr>
-            <tr class="cart-delete-item-tr">
-                <td data-th="商品">
-                    <input class="cart-delete-checkbox" type="checkbox" checked="checked"><img src="./image/picture/wine1.jpg"><label>美國原裝原瓶進口美國原裝原原裝</label>
-                </td>
-                <td data-th="單位"></td>
-                <td data-th="單價">¥ 155.00</td>
-                <td data-th="數量">
-                    <div class="cart-item-reduce"><img src="./image/icon/less.png"></div>
-                    <input class="cart-item-count" value="1">
-                    <div class="cart-item-add"><img src="./image/icon/more-icon.png"></div>
-                </td>
-                <td data-th="小計">¥ 155.00</td>
-                <td data-th="操作"><div class="cart-item-action">操作</div><div class="cart-item-action">收藏至酒單</div></td>
+                <td colspan="4" id="add-address"><img src="./image/icon/add.png">新增地址</td>
             </tr>
         </table>
-        <div class="cart-action-box">
-            <div><img src="./image/icon/close-02.png">刪除選取</div>
-            <div><img src="./image/icon/clear.png">全部清空</div>
-            <div><img src="./image/icon/add-to-list.png">收藏至酒單</div>
-        </div>
-        <div class="cart-total-box">
-            <div class="cart-item-mount">已選<span>2</span>項商品</div>
-            <div class="cart-item-total">
-                <div class="cart-item-price-text"><span>訂單金額</span><span>不含運費</span></div>
-                <div class="cart-item-price">¥ 9923.00</div>
+
+        <div class="add-new-address-block hidden">
+            <div class="new-address-box">
+                <div class="new-address-head">新增地址<img id="close-new-address-block" src="./image/icon/close-02.png"></div>
+                <div class="new-address-content">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="new-address-text">收貨人姓名*</div>
+                            <input class="col-xs-12 col-sm-12 col-md-12 col-lg-12" type="text" placeholder="長度不超過25個字符" maxlength="25">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="new-address-text">手機號碼</div>
+                            <input class="col-xs-12 col-sm-12 col-md-12 col-lg-12" type="text" placeholder="18668415142">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="new-address-text">電話號碼</div>
+                            <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="text" placeholder="區號">
+                            <input class="col-xs-6 col-sm-6 col-md-6 col-lg-6" type="text" placeholder="電話號碼">
+                            <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="text" placeholder="分機">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-2-box">
+                                <div class="new-address-text">省份*</div>
+                                <select class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <option>請選擇省份</option>
+                                    <option>請選擇省份</option>
+                                    <option>請選擇省份</option>
+                                    <option>請選擇省份</option>
+                                    <option>請選擇省份</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-2-box">
+                                <div class="new-address-text">城市*</div>
+                               <select class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <option>請選擇城市</option>
+                                    <option>請選擇城市</option>
+                                    <option>請選擇城市</option>
+                                    <option>請選擇城市</option>
+                                    <option>請選擇城市</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-2-box">
+                                <div class="new-address-text">縣區*</div>
+                                <select class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <option>請選擇縣區</option>
+                                    <option>請選擇縣區</option>
+                                    <option>請選擇縣區</option>
+                                    <option>請選擇縣區</option>
+                                    <option>請選擇縣區</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-2-box">
+                                <div class="new-address-text">街道*</div>
+                               <select class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <option>請選擇街道</option>
+                                    <option>請選擇街道</option>
+                                    <option>請選擇街道</option>
+                                    <option>請選擇街道</option>
+                                    <option>請選擇街道</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="new-address-text">詳細地址*</div>
+                            <input class="col-xs-12 col-sm-12 col-md-12 col-lg-12" type="text" placeholder="請填寫詳細地址，如街道名稱、門牌號碼、樓層房號。">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="new-address-text">郵政編碼</div>
+                            <input class="col-xs-12 col-sm-12 col-md-12 col-lg-12" type="text" placeholder="如您不清楚郵遞區號，請填寫000000">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 new-address-input">
+                            <div class="new-address-text">郵政編碼</div>
+                            <input class="col-xs-12 col-sm-12 col-md-12 col-lg-12" type="checkbox"><label>設為默認收貨地址</label>
+                        </div>       
+                    </div>
+                </div>
+                <div class="new-address-footer">
+                    <button class="new-address-btn">新增</button>
+                </div>
             </div>
         </div>
-        <button class="cart-checkout-btn">訂單結算</button>
+
+        <div class="checkout-address-text">確認訂單信息</div>
+        <table class="checkout-order-table">
+            <tr>
+                <th>商品</th>
+                <th>單位</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>折扣</th>
+                <th>小計</th>
+            </tr>
+            <tr id="rwdtr">
+                <td data-th="商品">美國原裝原瓶進口美國原裝原原裝</td>
+                <td data-th="單位"></td>
+                <td data-th="單價">¥ 155.00</td>
+                <td data-th="數量">1</td>
+                <td data-th="折扣">1</td>
+                <td data-th="小計">¥ 155.00</td>
+            <tr id="rwdtr">
+                <td data-th="商品">美國原裝原瓶進口美國原裝原原裝</td>
+                <td data-th="單位"></td>
+                <td data-th="單價">¥ 155.00</td>
+                <td data-th="數量">1</td>
+                <td data-th="折扣">1</td>
+                <td data-th="小計">¥ 155.00</td>
+            </tr>
+            <tr class="checkout-delivery">
+                <td colspan="4">運送方式</td>
+                <td colspan="2">
+                    <div class="checkout-delivery-option-box">
+                        <div><input type="radio" name="delivery-option"><label>普通配送:</label></div>
+                        <div><input type="radio" name="delivery-option"><label>普通配送:</label></div>
+                    </div>
+                    <div class="checkout-delivery-fee-box">
+                        <div class="checkout-delivery-fee">¥ 20.00</div>
+                        <div class="checkout-delivery-fee">¥ 20.00</div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="checkout-total-price">
+                <td>合計(含運費)</td>
+                <td colspan="5">¥ 360.00</td>
+            </tr>
+        </table>
+        <div class="checkout-other-block">
+            <div class="checkout-other-box input-group">
+                <div class="checkout-other-text">折扣代碼</div>
+                <input class="form-control" type="text" placeholder="請輸入折扣代碼">
+                <button>啟用</button>
+            </div>
+            <div class="checkout-other-box input-group">
+                <div class="checkout-other-text">推薦人</div>
+                <input class="form-control" type="text" placeholder="請輸入用戶ID">
+                <button>確認</button>
+            </div>
+            <div class="checkout-invoice">
+                <input type="checkbox"><label>開具發票</label>
+            </div>
+        </div>
+        <div class="checkout-info-list">
+            <div class="checkout-info-list-box">
+                <div class="checkout-info-address"><span>寄送至:</span><span>浙江杭州 餘杭五常文一西路969号 5号小邮局 </span></div>
+                <div class="checkout-info-address"><span>收貨人:</span><span>陳小姐 71-1323523532 </span></div>
+            </div>
+            <div class="checkout-info-list-box">
+                <div class="checkout-info-weight">總重量: 6000g</div>
+                <div class="checkout-info-price-box"><span class="checkout-info-price-text">實付款:</span><span class="checkout-info-price">¥ 9923.00</span></div>
+            </div>
+        </div>
+        <button class="checkout-btn">提交訂單</button>
     </div>
 </div>
 <footer>
@@ -535,9 +633,10 @@
     </div>
 </footer>
 
+
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="./js/bootstrap.min.js" ></script>
-<script src="./js/menuInit.js?i=7"></script>
-<script src="./js/shoppingCartPage.js?i=3"></script>
+<script src="./js/menuInit.js?i=8"></script>
+<script src="./js/checkoutPage.js?i=3"></script>
 </body>
 </html>

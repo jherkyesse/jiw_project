@@ -7,17 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="./stylesheets/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=5">
-    <link rel="stylesheet" href="./stylesheets/screen.css?i=11">
+    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=7">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=13">
 </head>
 
 <body>
 <nav>
     <div class="container navbar">
         <div class="hidden-sm hidden-md hidden-lg navbar-menu-icon" id="nav-menu-icon">
-            <img src="./image/icon/menu.png">
-            <img src="./image/icon/close.png">
+            <img src="./image/icon/menu.png" id="navmenustart">
+            <img src="./image/icon/close.png" id="navmenuclose">
             <img src="./image/icon/back.png">
         </div>
         <div class="navbar-brand">
@@ -28,9 +27,9 @@
                 <li><a>首頁</a></li>
                 <li id="all-wine-menu">
                     <a>全部酒品</a><img class="arrow" src="./image/icon/arrow.png">
-                    <ul id="nav-submenu">
+                    <ul id="nav-submenu" class="hidden-xs">
                         <li id="all-wine-dropmenu"><a>發現</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-1-block">
+                            <ul class="li-1-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li>熱門關鍵字</li>
@@ -84,7 +83,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>種類</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-2-block">
+                            <ul class="li-2-block hidden-xs">
                                 <li><a href="">紅葡萄酒</a></li>
                                 <li><a href="">白葡萄酒</a></li>
                                 <li><a href="">桃紅葡萄酒</a></li>
@@ -94,7 +93,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>品牌</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-1-block">
+                            <ul class="li-1-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li><a href="">ShaferVineyards</a></li>
@@ -146,7 +145,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>國家/產區</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-4-block">
+                            <ul class="li-4-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li>美國</li>
@@ -238,7 +237,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>品種</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-5-block">
+                            <ul class="li-5-block hidden-xs">
                                 <li>
                                     <ul>
                                         <li><a href="">赤霞珠</a></li>
@@ -272,7 +271,7 @@
                             </ul>
                         </li>
                         <li id="all-wine-dropmenu"><a>等級</a><img class="arrow-white" src="./image/icon/arrow-white.png">
-                            <ul class="li-6-block">
+                            <ul class="li-6-block hidden-xs">
                                 <li><a href="">1855梅多克列級莊園</a></li>
                                 <li><a href="">聖愛美儂列級莊園</a></li>
                                 <li><a href="">蘇玳巴薩克列級莊園</a></li>
@@ -1250,7 +1249,7 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js" ></script>
-<script src="./js/init.js?i=11"></script>
-<script src="./js/menuInit.js?i=5"></script>
+<script src="./js/init.js?i=13"></script>
+<script src="./js/menuInit.js?i=7"></script>
 </body>
 </html>

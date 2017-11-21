@@ -1,47 +1,1552 @@
-/*
-Error: Invalid CSS after "..."compass/reset"": expected "{", was ";"
-        on line 7 of I:/joininwine/jiw_project/sass/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-2: /* Welcome to Compass.
-3:  * In this file you should write your main styles. (or centralize your imports)
-4:  * Import this file using the following HTML or equivalent:
-5:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
-6: 
-7: @import "compass/reset";
-8: @import "./setting.scss";
-9: .search-block{
-10:     position: relative;
-11:     display: -webkit-flex;
-12:     display: flex;
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-I:/joininwine/jiw_project/sass/screen.scss:7
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...\"compass/reset\"\": expected \"{\", was \";\"\A         on line 7 of I:/joininwine/jiw_project/sass/screen.scss\A \A 2: /* Welcome to Compass.\A 3:  * In this file you should write your main styles. (or centralize your imports)\A 4:  * Import this file using the following HTML or equivalent:\A 5:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 6: \A 7: @import \"compass/reset\";\A 8: @import \"./setting.scss\";\A 9: .search-block{\A 10:     position: relative;\A 11:     display: -webkit-flex;\A 12:     display: flex;"; }
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Noto Sans CJK TC";
+  src: url(../font/NotoSansCJKtc-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+/* line 9, ../sass/screen.scss */
+.search-block {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 480px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../image/picture/wine-slider.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  /* line 9, ../sass/screen.scss */
+  .search-block {
+    height: 180px;
+    margin-top: 132px;
+  }
+}
+/* line 29, ../sass/screen.scss */
+.search-block .search-box h1 {
+  font-size: 40px;
+  line-height: 59px;
+  font-weight: 300;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid #d1a593;
+  padding-bottom: 8px;
+  width: calc(9em + 90px);
+  margin: auto;
+}
+@media (max-width: 767px) {
+  /* line 29, ../sass/screen.scss */
+  .search-block .search-box h1 {
+    font-size: 22px;
+    line-height: 41px;
+    padding-bottom: 0;
+  }
+}
+/* line 50, ../sass/screen.scss */
+.search-block .search-box h5 {
+  font-size: 17px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 6px;
+  text-align: left;
+  text-align: center;
+  color: #ffffff;
+  margin: 23px 0 60px;
+}
+@media (max-width: 767px) {
+  /* line 50, ../sass/screen.scss */
+  .search-block .search-box h5 {
+    margin: 20px 0 0;
+    font-size: 13px;
+    letter-spacing: 5px;
+  }
+}
+/* line 67, ../sass/screen.scss */
+.search-block .search-box form.form-inline {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 0;
+  z-index: 8000;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
+}
+@media (max-width: 767px) {
+  /* line 67, ../sass/screen.scss */
+  .search-block .search-box form.form-inline {
+    padding: 12px;
+    -o-transition: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+/* line 85, ../sass/screen.scss */
+.search-block .search-box .searchbar-float {
+  position: fixed !important;
+  width: 100%;
+  margin: 0 !important;
+  text-align: center;
+  top: 60px;
+  left: 0;
+  background: #26264f;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
+}
+/* line 98, ../sass/screen.scss */
+.search-block .search-box .search-selector {
+  position: relative;
+  display: inline-block;
+  width: 98px;
+  height: 48px;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #5052a1;
+  margin: 0;
+  outline: none;
+  border-width: 0 1px 0 0;
+  border-color: #999999;
+  border-style: solid;
+  border-radius: 0;
+  padding: 0 0 0 5px;
+}
+@media (max-width: 767px) {
+  /* line 98, ../sass/screen.scss */
+  .search-block .search-box .search-selector {
+    width: 23%;
+  }
+}
+/* line 122, ../sass/screen.scss */
+.search-block .search-box .search-selector option {
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #5052a1;
+}
+/* line 133, ../sass/screen.scss */
+.search-block .search-box .search-bar {
+  position: relative;
+  display: inline-block;
+  width: 580px;
+  height: 48px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border-width: 0 1px 0 0;
+  border-color: #999999;
+  border-style: solid;
+  border-radius: 0;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 22px;
+  text-align: left;
+  color: #999999;
+  outline: none;
+  padding-left: 24.5px;
+  margin-left: -4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  /* line 133, ../sass/screen.scss */
+  .search-block .search-box .search-bar {
+    width: 60%;
+    padding: 0 10px;
+  }
+}
+/* line 162, ../sass/screen.scss */
+.search-block .search-box .search-bar:focus {
+  box-shadow: none;
+}
+/* line 166, ../sass/screen.scss */
+.search-block .search-box .search-btn {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  width: 88px;
+  height: 48px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  background-color: #26264f;
+  margin-left: -4px;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  /* line 166, ../sass/screen.scss */
+  .search-block .search-box .search-btn {
+    width: 12%;
+  }
+}
+
+/* line 183, ../sass/screen.scss */
+.arrow-prev {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 10px;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 500;
+  cursor: pointer;
+  background: #f5f5f5;
+  border-radius: 10em;
+  box-shadow: 2px 2px 5px 2px #888888;
+}
+@media (max-width: 767px) {
+  /* line 183, ../sass/screen.scss */
+  .arrow-prev {
+    opacity: 0.4;
+  }
+}
+
+/* line 199, ../sass/screen.scss */
+.arrow-next {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 10px;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 500;
+  cursor: pointer;
+  background: #f5f5f5;
+  border-radius: 10em;
+  box-shadow: 2px 2px 5px 2px #888888;
+}
+@media (max-width: 767px) {
+  /* line 199, ../sass/screen.scss */
+  .arrow-next {
+    opacity: 0.4;
+  }
+}
+
+/* line 215, ../sass/screen.scss */
+.intro-block-text {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+@media (max-width: 767px) {
+  /* line 215, ../sass/screen.scss */
+  .intro-block-text {
+    padding: 60px 10px;
+  }
+}
+/* line 228, ../sass/screen.scss */
+.intro-block-text h2 {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #5052a1;
+  width: 100%;
+}
+/* line 241, ../sass/screen.scss */
+.intro-block-text h4 {
+  width: 100%;
+  max-width: 642px;
+  line-height: 25px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 17px;
+  text-align: center;
+  color: #323142;
+  margin-top: 23px;
+}
+
+/* line 255, ../sass/screen.scss */
+.intro-block-content {
+  position: relative;
+  display: block;
+  background: #f5f5f5;
+  padding: 40px 0;
+}
+/* line 260, ../sass/screen.scss */
+.intro-block-content a.item-see-more {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-align: left;
+  float: right;
+  color: #d1a593;
+  padding-right: 8px;
+}
+/* line 273, ../sass/screen.scss */
+.intro-block-content .new-item-container {
+  position: relative;
+  overflow-x: scroll;
+}
+/* line 276, ../sass/screen.scss */
+.intro-block-content .new-item-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* line 279, ../sass/screen.scss */
+.intro-block-content .new-item-container::-webkit-scrollbar {
+  width: 0px;
+}
+/* line 282, ../sass/screen.scss */
+.intro-block-content .new-item-container::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+@media (max-width: 767px) {
+  /* line 286, ../sass/screen.scss */
+  .intro-block-content .new-item-block {
+    position: relative;
+    width: 360%;
+  }
+}
+
+/* line 294, ../sass/screen.scss */
+.country-card {
+  position: relative;
+  padding: 8px;
+}
+@media (max-width: 767px) {
+  /* line 298, ../sass/screen.scss */
+  .country-card:nth-child(odd) {
+    padding: 2.5px 0 2.5px 5px;
+  }
+  /* line 301, ../sass/screen.scss */
+  .country-card:nth-child(even) {
+    padding: 2.5px 5px 2.5px 0;
+  }
+}
+/* line 305, ../sass/screen.scss */
+.country-card img {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  /* line 305, ../sass/screen.scss */
+  .country-card img {
+    height: calc(50vw - 20px);
+  }
+}
+/* line 318, ../sass/screen.scss */
+.country-card img:hover {
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 327, ../sass/screen.scss */
+.country-card .country-card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  line-height: 41px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-bottom: 1px solid #d1a593;
+  margin: -24px 0 0 -48px;
+  pointer-events: none;
+}
+/* line 340, ../sass/screen.scss */
+.country-card .country-card-name {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 22px;
+  line-height: 41px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-bottom: 1px solid #d1a593;
+  pointer-events: none;
+}
+@media (max-width: 1170px) and (min-width: 768px) {
+  /* line 340, ../sass/screen.scss */
+  .country-card .country-card-name {
+    left: 20px;
+    bottom: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 4px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 340, ../sass/screen.scss */
+  .country-card .country-card-name {
+    left: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 4px;
+  }
+}
+
+/* line 367, ../sass/screen.scss */
+.investment-block {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(to bottom, #26264f, rgba(38, 38, 79, 0.15)), url("../image/picture/wine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+/* line 383, ../sass/screen.scss */
+.investment-block .investment-tag-box {
+  position: absolute;
+  top: 69px;
+  left: 106px;
+  border-right: 1px solid #FFFFFF;
+  padding-right: 12px;
+}
+/* line 389, ../sass/screen.scss */
+.investment-block .investment-tag-box th:nth-child(1) {
+  position: relative;
+  display: block;
+  margin-right: 30px;
+}
+/* line 394, ../sass/screen.scss */
+.investment-block .investment-tag-box th:nth-child(2) {
+  vertical-align: top;
+}
+/* line 397, ../sass/screen.scss */
+.investment-block .investment-tag-box .investment-tag-title {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #d1a593;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* line 406, ../sass/screen.scss */
+.investment-block .investment-tag-box ul li {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #d1a593;
+  margin: 5px 0;
+}
+/* line 413, ../sass/screen.scss */
+.investment-block .investment-tag-box ul li ul li {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #ffffff;
+  margin: 5px 0 5px 15px;
+}
+/* line 423, ../sass/screen.scss */
+.investment-block .investment-title {
+  font-size: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 41px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffd858;
+}
+/* line 431, ../sass/screen.scss */
+.investment-block .investment-subtitle {
+  width: 100%;
+  max-width: 560px;
+  line-height: 25px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 23px;
+}
+/* line 441, ../sass/screen.scss */
+.investment-block .investment-btn {
+  width: 100%;
+  max-width: 423px;
+  height: 65px;
+  border-radius: 4px;
+  background-color: #5052a1;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 60px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  margin-top: 79px;
+  outline: none;
+}
+/* line 458, ../sass/screen.scss */
+.investment-block img.investment-mobile-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 464, ../sass/screen.scss */
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #FFFFFF;
+}
+/* line 469, ../sass/screen.scss */
+footer .footer-first-block {
+  padding: 40px 0 140px 0;
+  background: #FFFFFF;
+}
+@media (max-width: 767px) {
+  /* line 469, ../sass/screen.scss */
+  footer .footer-first-block {
+    padding: 40px 0 40px 0;
+  }
+}
+/* line 476, ../sass/screen.scss */
+footer a.footer-title {
+  position: relative;
+  display: block;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  color: #26264f;
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 476, ../sass/screen.scss */
+  footer a.footer-title {
+    margin-bottom: 20px;
+  }
+}
+/* line 491, ../sass/screen.scss */
+footer a.footer-subtitle {
+  position: relative;
+  display: block;
+  height: 22px;
+  font-size: 13px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  line-height: 22px;
+  color: #999999;
+}
+@media (max-width: 767px) {
+  /* line 491, ../sass/screen.scss */
+  footer a.footer-subtitle {
+    display: none;
+  }
+}
+/* line 503, ../sass/screen.scss */
+footer .footer-service-title {
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  color: #26264f;
+  text-align: right;
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 503, ../sass/screen.scss */
+  footer .footer-service-title {
+    margin-bottom: 20px;
+  }
+}
+/* line 517, ../sass/screen.scss */
+footer .footer-service-time {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: right;
+  color: #323142;
+}
+/* line 524, ../sass/screen.scss */
+footer img.footer-service-qrcode {
+  position: relative;
+  display: block;
+  text-align: right;
+  width: 100px;
+  height: auto;
+  float: right;
+  margin-top: 16px;
+}
+/* line 533, ../sass/screen.scss */
+footer .footer-second-block {
+  position: relative;
+  display: block;
+  padding: 0;
+  background: #5052a1;
+  width: 100%;
+  padding: 20px 0;
+}
+/* line 540, ../sass/screen.scss */
+footer .footer-second-block ul {
+  position: relative;
+  text-align: center;
+}
+/* line 543, ../sass/screen.scss */
+footer .footer-second-block ul li {
+  position: relative;
+  display: inline;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border-right: 1px solid #FFFFFF;
+  padding: 0 15px 0 10px;
+}
+/* line 552, ../sass/screen.scss */
+footer .footer-second-block ul li a {
+  color: #ffffff;
+}
+/* line 555, ../sass/screen.scss */
+footer .footer-second-block ul li:nth-child(5) {
+  border: none;
+}
+@media (max-width: 767px) {
+  /* line 559, ../sass/screen.scss */
+  footer .footer-second-block ul li:nth-child(1) {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  /* line 563, ../sass/screen.scss */
+  footer .footer-second-block ul li:nth-child(2) {
+    display: inline-block;
+    border: none;
+    margin-bottom: 20px;
+  }
+  /* line 568, ../sass/screen.scss */
+  footer .footer-second-block ul li:nth-child(3), footer .footer-second-block ul li:nth-child(4), footer .footer-second-block ul li:nth-child(5) {
+    display: block;
+    border: none;
+    text-align: left;
+    line-height: 22px;
+  }
+}
+
+/* line 579, ../sass/screen.scss */
+.item-box-block {
+  position: relative;
+  padding: 8px;
+  margin: 0;
+}
+/* line 583, ../sass/screen.scss */
+.item-box-block .item-box {
+  background: #FFFFFF;
+  padding: 12px 20px;
+}
+/* line 587, ../sass/screen.scss */
+.item-box-block img.item-img {
+  width: 100%;
+  height: 265px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 593, ../sass/screen.scss */
+.item-box-block .item-title {
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 25px;
+  height: 25px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #323142;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 16px 0 0 0;
+}
+/* line 607, ../sass/screen.scss */
+.item-box-block .item-subtitle {
+  font-size: 13px;
+  line-height: 19px;
+  height: 19px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  text-align: left;
+  color: #999999;
+}
+/* line 616, ../sass/screen.scss */
+.item-box-block .item-price-box {
+  position: relative;
+  display: block;
+}
+/* line 619, ../sass/screen.scss */
+.item-box-block .item-price-box .item-price {
+  font-size: 19px;
+  line-height: 28px;
+  height: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  text-align: left;
+  color: #933c42;
+}
+/* line 631, ../sass/screen.scss */
+.item-box-block .item-price-box .item-orginal-price {
+  height: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: left;
+  color: #999999;
+  text-decoration: line-through;
+  margin-left: 5px;
+  vertical-align: top;
+}
+/* line 645, ../sass/screen.scss */
+.item-box-block .item-price-box .item-discount {
+  position: relative;
+  height: 28px;
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+  background-color: #933c42;
+  padding: 0 5px 0 0;
+  margin-left: 15px;
+  vertical-align: top;
+}
+/* line 662, ../sass/screen.scss */
+.item-box-block .item-price-box .item-discount:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 0;
+  border-right: 11px solid #933c42;
+  border-top: 11px solid transparent;
+  border-bottom: 11.1px solid transparent;
+}
+/* line 674, ../sass/screen.scss */
+.item-box-block .item-price-box .item-bonus-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+/* line 678, ../sass/screen.scss */
+.item-box-block .item-price-box .item-bonus-box span {
+  position: relative;
+  height: 19px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: bold;
+  text-align: left;
+  color: #5052a1;
+  margin-left: 15px;
+}
+/* line 691, ../sass/screen.scss */
+.item-box-block .item-price-box .item-bonus-box span:before {
+  content: '';
+  position: absolute;
+  right: calc(100% + 5px);
+  bottom: 4px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #5052a1;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+/* line 705, ../sass/screen.scss */
+.item-box-block .item-score-box {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 22px;
+  margin: 30px 0 20px;
+}
+/* line 715, ../sass/screen.scss */
+.item-box-block .item-score-box .item-score {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 40px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 0.5px #999999;
+  overflow: hidden;
+}
+/* line 727, ../sass/screen.scss */
+.item-box-block .item-score-box .item-score span {
+  width: 20px;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #555555;
+}
+/* line 735, ../sass/screen.scss */
+.item-box-block .item-score-box .item-score span:nth-child(1) {
+  background: #f3f3f3;
+  border-right: 1px solid #999999;
+}
+/* line 742, ../sass/screen.scss */
+.item-box-block .item-info-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 23px;
+}
+/* line 747, ../sass/screen.scss */
+.item-box-block .item-info-box img.item-info-star-img {
+  width: 20px;
+  height: auto;
+}
+/* line 751, ../sass/screen.scss */
+.item-box-block .item-info-box .item-info-star-rate {
+  height: 20px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 20px;
+  color: #d1a593;
+  vertical-align: top;
+}
+/* line 762, ../sass/screen.scss */
+.item-box-block .item-info-box .item-btn-block {
+  position: absolute;
+  right: 0;
+}
+/* line 765, ../sass/screen.scss */
+.item-box-block .item-info-box .item-btn-block .item-presale-btn {
+  border-radius: 4px;
+  background-color: #df8d74;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  line-height: 20px;
+  height: 20px;
+  color: #ffffff;
+  padding: 0 8px;
+}
+/* line 779, ../sass/screen.scss */
+.item-box-block .item-info-box .item-btn-block .item-invest-btn {
+  border-radius: 4px;
+  background-color: #5052a1;
+  font-size: 15px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-weight: bold;
+  line-height: 20px;
+  height: 20px;
+  color: #ffffff;
+  padding: 0 8px;
+  margin-right: 8px;
+}
+
+/* line 797, ../sass/screen.scss */
+.wine-block {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 797, ../sass/screen.scss */
+  .wine-block {
+    padding-left: calc(5vw + 4px);
+  }
+}
+/* line 805, ../sass/screen.scss */
+.wine-block .wine-card-block {
+  position: relative;
+  display: block;
+  width: 2000%;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 815, ../sass/screen.scss */
+.wine-card {
+  position: relative;
+  display: inline-block;
+  width: 292.5px;
+  padding: 8px;
+  vertical-align: top;
+  margin-left: -4px;
+}
+@media (max-width: 767px) {
+  /* line 815, ../sass/screen.scss */
+  .wine-card {
+    width: 90vw;
+  }
+}
+/* line 825, ../sass/screen.scss */
+.wine-card img.wine-card-intro {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 440px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 833, ../sass/screen.scss */
+.wine-card .wine-card-story-pic {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 160px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 841, ../sass/screen.scss */
+.wine-card .wine-card-story-pic:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 160px;
+  background-image: linear-gradient(to top, rgba(38, 38, 79, 0.8), rgba(38, 38, 79, 0));
+  z-index: 100;
+}
+/* line 851, ../sass/screen.scss */
+.wine-card .wine-card-story-pic:hover:after {
+  background: rgba(38, 38, 79, 0.7);
+}
+/* line 854, ../sass/screen.scss */
+.wine-card .wine-card-story-pic:hover > * {
+  -ms-transform: translateY(-160px);
+  -o-transform: translateY(-160px);
+  -webkit-transform: translateY(-160px);
+  -moz-transform: translateY(-160px);
+  transform: translateY(-160px);
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 866, ../sass/screen.scss */
+.wine-card .wine-card-story-pic img.wine-card-author-pic {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10em;
+  z-index: 102;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 882, ../sass/screen.scss */
+.wine-card .wine-card-story-pic .wine-card-article-title {
+  position: absolute;
+  left: 68px;
+  bottom: 32px;
+  width: 12em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  color: #ffffff;
+  z-index: 102;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+@media (max-width: 767px) {
+  /* line 882, ../sass/screen.scss */
+  .wine-card .wine-card-story-pic .wine-card-article-title {
+    width: calc(90vw - 88px);
+  }
+}
+/* line 909, ../sass/screen.scss */
+.wine-card .wine-card-story-pic .wine-card-article-author {
+  position: absolute;
+  left: 68px;
+  bottom: 12px;
+  width: 12em;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  color: #ffffff;
+  z-index: 102;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 933, ../sass/screen.scss */
+.wine-card .wine-card-story-pic .wine-card-article-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 136px;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  color: #ffffff;
+  padding: 26px 24px;
+  z-index: 102;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 962, ../sass/screen.scss */
+.wine-card .wine-card-item-block {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 280px;
+  background: #FFFFFF;
+  padding: 8px 0 8px 4px;
+}
+/* line 969, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block {
+  position: relative;
+  display: block;
+  height: 240px;
+  overflow-y: scroll;
+}
+/* line 974, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* line 977, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar {
+  width: 4px;
+}
+/* line 980, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-thumb {
+  background: #999999;
+}
+/* line 984, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box {
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 988, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box:hover {
+  background: #f5f5f5;
+}
+/* line 991, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box img {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 999, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 1004, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-title {
+  width: 11em;
+  height: 25px;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  text-align: left;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  color: #323142;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  /* line 1004, ../sass/screen.scss */
+  .wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-title {
+    width: calc(90vw - 110px);
+  }
+}
+/* line 1023, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-price {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: bold;
+  text-align: left;
+  color: #933c42;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  margin-top: 4px;
+}
+/* line 1036, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  padding: 4px 8px;
+}
+/* line 1042, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(to top, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+/* line 1052, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box img {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+/* line 1060, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box span {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  color: #d1a593;
+  vertical-align: top;
+}
+/* line 1075, ../sass/screen.scss */
+.wine-card .wine-card-item-block .wine-card-info-box div {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  color: #d1a593;
+  vertical-align: top;
+  float: right;
+}
+/* line 1093, ../sass/screen.scss */
+.wine-card .wine-card-title-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  background-color: rgba(80, 82, 161, 0.9);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 1104, ../sass/screen.scss */
+.wine-card .wine-card-title-box .wine-card-title {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 180px;
+}
+@media (max-width: 1170px) {
+  /* line 1104, ../sass/screen.scss */
+  .wine-card .wine-card-title-box .wine-card-title {
+    width: 200px;
+    padding: 0 10px;
+  }
+}
+/* line 1119, ../sass/screen.scss */
+.wine-card .wine-card-title-box .wine-card-title h4 {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 28px;
+  line-height: 41px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+  width: calc(4em + 8px);
+  border-bottom: 1px solid #d1a593;
+  padding-bottom: 16px;
+  margin: 16px auto 0;
+}
+/* line 1134, ../sass/screen.scss */
+.wine-card .wine-card-title-box .wine-card-title h5 {
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  padding: 0 10px;
+  text-align: center;
+  color: #ffd858;
+}
+/* line 1148, ../sass/screen.scss */
+.wine-card img.wine-card-activity-pic {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 290px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 1156, ../sass/screen.scss */
+.wine-card .wine-card-activity-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 150px;
+  background: #FFFFFF;
+  padding: 12px;
+}
+/* line 1163, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-title {
+  width: 100%;
+  white-space: nowrap;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  text-align: left;
+  color: #323142;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+}
+/* line 1179, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-info {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  height: 22px;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-align: left;
+  color: #999999;
+}
+/* line 1188, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-info img {
+  width: 18px;
+  height: 18px;
+  margin: 0 4px 0 0;
+  vertical-align: top;
+}
+/* line 1195, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-favorite {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  margin: 18px 0 0;
+}
+/* line 1200, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-favorite img {
+  height: 20px;
+  width: auto;
+}
+/* line 1204, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-favorite span {
+  color: #d1a593;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #d1a593;
+}
+/* line 1217, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-hashtag {
+  position: relative;
+  display: inline-block;
+  float: right;
+  height: 20px;
+  margin: 18px 0 0;
+}
+/* line 1223, ../sass/screen.scss */
+.wine-card .wine-card-activity-box .wine-card-activity-hashtag span {
+  color: #d1a593;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 13px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #d1a593;
+}

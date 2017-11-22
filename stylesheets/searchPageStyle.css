@@ -922,7 +922,7 @@ body {
   font-smooth: always;
   padding-bottom: 12px;
   border-bottom: 1px solid #dbdbdb;
-  margin: 0 0 16px;
+  margin: 0 16px 16px;
 }
 /* line 653, ../sass/searchPageStyle.scss */
 .select-item-block .select-item-head .select-item-title {

@@ -753,22 +753,25 @@ nav .navbar .navbar-cart {
   }
 }
 /* line 495, ../sass/navStyle.scss */
-nav .navbar .navbar-cart > img {
+nav .navbar .navbar-cart a {
   position: relative;
   display: inline-block;
-  height: 24px;
-  width: auto;
-  cursor: pointer;
   padding: 0 16px;
+  cursor: pointer;
 }
-/* line 502, ../sass/navStyle.scss */
-nav .navbar .navbar-cart > img:nth-child(2) {
+/* line 500, ../sass/navStyle.scss */
+nav .navbar .navbar-cart a:nth-child(2) {
   border-width: 0 1px;
   border-color: #cccccc;
   border-style: solid;
 }
-/* line 508, ../sass/navStyle.scss */
-nav .navbar .navbar-cart #navbar-cart-count {
+/* line 505, ../sass/navStyle.scss */
+nav .navbar .navbar-cart a > img {
+  height: 24px;
+  width: auto;
+}
+/* line 509, ../sass/navStyle.scss */
+nav .navbar .navbar-cart a #navbar-cart-count {
   position: relative;
   display: inline-block;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -780,11 +783,11 @@ nav .navbar .navbar-cart #navbar-cart-count {
   font-weight: bold;
   text-align: right;
   color: #5052a1;
-  margin-left: -8px;
+  margin-left: 4px;
   padding-top: 2px;
   vertical-align: top;
 }
-/* line 521, ../sass/navStyle.scss */
+/* line 523, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list {
   position: absolute;
   right: 0;
@@ -798,12 +801,12 @@ nav .navbar .navbar-cart .cart-list {
   z-index: 10100;
 }
 @media (max-width: 767px) {
-  /* line 521, ../sass/navStyle.scss */
+  /* line 523, ../sass/navStyle.scss */
   nav .navbar .navbar-cart .cart-list {
     height: 360px;
   }
 }
-/* line 533, ../sass/navStyle.scss */
+/* line 535, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list:before {
   content: '';
   position: absolute;
@@ -813,37 +816,37 @@ nav .navbar .navbar-cart .cart-list:before {
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
 }
-/* line 542, ../sass/navStyle.scss */
+/* line 544, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block {
   position: relative;
   display: block;
   width: 100%;
   height: 350px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 @media (max-width: 767px) {
-  /* line 542, ../sass/navStyle.scss */
+  /* line 544, ../sass/navStyle.scss */
   nav .navbar .navbar-cart .cart-list .cart-list-item-box-block {
     height: 210px;
   }
 }
-/* line 550, ../sass/navStyle.scss */
+/* line 552, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block::-webkit-scrollbar {
   border-radius: 3.5px;
   width: 4px;
 }
-/* line 554, ../sass/navStyle.scss */
+/* line 556, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block::-webkit-scrollbar-track {
   width: 4px;
   background: #555555;
 }
-/* line 558, ../sass/navStyle.scss */
+/* line 560, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block::-webkit-scrollbar-thumb {
   width: 4px;
   background: #dbdbdb;
 }
-/* line 562, ../sass/navStyle.scss */
+/* line 564, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box {
   position: relative;
   display: block;
@@ -851,7 +854,7 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-bo
   height: 70px;
   border-bottom: 0.5px solid #999999;
 }
-/* line 568, ../sass/navStyle.scss */
+/* line 570, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box > img {
   position: absolute;
   left: 10px;
@@ -859,7 +862,7 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-bo
   height: 50px;
   width: auto;
 }
-/* line 575, ../sass/navStyle.scss */
+/* line 577, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-name {
   position: absolute;
   top: 10px;
@@ -876,19 +879,19 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-bo
   white-space: nowrap;
   vertical-align: top;
 }
-/* line 588, ../sass/navStyle.scss */
+/* line 590, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-reduce {
   position: absolute;
   left: 70px;
   bottom: 8px;
   cursor: pointer;
 }
-/* line 593, ../sass/navStyle.scss */
+/* line 595, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-reduce > img {
   height: 22px;
   width: auto;
 }
-/* line 598, ../sass/navStyle.scss */
+/* line 600, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box input.cart-list-item-count {
   position: absolute;
   left: 105px;
@@ -908,7 +911,7 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-bo
   outline: none;
 }
 @media (max-width: 767px) {
-  /* line 598, ../sass/navStyle.scss */
+  /* line 600, ../sass/navStyle.scss */
   nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box input.cart-list-item-count {
     height: 26px;
     bottom: 10px;
@@ -916,19 +919,19 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-bo
     line-height: 19px;
   }
 }
-/* line 619, ../sass/navStyle.scss */
+/* line 621, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-add {
   position: absolute;
   left: 168px;
   bottom: 8px;
   cursor: pointer;
 }
-/* line 624, ../sass/navStyle.scss */
+/* line 626, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-add > img {
   height: 22px;
   width: auto;
 }
-/* line 629, ../sass/navStyle.scss */
+/* line 631, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-price {
   position: absolute;
   right: 10px;
@@ -943,19 +946,19 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-bo
   text-align: left;
   color: #933c42;
 }
-/* line 640, ../sass/navStyle.scss */
+/* line 642, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-delete {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
 }
-/* line 645, ../sass/navStyle.scss */
+/* line 647, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-box-block .cart-list-item-box .cart-list-item-delete > img {
   height: 16px;
   width: auto;
 }
-/* line 652, ../sass/navStyle.scss */
+/* line 654, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-mount {
   position: absolute;
   left: 10px;
@@ -968,7 +971,7 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-mount {
   line-height: 22px;
   color: #323142;
 }
-/* line 661, ../sass/navStyle.scss */
+/* line 663, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-total-price {
   position: absolute;
   right: 10px;
@@ -983,7 +986,7 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-total-price {
   text-align: left;
   color: #933c42;
 }
-/* line 672, ../sass/navStyle.scss */
+/* line 674, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-all-delete-btn {
   position: absolute;
   left: 10px;
@@ -997,13 +1000,13 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-all-delete-btn {
   color: #999999;
   cursor: pointer;
 }
-/* line 681, ../sass/navStyle.scss */
+/* line 683, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-all-delete-btn > img {
   height: 22px;
   width: auto;
   vertical-align: top;
 }
-/* line 687, ../sass/navStyle.scss */
+/* line 689, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-invest-btn {
   position: absolute;
   right: 10px;
@@ -1017,13 +1020,13 @@ nav .navbar .navbar-cart .cart-list .cart-list-item-invest-btn {
   color: #5052a1;
   cursor: pointer;
 }
-/* line 696, ../sass/navStyle.scss */
+/* line 698, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-list-item-invest-btn > img {
   height: 22px;
   width: auto;
   vertical-align: top;
 }
-/* line 702, ../sass/navStyle.scss */
+/* line 704, ../sass/navStyle.scss */
 nav .navbar .navbar-cart .cart-list .cart-item-list-more {
   position: absolute;
   bottom: 0;
@@ -1042,4 +1045,11 @@ nav .navbar .navbar-cart .cart-list .cart-item-list-more {
   letter-spacing: 2px;
   border: none;
   outline: none;
+}
+
+@media (max-width: 767px) {
+  /* line 724, ../sass/navStyle.scss */
+  .hidden-xs {
+    display: none !important;
+  }
 }

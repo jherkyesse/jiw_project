@@ -29,7 +29,7 @@ document.querySelector('.select-more').onclick = function(){
     document.querySelector('.select-reduce').style.display='inline-block'
     var selectHiddenCount = document.querySelectorAll('#select-hidden-menu').length
     for(var i=0;i<selectHiddenCount;i++){
-        document.querySelectorAll('#select-hidden-menu')[i].classList.remove('hidden')
+        document.querySelectorAll('#select-hidden-menu')[i].classList.remove('d-none')
     }
 }
 document.querySelector('.select-reduce').onclick = function(){
@@ -37,17 +37,17 @@ document.querySelector('.select-reduce').onclick = function(){
     document.querySelector('.select-more').style.display='inline-block'
     var selectHiddenCount = document.querySelectorAll('#select-hidden-menu').length
     for(var i=0;i<selectHiddenCount;i++){
-        document.querySelectorAll('#select-hidden-menu')[i].classList.add('hidden')
+        document.querySelectorAll('#select-hidden-menu')[i].classList.add('d-none')
     }
 }
 Array.prototype.map.call(document.querySelectorAll('.search-class'),function(element,index){
     element.onclick = function(){
         for(var i=0;i<6;i++){
             document.querySelectorAll('.search-class')[i].classList.remove('search-class-active')
-            document.querySelectorAll('#select-subblock')[i].classList.add('hidden')
+            document.querySelectorAll('#select-subblock')[i].classList.add('d-none')
         }
         document.querySelectorAll('.search-class')[index].classList.add('search-class-active')
-        document.querySelectorAll('#select-subblock')[index].classList.remove('hidden')
+        document.querySelectorAll('#select-subblock')[index].classList.remove('d-none')
     }
 })
 Array.prototype.map.call( document.querySelectorAll('.search-selection-block ul li:nth-child(1)'),function(element,index){

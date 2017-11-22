@@ -2,7 +2,6 @@ var allwinemenuclickCount=0;
 var allwinedropmenuclickCount=0
 
 document.getElementById('navmenustart').addEventListener('click',function(){
-
     document.getElementById('navmenuclose').onclick=function(){
         document.getElementById('nav-menu-icon').classList.toggle('navbar-menu-span')
         document.getElementById('nav-menu').classList.toggle('hidden-xs')
@@ -13,7 +12,7 @@ document.getElementById('navmenustart').addEventListener('click',function(){
         allwinemenuclickCount == 1 ? document.getElementById('nav-submenu').classList.toggle('hidden-xs') : ''
         allwinemenuclickCount == 0 ? document.querySelector('.navbar-menu ul li').style.marginTop = '0' : document.querySelector('.navbar-menu ul li').style.marginTop = '-60px'
         document.getElementById('nav-menu-icon').classList.add('navbar-menu-span-all')
-        document.querySelector('#nav-menu-icon > img:nth-child(3)').onclick = function () {
+        document.getElementById('navmenuback').onclick = function () {
             allwinemenuclickCount = 0
             allwinedropmenuclickCount = 0
             allwinemenuclickCount == 0 ? document.getElementById('nav-submenu').classList.toggle('hidden-xs') : ''
@@ -56,6 +55,6 @@ document.querySelector('.cart-list-item-all-delete-btn').onclick=function(){
     document.querySelector('.cart-list-item-box-block').innerHTML=''
     document.getElementById('navbar-cart-count').innerHTML=''
 }
-document.querySelector('.navbar-cart > img:nth-child(3)').onclick=function(){
-    document.querySelector('.cart-list').classList.toggle('hidden')
+document.querySelector('.navbar-cart > a:nth-child(3)').onclick=function(){
+    document.querySelector('.cart-list').classList.toggle('d-none')
 }

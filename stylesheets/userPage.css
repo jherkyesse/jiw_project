@@ -89,27 +89,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   max-width: 1080px;
   background: #FFFFFF;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
   padding: 40px 0 0;
   margin: 0 auto;
 }
-/* line 22, ../sass/userPage.scss */
+/* line 23, ../sass/userPage.scss */
 .user-profile-block .user-profile-img {
   position: relative;
   width: 100%;
   height: 0;
-  border-radius: 100px;
+  border-radius: 500px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 100%;
 }
-/* line 32, ../sass/userPage.scss */
-.user-profile-block .user-profile-info {
-  height: 200px;
-  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
+@media (max-width: 767px) {
+  /* line 33, ../sass/userPage.scss */
+  .user-profile-block .user-profile-info {
+    padding: 0;
+  }
 }
 /* line 35, ../sass/userPage.scss */
 .user-profile-block .user-profile-info .user-profile-name {
@@ -124,10 +126,150 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 16px 0 0;
 }
 /* line 45, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-name + img {
+  cursor: pointer;
+}
+/* line 46, ../sass/userPage.scss */
 .user-profile-block .user-profile-info .user-profile-name .user-profile-edit {
   position: relative;
   display: inline-block;
   height: 24px;
   width: auto;
   margin: 8px 0;
+}
+/* line 54, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-fan-box {
+  position: relative;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  /* line 54, ../sass/userPage.scss */
+  .user-profile-block .user-profile-info .user-profile-fan-box {
+    text-align: left;
+  }
+}
+/* line 58, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-fan-box .user-profile-fan {
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  border-right: 1px solid #dbdbdb;
+}
+/* line 64, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-fan-box .user-profile-fan:nth-last-child(1) {
+  border: none;
+}
+/* line 66, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-fan-box .user-profile-fan > div:nth-child(1) {
+  line-height: 25px;
+  font-size: 17px;
+  color: #323142;
+}
+/* line 71, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-fan-box .user-profile-fan > div:nth-child(2) {
+  line-height: 22px;
+  font-size: 15px;
+  color: #999999;
+}
+/* line 79, ../sass/userPage.scss */
+.user-profile-block .user-profile-info hr {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+  margin: 16px 0;
+}
+/* line 86, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-intro {
+  line-height: 22px;
+  font-size: 15px;
+  text-align: left;
+  color: #323142;
+  padding: 0;
+}
+/* line 93, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-share {
+  line-height: 22px;
+  font-size: 15px;
+  text-align: left;
+  color: #323142;
+  padding: 0;
+  margin-top: 16px;
+}
+/* line 100, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-share > img {
+  height: 18px;
+  width: auto;
+  margin: 2px 4px;
+  vertical-align: top;
+}
+/* line 106, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-share > input[type="text"] {
+  height: 28px;
+  width: 300px;
+  outline: none;
+  padding: 0 5px;
+}
+/* line 112, ../sass/userPage.scss */
+.user-profile-block .user-profile-info .user-profile-share > button {
+  height: 28px;
+  border-radius: 0 4px 4px 0;
+  background: #5052a1;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 0 12px 0 14px;
+  margin-left: -4px;
+}
+/* line 128, ../sass/userPage.scss */
+.user-profile-block .user-profile-menu-box {
+  width: 100%;
+  margin-top: 60px;
+}
+/* line 131, ../sass/userPage.scss */
+.user-profile-block .user-profile-menu-box .user-profile-menu {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 15px;
+  text-align: center;
+  color: #999999;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-right: 16px;
+}
+@media (min-width: 1200px) {
+  /* line 144, ../sass/userPage.scss */
+  .user-profile-block .user-profile-menu-box .user-profile-menu:hover {
+    color: #323142;
+  }
+  /* line 146, ../sass/userPage.scss */
+  .user-profile-block .user-profile-menu-box .user-profile-menu:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #5052a1;
+  }
+}
+/* line 158, ../sass/userPage.scss */
+.user-profile-block .user-profile-menu-box .user-profile-menu-active {
+  color: #323142;
+}
+/* line 160, ../sass/userPage.scss */
+.user-profile-block .user-profile-menu-box .user-profile-menu-active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 2px solid #5052a1;
 }

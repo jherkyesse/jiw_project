@@ -268,99 +268,50 @@
         text-align: left;
         float: right;
         color: #d1a593;
-        padding-right: 8px;
     }
-    .new-item-container{
-        position: relative;
-        overflow-x: scroll;
-        &::-webkit-scrollbar-track{
-            background: transparent;
-        }
-        &::-webkit-scrollbar{
-            width: 0px;
-        }
-        &::-webkit-scrollbar-thumb{
-            background: transparent;
-        }
-    }
-    .new-item-block{
-        @media(max-width:767px){
-            position: relative;
-            width: 360%;
-        }
-    }
-    
 }
 .country-card{
     position: relative;
     padding: 8px;
-    @media(max-width:767px){
-        &:nth-child(odd){
-            padding: 2.5px 0 2.5px 5px;
-        }
-        &:nth-child(even){
-            padding: 2.5px 5px 2.5px 0;
-        }
-    }
-    img{
+    .country-card-bg{
         position: relative;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
         width: 100%;
-        height: 240px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        -o-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        @media(max-width:767px){
-            height: calc(50vw - 20px);
-        }
-        &:hover{
-            -webkit-filter: brightness(0.7);
-            filter: brightness(0.7);
-            -o-transition: 0.3s;
-            -moz-transition: 0.3s;
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-        }
+        height: 0;
+        padding-bottom: 240px;
+        @media(max-width:767px){ padding-bottom: 100%; }
     }
     .country-card-title{
         position: absolute;
-        top: 50%;
         left: 50%;
+        top: 50%;
         font-size: 22px;
         line-height: 41px;
         @include font-setting;
         letter-spacing: 2px;
         color: #ffffff;
         border-bottom: 1px solid #d1a593;
-        margin: -24px 0 0 -48px;
-        pointer-events: none;
+        margin: -20.5px 0 0 -48px;
     }
     .country-card-name{
         position: absolute;
-        bottom: 30px;
-        left: 30px;
+        bottom: 24px;
+        left: 24px;
         font-size: 22px;
         line-height: 41px;
         @include font-setting;
         letter-spacing: 2px;
         color: #ffffff;
         border-bottom: 1px solid #d1a593;
-        pointer-events: none;
-        @media(max-width:1170px)and(min-width:768px){
-            left: 20px;
-            bottom: 20px;
-            font-size: 22px;
-            line-height: 26px;
-            padding-bottom: 4px;
-        }
-        @media(max-width:767px){
-            left: 10px;
-            bottom: 10px;
-            font-size: 18px;
-            line-height: 24px;
-            padding-bottom: 4px;
+        @media(max-width:767px){ 
+            width: 100%;
+            left: 0;
+            top: 50%;
+            margin-top: -20.5px;
+            text-align: center;
+            border: none;
         }
     }
 }
@@ -451,6 +402,7 @@
         letter-spacing: 4px;
         text-align: center;
         color: #ffffff;
+        cursor: pointer;
         border: 0;
         margin-top: 79px;
         outline: none;
@@ -484,9 +436,7 @@ footer{
         color: #26264f;
         margin-bottom: 8px;
         padding: 0;
-        @media(max-width:767px){
-            margin-bottom: 20px;
-        }
+        @media(max-width:767px){ margin-bottom: 20px; }
     }
     a.footer-subtitle{
         position: relative;
@@ -496,9 +446,7 @@ footer{
         @include font-setting;
         line-height: 22px;
         color: #999999;
-        @media(max-width:767px){
-            display: none;
-        }
+        @media(max-width:767px){ display: none; }
     }
     .footer-service-title{
         height: 22px;
@@ -510,9 +458,7 @@ footer{
         text-align: right;
         margin-bottom: 8px;
         padding: 0;
-        @media(max-width:767px){
-            margin-bottom: 20px;
-        }
+        @media(max-width:767px){ margin-bottom: 20px; }
     }
     .footer-service-time{
         @include font-setting;
@@ -536,7 +482,7 @@ footer{
         padding: 0;
         background: #5052a1;
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 10px;
         ul{
             position: relative;
             text-align: center;
@@ -549,24 +495,9 @@ footer{
                 color: #ffffff;
                 border-right: 1px solid #FFFFFF;
                 padding: 0 15px 0 10px;
-                a{
-                    color: #ffffff;
-                }
-                &:nth-child(5){
-                    border: none;
-                }
+                a{ color: #ffffff; }
                 @media(max-width:767px){
-                    &:nth-child(1){
-                        display: inline-block;
-                        margin-bottom: 20px;
-                    }
-                    &:nth-child(2){
-                        display: inline-block;
-                        border: none;
-                        margin-bottom: 20px;
-                    }
                     &:nth-child(3),&:nth-child(4),&:nth-child(5){
-                        display: block;
                         border: none;
                         text-align: left;
                         line-height: 22px;              
@@ -578,8 +509,6 @@ footer{
 }
 .item-box-block{
         position: relative;
-        padding: 8px;
-        margin: 0;
         .item-box{
             background: #FFFFFF;
             padding: 12px 20px;
@@ -796,16 +725,13 @@ footer{
     }
 .wine-block{
         position: relative;
-        display: block;
         overflow: hidden;
-        padding: 0;
         @media(max-width:767px){
             padding-left: calc(5vw + 4px);
         }
         .wine-card-block{
             position: relative;
-            display: block;
-            width: 2000%;
+            margin: 0;
             -o-transition: 0.3s;
             -webkit-transition: 0.3s;
             -moz-transition: 0.3s;
@@ -813,30 +739,22 @@ footer{
         }
     }
 .wine-card{
-        position: relative;
-        display: inline-block;
-        width: 292.5px;
-        padding: 8px;
-        vertical-align: top;
-        margin-left: -4px;
+    padding: 8px;
         @media(max-width:767px){
             width: 90vw;
         }
-        img.wine-card-intro{
-            position: relative;
-            display: block;
+        .wine-card-intro{
             width: 100%;
             height: 440px;
-            -o-object-fit: cover;
-            object-fit: cover;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
         }
         .wine-card-story-pic{
-            position: relative;
-            display: block;
-            width: 100%;
             height: 160px;
-            background-position: center;
-            background-size: cover;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
             overflow: hidden;
             &:after{
                 content: '';
@@ -865,8 +783,8 @@ footer{
             }
             img.wine-card-author-pic{
                 position: absolute;
-                left: 14px;
-                bottom: 14px;
+                left: 12px;
+                bottom: 12px;
                 width: 40px;
                 height: 40px;
                 -o-object-fit: cover;
@@ -881,9 +799,9 @@ footer{
             }
             .wine-card-article-title{
                 position: absolute;
-                left: 68px;
+                left: 63px;
                 bottom: 32px;
-                width: 12em;
+                width: calc(100% - 70px);
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 22px;
@@ -908,7 +826,7 @@ footer{
             }
             .wine-card-article-author{
                 position: absolute;
-                left: 68px;
+                left: 63px;
                 bottom: 12px;
                 width: 12em;
                 font-size: 13px;
@@ -968,9 +886,8 @@ footer{
             padding: 8px 0 8px 4px;
             .wine-card-item-box-block{
                 position: relative;
-                display: block;
                 height: 240px;
-                overflow-y: scroll;
+                overflow-y: auto;
                 &::-webkit-scrollbar-track{
                     background: transparent;
                 }
@@ -982,6 +899,7 @@ footer{
                 }
             }
             .wine-card-item-box{
+                position: relative;
                 width: 100%;
                 padding: 8px;
                 border-bottom: 1px solid #f5f5f5;
@@ -989,20 +907,12 @@ footer{
                     background: #f5f5f5;
                 }
                 img{
-                    position: relative;
-                    display: inline-block;
-                    width: 60px;
-                    height: 60px;
+                    width: 100%;
+                    height: auto;
                     -o-object-fit: cover;
                     object-fit: cover;
                 }
-                .wine-card-item-text{
-                    position: relative;
-                    display: inline-block;
-                    vertical-align: top;
-                }
                 .wine-card-item-title{
-                    width: 11em;
                     height: 25px;
                     font-size: 17px;
                     line-height: 25px;
@@ -1013,12 +923,7 @@ footer{
                     -moz-osx-font-smoothing: grayscale; 
                     font-smooth: always;
                     color: #323142;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    @media(max-width:767px){
-                        width: calc(90vw - 110px);
-                    }
+                    padding: 0 0 0 10px;
                 }
                 .wine-card-item-price{
                     font-size: 19px;
@@ -1031,6 +936,7 @@ footer{
                     -moz-osx-font-smoothing: grayscale; 
                     font-smooth: always;
                     margin-top: 4px;
+                    padding: 0 0 0 10px;
                 }
             }
             .wine-card-info-box{
@@ -1091,16 +997,36 @@ footer{
             }
         }
         .wine-card-title-box{
-            position: absolute;
-            top: 50%;
-            left: 50%;
             border-radius: 4px;
             background-color: rgba(80, 82, 161, 0.9);
-            -ms-transform: translateX(-50%) translateY(-50%);
-            -o-transform: translateX(-50%) translateY(-50%);
-            -moz-transform: translateX(-50%) translateY(-50%);
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+            padding: 30px 10px;
+            h4{
+                font-family: $font-family-os;
+                -webkit-font-smoothing: antialiased; 
+                -moz-osx-font-smoothing: grayscale; 
+                font-smooth: always;
+                font-size: 28px;
+                line-height: 41px;
+                letter-spacing: 2px;
+                text-align: center;
+                color: #ffffff;
+                width: calc(4em + 8px);
+                border-bottom: 1px solid #d1a593;
+                padding-bottom: 16px;
+                margin: 16px auto 0;
+            }
+            h5{
+                font-family: $font-family-os;
+                -webkit-font-smoothing: antialiased; 
+                -moz-osx-font-smoothing: grayscale; 
+                font-smooth: always;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 4px;
+                padding: 0 10px;
+                text-align: center;
+                color: #ffd858;
+            }
             .wine-card-title{
                 position: relative;
                 display: -webkit-flex;
@@ -1145,13 +1071,11 @@ footer{
                 }
             }
         }
-        img.wine-card-activity-pic{
-            position: relative;
-            display: block;
-            width: 100%;
+        .wine-card-activity-pic{
             height: 290px;
-            -o-object-fit: cover;
-            object-fit: cover;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
         }
         .wine-card-activity-box{
             position: relative;

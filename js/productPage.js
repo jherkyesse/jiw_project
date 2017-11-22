@@ -1,8 +1,8 @@
 document.querySelector('.new-winelist-btn').onclick=function(){
-    document.querySelector('.new-winelist-sub').classList.toggle('hidden')
+    document.querySelector('.new-winelist-sub').classList.toggle('d-none')
 }
 document.querySelector('.new-wine-cancel-btn').onclick=function(){
-    document.querySelector('.new-winelist-sub').classList.add('hidden')
+    document.querySelector('.new-winelist-sub').classList.add('d-none')
 }
 
 document.querySelector('.product-new-winelist > img').onclick=function(){

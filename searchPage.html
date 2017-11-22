@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=9">
-    <link rel="stylesheet" href="./stylesheets/screen.css?i=9">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=10">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=10">
     <link rel="stylesheet" href="./stylesheets/searchboxStyle.css?i=3">
     <link rel="stylesheet" href="./stylesheets/searchPageStyle.css?i=9">
 </head>
@@ -16,10 +16,10 @@
 <body>
 <nav>
     <div class="container navbar">
-        <div class="hidden-sm hidden-md hidden-lg navbar-menu-icon" id="nav-menu-icon">
+        <div class="d-block d-md-none navbar-menu-icon" id="nav-menu-icon">
             <img src="./image/icon/menu.png" id="navmenustart">
             <img src="./image/icon/close.png" id="navmenuclose">
-            <img src="./image/icon/back.png">
+            <img src="./image/icon/back.png" id="navmenuback">
         </div>
         <div class="navbar-brand">
             <a href=""><img src="./image/icon/favicon.png"></a>
@@ -290,15 +290,15 @@
                 <li><a>搜酒單</a></li>
                 <li><a>找活動</a></li>
                 <li><a>來投資</a></li>
-                <li class="hidden-sm hidden-md hidden-lg"><a>個人中心</a></li>
-                <li class="hidden-sm hidden-md hidden-lg"><a>使用指南</a></li>                
+                <li class="d-block d-md-none"><a>個人中心</a></li>
+                <li class="d-block d-md-none"><a>使用指南</a></li>                
             </ul>
         </div>
         <div class="navbar-cart">
-            <img class="hidden-xs" src="./image/icon/heart.png">
-            <img class="hidden-xs" src="./image/icon/user.png">
-            <img src="./image/icon/cart.png"><span id="navbar-cart-count">6</span>
-            <div class="cart-list hidden">
+            <a href="" class="d-none d-sm-inline-block"><img src="./image/icon/heart.png"></a>
+            <a href="" class="d-none d-sm-inline-block"><img src="./image/icon/user.png"></a>
+            <a><img src="./image/icon/cart.png"><span id="navbar-cart-count">6</span></a>
+            <div class="cart-list d-none">
                 <div class="cart-list-item-box-block">
                     <div class="cart-list-item-box">   
                         <img src="./image/picture/wine1.jpg">
@@ -364,6 +364,7 @@
         </div>
     </div>
 </nav>
+
 <div class="search-box">
     <form>
         <select class="search-selector">
@@ -541,7 +542,7 @@
                 <input type="checkbox"><span>次产区与村庄优良地区餐酒 AOC</span>
             </li>
         </ul>
-        <ul class="hidden" id="select-hidden-menu">
+        <ul class="d-none" id="select-hidden-menu">
             <li><img src="./image/icon/star-icon.png">等級</li>
             <li class="hidden-xs">
                 <input type="checkbox"><span>1855梅多克列級莊園</span>
@@ -552,7 +553,7 @@
                 <input type="checkbox"><span>勃艮第AOC</span>
             </li>
         </ul>
-        <ul class="hidden" id="select-hidden-menu">
+        <ul class="d-none" id="select-hidden-menu">
             <li><img src="./image/icon/grape-icon.png">品種</li>
             <li class="hidden-xs">
                 <input type="checkbox"><span>赤霞珠</span>
@@ -562,7 +563,7 @@
                 <input type="checkbox"><span>仙粉黛</span>
             </li>
         </ul>
-        <ul class="hidden" id="select-hidden-menu">
+        <ul class="d-none" id="select-hidden-menu">
             <li><img src="./image/icon/level-icon.png">酒評</li>
             <li class="hidden-xs">
                 <input type="checkbox"><span>赤霞珠</span>
@@ -572,7 +573,7 @@
                 <input type="checkbox"><span>仙粉黛</span>
             </li>
         </ul>
-        <ul class="hidden" id="select-hidden-menu">
+        <ul class="d-none" id="select-hidden-menu">
             <li><img src="./image/icon/date.png">年份</li>
             <li class="hidden-xs">
                 <input type="checkbox"><span>赤霞珠</span>
@@ -582,7 +583,7 @@
                 <input type="checkbox"><span>仙粉黛</span>
             </li>
         </ul>
-        <ul class="hidden" id="select-hidden-menu">
+        <ul class="d-none" id="select-hidden-menu">
             <li><img src="./image/icon/other-icon.png">其他</li>
             <li class="hidden-xs">
                 <input type="checkbox"><span>赤霞珠</span>
@@ -1147,7 +1148,7 @@
         </div>
     </div>
     <!-- 酒品 -->
-    <div class="hidden" id="select-subblock">
+    <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 item-box-block">
                 <div class="item-box">
@@ -1479,7 +1480,7 @@
         </div>
     </div>
     <!-- 品牌 -->
-    <div class="hidden" id="select-subblock">
+    <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wine-brand-card">
                 <div class="wine-brand-content">
@@ -1588,7 +1589,7 @@
         </div>
     </div>
     <!-- 酒單 -->
-    <div class="hidden" id="select-subblock">
+    <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wine-card">
                 <div class="wine-card-story-pic" style="background-image: url('./image/picture/pic1.png')">
@@ -1927,7 +1928,7 @@
         </div>
     </div>
     <!-- 活動 -->
-    <div class="hidden" id="select-subblock">
+    <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wine-card">
                 <img class="wine-card-activity-pic" src="./image/picture/w1.jpg">
@@ -2145,7 +2146,7 @@
         </div>
     </div>
     <!-- 行家 -->
-    <div class="hidden" id="select-subblock">
+    <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 expert-card">
                 <div class="expert-card-content">
@@ -2289,68 +2290,72 @@
 </div>
 <footer>
     <div class="container footer-first-block">
-        <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <a class="footer-title">关于我们</a>
-                <a class="footer-subtitle">平台特色</a>
-                <a class="footer-subtitle">公司介绍</a>
-                <a class="footer-subtitle">入驻酒庄</a>
-                <a class="footer-subtitle">入驻指南</a>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <a class="footer-title">登入注册</a>
-                <a class="footer-subtitle">社群收藏</a>
-                <a class="footer-subtitle">购物流程</a>
-                <a class="footer-subtitle">投资流程</a>
-                <a class="footer-subtitle">会员升级</a>
-                <a class="footer-subtitle">返利指导</a>
-                <a class="footer-subtitle">提现指导</a>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <a class="footer-title">常见问题</a>
-                <a class="footer-subtitle">买家</a>
-                <a class="footer-subtitle">投资客</a>
-                <a class="footer-subtitle">帐户管理</a>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <a class="footer-title">加入我们</a>
-                <a class="footer-subtitle">招聘讯息</a>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <a class="footer-title">联系我们</a>
-                <a class="footer-subtitle">联系表单</a>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <a class="footer-title">關注</a>
-                <a class="footer-subtitle">微信公众号</a>         
-                <a class="footer-subtitle">小程序</a>                
-                <a class="footer-subtitle">微博</a>
+        <div class="row">
+        <div class="col-6 col-sm-8 col-md-10 col-lg-10 col-xl-10 d-inline-block px-4">
+            <div class="row">
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-block d-md-inline-block p-md-0">
+                    <a class="footer-title">关于我们</a>
+                    <a class="footer-subtitle" href="">平台特色</a>
+                    <a class="footer-subtitle" href="">公司介绍</a>
+                    <a class="footer-subtitle" href="">入驻酒庄</a>
+                    <a class="footer-subtitle" href="">入驻指南</a>
+                </div>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-block d-md-inline-block p-md-0">
+                    <a class="footer-title">登入注册</a>
+                    <a class="footer-subtitle" href="">社群收藏</a>
+                    <a class="footer-subtitle" href="">购物流程</a>
+                    <a class="footer-subtitle" href="">投资流程</a>
+                    <a class="footer-subtitle" href="">会员升级</a>
+                    <a class="footer-subtitle" href="">返利指导</a>
+                    <a class="footer-subtitle" href="">提现指导</a>
+                </div>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-block d-md-inline-block p-md-0">
+                    <a class="footer-title">常见问题</a>
+                    <a class="footer-subtitle" href="">买家</a>
+                    <a class="footer-subtitle" href="">投资客</a>
+                    <a class="footer-subtitle" href="">帐户管理</a>
+                </div>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-block d-md-inline-block p-md-0">
+                    <a class="footer-title">加入我们</a>
+                    <a class="footer-subtitle" href="">招聘讯息</a>
+                </div>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-block d-md-inline-block p-md-0">
+                    <a class="footer-title">联系我们</a>
+                    <a class="footer-subtitle" href="">联系表单</a>
+                </div>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-block d-md-inline-block p-md-0">
+                    <a class="footer-title">關注</a>
+                    <a class="footer-subtitle" href="">微信公众号</a>         
+                    <a class="footer-subtitle" href="">小程序</a>                
+                    <a class="footer-subtitle" href="">微博</a>
+                </div>
             </div>
         </div>        
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-inline-block">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-md-0">
                 <div class="footer-service-title">服务热线</div>
                 <div class="footer-service-time">400-655-1212<br>周一至周日<br>8:00-21:00</div>
                 <img class="footer-service-qrcode" src="./image/icon/qrcode.jpg">
             </div>
         </div>
     </div>
+    </div>
     <div class="footer-second-block">
         <ul>
-            <li><a href="">服务协议</a></li>
-            <li><a href="">隐私政策</a></li>
-            <li>食品流通许可证：SP1101081110120639</li>
-            <li>营业执照：9111010858442448XQ</li>
-            <li>公司地址：北京市海淀区学院南路68号20号楼1层126室</li>
+            <li class="d-inline-block mb-4"><a href="">服务协议</a></li>
+            <li class="d-inline-block mb-4"><a href="">隐私政策</a></li>
+            <li class="d-block d-sm-inline-block">食品流通许可证：SP1101081110120639</li>
+            <li class="d-blockd-iblock">营业执照：9111010858442448XQ</li>
+            <li class="d-block d-iblock border-0">公司地址：北京市海淀区学院南路68号20号楼1层126室</li>
          </ul>
     </div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="./js/bootstrap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="./js/searchPage.js?i=8"></script>
-<script src="./js/menuInit.js?i=9"></script>
+<script src="./js/menuInit.js?i=10"></script>
 
 </body>
 </html>

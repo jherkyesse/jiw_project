@@ -589,6 +589,7 @@ footer {
 }
 /* line 421, ../sass/screen.scss */
 footer .footer-first-block {
+  position: relative;
   padding: 40px 0 140px 0;
   background: #FFFFFF;
 }
@@ -598,7 +599,7 @@ footer .footer-first-block {
     padding: 40px 0 40px 0;
   }
 }
-/* line 428, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 footer a.footer-title {
   position: relative;
   display: block;
@@ -615,12 +616,12 @@ footer a.footer-title {
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 428, ../sass/screen.scss */
+  /* line 429, ../sass/screen.scss */
   footer a.footer-title {
     margin-bottom: 20px;
   }
 }
-/* line 441, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 footer a.footer-subtitle {
   position: relative;
   display: block;
@@ -634,12 +635,12 @@ footer a.footer-subtitle {
   color: #999999;
 }
 @media (max-width: 767px) {
-  /* line 441, ../sass/screen.scss */
+  /* line 442, ../sass/screen.scss */
   footer a.footer-subtitle {
     display: none;
   }
 }
-/* line 451, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 footer .footer-service-title {
   height: 22px;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -655,12 +656,12 @@ footer .footer-service-title {
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 451, ../sass/screen.scss */
+  /* line 452, ../sass/screen.scss */
   footer .footer-service-title {
     margin-bottom: 20px;
   }
 }
-/* line 463, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 footer .footer-service-time {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -671,7 +672,7 @@ footer .footer-service-time {
   text-align: right;
   color: #323142;
 }
-/* line 470, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 footer img.footer-service-qrcode {
   position: relative;
   display: block;
@@ -681,7 +682,7 @@ footer img.footer-service-qrcode {
   float: right;
   margin-top: 16px;
 }
-/* line 479, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 footer .footer-second-block {
   position: relative;
   display: block;
@@ -690,12 +691,12 @@ footer .footer-second-block {
   width: 100%;
   padding: 20px 10px;
 }
-/* line 486, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 footer .footer-second-block ul {
   position: relative;
   text-align: center;
 }
-/* line 489, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 footer .footer-second-block ul li {
   position: relative;
   display: inline;
@@ -709,12 +710,12 @@ footer .footer-second-block ul li {
   border-right: 1px solid #FFFFFF;
   padding: 0 15px 0 10px;
 }
-/* line 498, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 footer .footer-second-block ul li a {
   color: #ffffff;
 }
 @media (max-width: 767px) {
-  /* line 500, ../sass/screen.scss */
+  /* line 501, ../sass/screen.scss */
   footer .footer-second-block ul li:nth-child(3), footer .footer-second-block ul li:nth-child(4), footer .footer-second-block ul li:nth-child(5) {
     border: none;
     text-align: left;
@@ -722,23 +723,23 @@ footer .footer-second-block ul li a {
   }
 }
 
-/* line 510, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .item-box-block {
   position: relative;
 }
-/* line 512, ../sass/screen.scss */
+/* line 513, ../sass/screen.scss */
 .item-box-block .item-box {
   background: #FFFFFF;
   padding: 12px 20px;
 }
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .item-box-block img.item-img {
   width: 100%;
   height: 265px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 522, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 .item-box-block .item-title {
   width: 100%;
   font-size: 17px;
@@ -756,7 +757,7 @@ footer .footer-second-block ul li a {
   white-space: nowrap;
   margin: 16px 0 0 0;
 }
-/* line 536, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 .item-box-block .item-subtitle {
   font-size: 13px;
   line-height: 19px;
@@ -769,12 +770,12 @@ footer .footer-second-block ul li a {
   text-align: left;
   color: #999999;
 }
-/* line 545, ../sass/screen.scss */
+/* line 546, ../sass/screen.scss */
 .item-box-block .item-price-box {
   position: relative;
   display: block;
 }
-/* line 548, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 .item-box-block .item-price-box .item-price {
   font-size: 19px;
   line-height: 28px;
@@ -787,7 +788,7 @@ footer .footer-second-block ul li a {
   text-align: left;
   color: #933c42;
 }
-/* line 560, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
 .item-box-block .item-price-box .item-orginal-price {
   height: 28px;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -802,7 +803,7 @@ footer .footer-second-block ul li a {
   margin-left: 5px;
   vertical-align: top;
 }
-/* line 574, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 .item-box-block .item-price-box .item-discount {
   position: relative;
   height: 28px;
@@ -821,7 +822,7 @@ footer .footer-second-block ul li a {
   margin-left: 15px;
   vertical-align: top;
 }
-/* line 591, ../sass/screen.scss */
+/* line 592, ../sass/screen.scss */
 .item-box-block .item-price-box .item-discount:before {
   content: '';
   position: absolute;
@@ -833,13 +834,13 @@ footer .footer-second-block ul li a {
   border-top: 11px solid transparent;
   border-bottom: 11.1px solid transparent;
 }
-/* line 603, ../sass/screen.scss */
+/* line 604, ../sass/screen.scss */
 .item-box-block .item-price-box .item-bonus-box {
   position: absolute;
   top: 100%;
   left: 0;
 }
-/* line 607, ../sass/screen.scss */
+/* line 608, ../sass/screen.scss */
 .item-box-block .item-price-box .item-bonus-box span {
   position: relative;
   height: 19px;
@@ -854,7 +855,7 @@ footer .footer-second-block ul li a {
   color: #5052a1;
   margin-left: 15px;
 }
-/* line 620, ../sass/screen.scss */
+/* line 621, ../sass/screen.scss */
 .item-box-block .item-price-box .item-bonus-box span:before {
   content: '';
   position: absolute;
@@ -866,7 +867,7 @@ footer .footer-second-block ul li a {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }
-/* line 634, ../sass/screen.scss */
+/* line 635, ../sass/screen.scss */
 .item-box-block .item-score-box {
   position: relative;
   display: -webkit-flex;
@@ -878,7 +879,7 @@ footer .footer-second-block ul li a {
   height: 22px;
   margin: 30px 0 20px;
 }
-/* line 644, ../sass/screen.scss */
+/* line 645, ../sass/screen.scss */
 .item-box-block .item-score-box .item-score {
   display: -webkit-flex;
   display: flex;
@@ -892,7 +893,7 @@ footer .footer-second-block ul li a {
   border: solid 0.5px #999999;
   overflow: hidden;
 }
-/* line 656, ../sass/screen.scss */
+/* line 657, ../sass/screen.scss */
 .item-box-block .item-score-box .item-score span {
   width: 20px;
   height: 22px;
@@ -905,24 +906,24 @@ footer .footer-second-block ul li a {
   text-align: center;
   color: #555555;
 }
-/* line 664, ../sass/screen.scss */
+/* line 665, ../sass/screen.scss */
 .item-box-block .item-score-box .item-score span:nth-child(1) {
   background: #f3f3f3;
   border-right: 1px solid #999999;
 }
-/* line 671, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 .item-box-block .item-info-box {
   position: relative;
   display: block;
   width: 100%;
   margin-top: 23px;
 }
-/* line 676, ../sass/screen.scss */
+/* line 677, ../sass/screen.scss */
 .item-box-block .item-info-box img.item-info-star-img {
   width: 20px;
   height: auto;
 }
-/* line 680, ../sass/screen.scss */
+/* line 681, ../sass/screen.scss */
 .item-box-block .item-info-box .item-info-star-rate {
   height: 20px;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -934,12 +935,12 @@ footer .footer-second-block ul li a {
   color: #d1a593;
   vertical-align: top;
 }
-/* line 691, ../sass/screen.scss */
+/* line 692, ../sass/screen.scss */
 .item-box-block .item-info-box .item-btn-block {
   position: absolute;
   right: 0;
 }
-/* line 694, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 .item-box-block .item-info-box .item-btn-block .item-presale-btn {
   border-radius: 4px;
   background-color: #df8d74;
@@ -954,7 +955,7 @@ footer .footer-second-block ul li a {
   color: #ffffff;
   padding: 0 8px;
 }
-/* line 708, ../sass/screen.scss */
+/* line 709, ../sass/screen.scss */
 .item-box-block .item-info-box .item-btn-block .item-invest-btn {
   border-radius: 4px;
   background-color: #5052a1;
@@ -971,18 +972,18 @@ footer .footer-second-block ul li a {
   margin-right: 8px;
 }
 
-/* line 726, ../sass/screen.scss */
+/* line 727, ../sass/screen.scss */
 .wine-block {
   position: relative;
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  /* line 726, ../sass/screen.scss */
+  /* line 727, ../sass/screen.scss */
   .wine-block {
     padding-left: calc(5vw + 4px);
   }
 }
-/* line 732, ../sass/screen.scss */
+/* line 733, ../sass/screen.scss */
 .wine-block .wine-card-block {
   position: relative;
   margin: 0;
@@ -992,17 +993,17 @@ footer .footer-second-block ul li a {
   transition: 0.3s;
 }
 
-/* line 741, ../sass/screen.scss */
+/* line 742, ../sass/screen.scss */
 .wine-card {
   padding: 8px;
 }
 @media (max-width: 767px) {
-  /* line 741, ../sass/screen.scss */
+  /* line 742, ../sass/screen.scss */
   .wine-card {
     width: 90vw;
   }
 }
-/* line 746, ../sass/screen.scss */
+/* line 747, ../sass/screen.scss */
 .wine-card .wine-card-intro {
   width: 100%;
   height: 440px;
@@ -1010,7 +1011,7 @@ footer .footer-second-block ul li a {
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
-/* line 753, ../sass/screen.scss */
+/* line 754, ../sass/screen.scss */
 .wine-card .wine-card-story-pic {
   height: 160px;
   background-size: cover !important;
@@ -1018,7 +1019,7 @@ footer .footer-second-block ul li a {
   background-position: center !important;
   overflow: hidden;
 }
-/* line 759, ../sass/screen.scss */
+/* line 760, ../sass/screen.scss */
 .wine-card .wine-card-story-pic:after {
   content: '';
   position: absolute;
@@ -1029,11 +1030,11 @@ footer .footer-second-block ul li a {
   background-image: linear-gradient(to top, rgba(38, 38, 79, 0.8), rgba(38, 38, 79, 0));
   z-index: 100;
 }
-/* line 769, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 .wine-card .wine-card-story-pic:hover:after {
   background: rgba(38, 38, 79, 0.7);
 }
-/* line 772, ../sass/screen.scss */
+/* line 773, ../sass/screen.scss */
 .wine-card .wine-card-story-pic:hover > * {
   -ms-transform: translateY(-160px);
   -o-transform: translateY(-160px);
@@ -1046,7 +1047,7 @@ footer .footer-second-block ul li a {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 784, ../sass/screen.scss */
+/* line 785, ../sass/screen.scss */
 .wine-card .wine-card-story-pic img.wine-card-author-pic {
   position: absolute;
   left: 12px;
@@ -1063,7 +1064,7 @@ footer .footer-second-block ul li a {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 800, ../sass/screen.scss */
+/* line 801, ../sass/screen.scss */
 .wine-card .wine-card-story-pic .wine-card-article-title {
   position: absolute;
   left: 63px;
@@ -1089,12 +1090,12 @@ footer .footer-second-block ul li a {
   transition: 0.4s;
 }
 @media (max-width: 767px) {
-  /* line 800, ../sass/screen.scss */
+  /* line 801, ../sass/screen.scss */
   .wine-card .wine-card-story-pic .wine-card-article-title {
     width: calc(90vw - 88px);
   }
 }
-/* line 827, ../sass/screen.scss */
+/* line 828, ../sass/screen.scss */
 .wine-card .wine-card-story-pic .wine-card-article-author {
   position: absolute;
   left: 63px;
@@ -1119,7 +1120,7 @@ footer .footer-second-block ul li a {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 851, ../sass/screen.scss */
+/* line 852, ../sass/screen.scss */
 .wine-card .wine-card-story-pic .wine-card-article-content {
   position: absolute;
   top: 100%;
@@ -1148,7 +1149,7 @@ footer .footer-second-block ul li a {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 880, ../sass/screen.scss */
+/* line 881, ../sass/screen.scss */
 .wine-card .wine-card-item-block {
   position: relative;
   display: block;
@@ -1157,43 +1158,43 @@ footer .footer-second-block ul li a {
   background: #FFFFFF;
   padding: 8px 0 8px 4px;
 }
-/* line 887, ../sass/screen.scss */
+/* line 888, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block {
   position: relative;
   height: 240px;
   overflow-y: auto;
 }
-/* line 891, ../sass/screen.scss */
+/* line 892, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-track {
   background: transparent;
 }
-/* line 894, ../sass/screen.scss */
+/* line 895, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar {
   width: 4px;
 }
-/* line 897, ../sass/screen.scss */
+/* line 898, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-thumb {
   background: #999999;
 }
-/* line 901, ../sass/screen.scss */
+/* line 902, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box {
   position: relative;
   width: 100%;
   padding: 8px;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 906, ../sass/screen.scss */
+/* line 907, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box:hover {
   background: #f5f5f5;
 }
-/* line 909, ../sass/screen.scss */
+/* line 910, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 915, ../sass/screen.scss */
+/* line 916, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-title {
   height: 25px;
   font-size: 17px;
@@ -1207,7 +1208,7 @@ footer .footer-second-block ul li a {
   color: #323142;
   padding: 0 0 0 10px;
 }
-/* line 928, ../sass/screen.scss */
+/* line 929, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-price {
   font-size: 19px;
   line-height: 28px;
@@ -1221,7 +1222,7 @@ footer .footer-second-block ul li a {
   margin-top: 4px;
   padding: 0 0 0 10px;
 }
-/* line 942, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box {
   position: relative;
   display: block;
@@ -1229,7 +1230,7 @@ footer .footer-second-block ul li a {
   height: 20px;
   padding: 4px 8px;
 }
-/* line 948, ../sass/screen.scss */
+/* line 949, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box:after {
   content: '';
   position: absolute;
@@ -1240,7 +1241,7 @@ footer .footer-second-block ul li a {
   background-image: linear-gradient(to top, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
 }
-/* line 958, ../sass/screen.scss */
+/* line 959, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box img {
   position: relative;
   display: inline-block;
@@ -1249,7 +1250,7 @@ footer .footer-second-block ul li a {
   height: 20px;
   margin-right: 8px;
 }
-/* line 966, ../sass/screen.scss */
+/* line 967, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box span {
   position: relative;
   display: inline-block;
@@ -1265,7 +1266,7 @@ footer .footer-second-block ul li a {
   color: #d1a593;
   vertical-align: top;
 }
-/* line 981, ../sass/screen.scss */
+/* line 982, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box div {
   position: relative;
   display: inline-block;
@@ -1282,13 +1283,13 @@ footer .footer-second-block ul li a {
   vertical-align: top;
   float: right;
 }
-/* line 999, ../sass/screen.scss */
+/* line 1000, ../sass/screen.scss */
 .wine-card .wine-card-title-box {
   border-radius: 4px;
   background-color: rgba(80, 82, 161, 0.9);
   padding: 30px 10px;
 }
-/* line 1003, ../sass/screen.scss */
+/* line 1004, ../sass/screen.scss */
 .wine-card .wine-card-title-box h4 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1304,7 +1305,7 @@ footer .footer-second-block ul li a {
   padding-bottom: 16px;
   margin: 16px auto 0;
 }
-/* line 1018, ../sass/screen.scss */
+/* line 1019, ../sass/screen.scss */
 .wine-card .wine-card-title-box h5 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1317,7 +1318,7 @@ footer .footer-second-block ul li a {
   text-align: center;
   color: #ffd858;
 }
-/* line 1030, ../sass/screen.scss */
+/* line 1031, ../sass/screen.scss */
 .wine-card .wine-card-title-box .wine-card-title {
   position: relative;
   display: -webkit-flex;
@@ -1331,13 +1332,13 @@ footer .footer-second-block ul li a {
   height: 180px;
 }
 @media (max-width: 1170px) {
-  /* line 1030, ../sass/screen.scss */
+  /* line 1031, ../sass/screen.scss */
   .wine-card .wine-card-title-box .wine-card-title {
     width: 200px;
     padding: 0 10px;
   }
 }
-/* line 1045, ../sass/screen.scss */
+/* line 1046, ../sass/screen.scss */
 .wine-card .wine-card-title-box .wine-card-title h4 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1353,7 +1354,7 @@ footer .footer-second-block ul li a {
   padding-bottom: 16px;
   margin: 16px auto 0;
 }
-/* line 1060, ../sass/screen.scss */
+/* line 1061, ../sass/screen.scss */
 .wine-card .wine-card-title-box .wine-card-title h5 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1366,14 +1367,14 @@ footer .footer-second-block ul li a {
   text-align: center;
   color: #ffd858;
 }
-/* line 1074, ../sass/screen.scss */
+/* line 1075, ../sass/screen.scss */
 .wine-card .wine-card-activity-pic {
   height: 290px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
-/* line 1080, ../sass/screen.scss */
+/* line 1081, ../sass/screen.scss */
 .wine-card .wine-card-activity-box {
   position: relative;
   display: block;
@@ -1382,7 +1383,7 @@ footer .footer-second-block ul li a {
   background: #FFFFFF;
   padding: 12px;
 }
-/* line 1087, ../sass/screen.scss */
+/* line 1088, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-title {
   width: 100%;
   white-space: nowrap;
@@ -1399,7 +1400,7 @@ footer .footer-second-block ul li a {
   text-overflow: ellipsis;
   margin-bottom: 12px;
 }
-/* line 1103, ../sass/screen.scss */
+/* line 1104, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-info {
   position: relative;
   display: block;
@@ -1413,26 +1414,26 @@ footer .footer-second-block ul li a {
   text-align: left;
   color: #999999;
 }
-/* line 1112, ../sass/screen.scss */
+/* line 1113, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-info img {
   width: 18px;
   height: 18px;
   margin: 0 4px 0 0;
   vertical-align: top;
 }
-/* line 1119, ../sass/screen.scss */
+/* line 1120, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-favorite {
   position: relative;
   display: inline-block;
   height: 20px;
   margin: 18px 0 0;
 }
-/* line 1124, ../sass/screen.scss */
+/* line 1125, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-favorite img {
   height: 20px;
   width: auto;
 }
-/* line 1128, ../sass/screen.scss */
+/* line 1129, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-favorite span {
   color: #d1a593;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -1447,7 +1448,7 @@ footer .footer-second-block ul li a {
   text-align: left;
   color: #d1a593;
 }
-/* line 1141, ../sass/screen.scss */
+/* line 1142, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-hashtag {
   position: relative;
   display: inline-block;
@@ -1455,7 +1456,7 @@ footer .footer-second-block ul li a {
   height: 20px;
   margin: 18px 0 0;
 }
-/* line 1147, ../sass/screen.scss */
+/* line 1148, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-hashtag span {
   color: #d1a593;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;

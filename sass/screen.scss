@@ -419,6 +419,7 @@ footer{
     width: 100%;
     background: #FFFFFF;
     .footer-first-block{
+        position: relative;
         padding: 40px 0 140px 0;
         background: #FFFFFF;
         @media(max-width:767px){

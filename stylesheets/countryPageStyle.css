@@ -97,15 +97,16 @@ hr {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
-  margin-top: 60px;
+  margin: 60px auto 240px;
 }
 /* line 29, ../sass/countryPageStyle.scss */
 .country-block .country-head {
   position: absolute;
   text-align: center;
   margin-top: 160px;
+  z-index: 61;
 }
-/* line 34, ../sass/countryPageStyle.scss */
+/* line 35, ../sass/countryPageStyle.scss */
 .country-block .yellow-text {
   line-height: 22px;
   font-size: 15px;
@@ -114,7 +115,7 @@ hr {
   text-align: center;
   color: #ffd858;
 }
-/* line 42, ../sass/countryPageStyle.scss */
+/* line 43, ../sass/countryPageStyle.scss */
 .country-block .red-text {
   line-height: 22px;
   font-size: 15px;
@@ -124,14 +125,14 @@ hr {
   color: #df8d74;
   margin: 16px 0 8px;
 }
-/* line 51, ../sass/countryPageStyle.scss */
+/* line 52, ../sass/countryPageStyle.scss */
 .country-block .white-text {
   line-height: 22px;
   font-size: 15px;
   text-align: left;
   color: #ffffff;
 }
-/* line 57, ../sass/countryPageStyle.scss */
+/* line 58, ../sass/countryPageStyle.scss */
 .country-block .country-head-name {
   line-height: 59px;
   font-size: 40px;
@@ -140,15 +141,16 @@ hr {
   text-align: center;
   color: #ffffff;
 }
-/* line 65, ../sass/countryPageStyle.scss */
+/* line 66, ../sass/countryPageStyle.scss */
 .country-block .country-head-icon {
   position: relative;
   display: block;
   margin: 25px auto;
   height: 24px;
+  cursor: pointer;
   width: auto;
 }
-/* line 72, ../sass/countryPageStyle.scss */
+/* line 74, ../sass/countryPageStyle.scss */
 .country-block .country-card-box {
   display: absolute;
   bottom: 0;
@@ -163,7 +165,7 @@ hr {
   margin: 0 auto;
   padding: 40px 48px;
 }
-/* line 85, ../sass/countryPageStyle.scss */
+/* line 87, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg {
   position: absolute;
   left: 0;
@@ -175,56 +177,60 @@ hr {
   padding: 40px 48px;
 }
 @media (max-width: 767px) {
-  /* line 85, ../sass/countryPageStyle.scss */
+  /* line 87, ../sass/countryPageStyle.scss */
   .country-block .country-card-box .country-card-bg {
     padding: 24px 16px;
   }
 }
 /* line 97, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg a.place-name-tag {
+  position: relative;
+  display: inline-block;
   color: #cccccc;
   border-right: 1px solid #cccccc;
   text-decoration: none;
   letter-spacing: 6px;
   vertical-align: top;
   line-height: 25px;
+  cursor: pointer;
   font-size: 17px;
+  padding: 0 10px 0 12px;
 }
-/* line 105, ../sass/countryPageStyle.scss */
+/* line 109, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg a.place-name-tag:nth-last-child(1) {
-  border: none;
+  border: none !important;
 }
-/* line 106, ../sass/countryPageStyle.scss */
+/* line 110, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg a.place-name-tag:hover {
   color: #FFFFFF;
 }
-/* line 110, ../sass/countryPageStyle.scss */
+/* line 112, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg .country-subcard {
   height: 400px;
   overflow-y: auto;
 }
 @media (max-width: 767px) {
-  /* line 110, ../sass/countryPageStyle.scss */
+  /* line 112, ../sass/countryPageStyle.scss */
   .country-block .country-card-box .country-card-bg .country-subcard {
     height: 160px;
   }
 }
-/* line 114, ../sass/countryPageStyle.scss */
+/* line 116, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg .country-subcard::-webkit-scrollbar {
   border-radius: 3.5px;
   width: 4px;
 }
-/* line 118, ../sass/countryPageStyle.scss */
+/* line 120, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg .country-subcard::-webkit-scrollbar-track {
   width: 4px;
   background: #555555;
 }
-/* line 122, ../sass/countryPageStyle.scss */
+/* line 124, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .country-card-bg .country-subcard::-webkit-scrollbar-thumb {
   width: 4px;
   background: #dbdbdb;
 }
-/* line 128, ../sass/countryPageStyle.scss */
+/* line 130, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .arrow-white {
   position: absolute;
   bottom: 24px;
@@ -233,12 +239,12 @@ hr {
   margin-left: -12px;
 }
 @media (max-width: 767px) {
-  /* line 128, ../sass/countryPageStyle.scss */
+  /* line 130, ../sass/countryPageStyle.scss */
   .country-block .country-card-box .arrow-white {
     bottom: 8px;
   }
 }
-/* line 135, ../sass/countryPageStyle.scss */
+/* line 137, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .arrow-white > img {
   width: 24px;
   height: auto;
@@ -248,7 +254,7 @@ hr {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 145, ../sass/countryPageStyle.scss */
+/* line 147, ../sass/countryPageStyle.scss */
 .country-block .country-card-box .blur-bottom {
   position: absolute;
   bottom: 0;
@@ -260,30 +266,13 @@ hr {
   opacity: 0.8;
 }
 
-/* line 157, ../sass/countryPageStyle.scss */
-.country-wine-block {
-  margin-top: 300px;
-}
-/* line 159, ../sass/countryPageStyle.scss */
-.country-wine-block .intro-block-bg {
-  position: relative;
-}
-/* line 161, ../sass/countryPageStyle.scss */
-.country-wine-block .intro-block-bg > img {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-/* line 174, ../sass/countryPageStyle.scss */
+/* line 160, ../sass/countryPageStyle.scss */
 .blur-container {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-/* line 176, ../sass/countryPageStyle.scss */
+/* line 162, ../sass/countryPageStyle.scss */
 .blur-container::before, .blur-container::after {
   top: 0px;
   left: 0px;
@@ -293,13 +282,13 @@ hr {
   display: block;
   position: absolute;
 }
-/* line 185, ../sass/countryPageStyle.scss */
+/* line 171, ../sass/countryPageStyle.scss */
 .blur-container .blur-box {
   display: block;
   position: relative;
 }
-/* line 188, ../sass/countryPageStyle.scss */
-.blur-container .blur-box::before, .blur-container .blur-box::after {
+/* line 174, ../sass/countryPageStyle.scss */
+.blur-container .blur-box:before, .blur-container .blur-box:after {
   top: 0px;
   left: 0px;
   content: '';
@@ -308,28 +297,115 @@ hr {
   display: block;
   position: absolute;
 }
-/* line 198, ../sass/countryPageStyle.scss */
-.blur-container.blur-1 {
+/* line 184, ../sass/countryPageStyle.scss */
+.blur-container.blur-bg {
   --bg: url(../image/picture/mp1.jpeg);
   color: #444;
   padding: 0px 20px;
+  background-image: -webkit-linear-gradient(0, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), var(--bg);
+  background-image: -o-linear-gradient(0, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), var(--bg);
   background-image: linear-gradient(0, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), var(--bg);
 }
-/* line 203, ../sass/countryPageStyle.scss */
-.blur-container.blur-1 .blur-box {
+/* line 191, ../sass/countryPageStyle.scss */
+.blur-container.blur-bg .blur-box {
   overflow: hidden;
 }
-/* line 205, ../sass/countryPageStyle.scss */
-.blur-container.blur-1 .blur-box::before {
+/* line 193, ../sass/countryPageStyle.scss */
+.blur-container.blur-bg .blur-box:before {
   opacity: 0.3;
+  -ms-filter: blur(15px);
+  -webkit-filter: blur(15px);
   filter: blur(15px);
   background-color: #26264f;
 }
-/* line 210, ../sass/countryPageStyle.scss */
-.blur-container.blur-1 .blur-box::after {
+/* line 200, ../sass/countryPageStyle.scss */
+.blur-container.blur-bg .blur-box:after {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  -ms-filter: blur(15px);
+  -webkit-filter: blur(15px);
   filter: blur(15px);
+  background-image: -webkit-linear-gradient(0, rgba(38, 38, 79, 0.7) 0%, rgba(38, 38, 79, 0.7) 100%), var(--bg);
+  background-image: -o-linear-gradient(0, rgba(38, 38, 79, 0.7) 0%, rgba(38, 38, 79, 0.7) 100%), var(--bg);
   background-image: linear-gradient(0, rgba(38, 38, 79, 0.7) 0%, rgba(38, 38, 79, 0.7) 100%), var(--bg);
+}
+
+/* line 212, ../sass/countryPageStyle.scss */
+.country-wine-block {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dbdbdb;
+  margin: 30px auto 60px;
+  padding-top: 60px;
+}
+/* line 218, ../sass/countryPageStyle.scss */
+.country-wine-block .country-head {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+/* line 222, ../sass/countryPageStyle.scss */
+.country-wine-block .country-head .country-head-bg {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+/* line 229, ../sass/countryPageStyle.scss */
+.country-wine-block .country-head .country-head-bg .country-head-text {
+  position: relative;
+  font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-size: 40px;
+  line-height: 59px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-align: left;
+  color: #ffffff;
+}
+/* line 238, ../sass/countryPageStyle.scss */
+.country-wine-block .country-head .country-head-bg .country-head-text:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  left: 0;
+  bottom: -8px;
+  border-bottom: 1px solid #d1a593;
+}
+@media (max-width: 767px) {
+  /* line 249, ../sass/countryPageStyle.scss */
+  .country-wine-block .brand-block {
+    margin: 0;
+  }
+}
+/* line 251, ../sass/countryPageStyle.scss */
+.country-wine-block .brand-block .brand-box {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 251, ../sass/countryPageStyle.scss */
+  .country-wine-block .brand-block .brand-box {
+    padding: 4px;
+  }
+}
+/* line 257, ../sass/countryPageStyle.scss */
+.country-wine-block .brand-block .brand-box > img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  /* line 257, ../sass/countryPageStyle.scss */
+  .country-wine-block .brand-block .brand-box > img {
+    height: 50px;
+  }
 }

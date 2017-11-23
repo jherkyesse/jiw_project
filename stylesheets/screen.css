@@ -1163,39 +1163,42 @@ footer .footer-second-block ul li a {
   position: relative;
   height: 240px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
-/* line 892, ../sass/screen.scss */
+/* line 893, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-track {
   background: transparent;
 }
-/* line 895, ../sass/screen.scss */
+/* line 896, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar {
   width: 4px;
 }
-/* line 898, ../sass/screen.scss */
+/* line 899, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box-block::-webkit-scrollbar-thumb {
   background: #999999;
 }
-/* line 902, ../sass/screen.scss */
+/* line 903, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box {
   position: relative;
   width: 100%;
   padding: 8px;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 907, ../sass/screen.scss */
+/* line 908, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box:hover {
   background: #f5f5f5;
 }
-/* line 910, ../sass/screen.scss */
+/* line 911, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 916, ../sass/screen.scss */
+/* line 917, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-title {
+  position: relative;
+  width: 100% !important;
   height: 25px;
   font-size: 17px;
   line-height: 25px;
@@ -1208,7 +1211,7 @@ footer .footer-second-block ul li a {
   color: #323142;
   padding: 0 0 0 10px;
 }
-/* line 929, ../sass/screen.scss */
+/* line 932, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-item-box .wine-card-item-price {
   font-size: 19px;
   line-height: 28px;
@@ -1222,7 +1225,7 @@ footer .footer-second-block ul li a {
   margin-top: 4px;
   padding: 0 0 0 10px;
 }
-/* line 943, ../sass/screen.scss */
+/* line 946, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box {
   position: relative;
   display: block;
@@ -1230,7 +1233,7 @@ footer .footer-second-block ul li a {
   height: 20px;
   padding: 4px 8px;
 }
-/* line 949, ../sass/screen.scss */
+/* line 952, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box:after {
   content: '';
   position: absolute;
@@ -1241,7 +1244,7 @@ footer .footer-second-block ul li a {
   background-image: linear-gradient(to top, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
 }
-/* line 959, ../sass/screen.scss */
+/* line 962, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box img {
   position: relative;
   display: inline-block;
@@ -1250,7 +1253,7 @@ footer .footer-second-block ul li a {
   height: 20px;
   margin-right: 8px;
 }
-/* line 967, ../sass/screen.scss */
+/* line 970, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box span {
   position: relative;
   display: inline-block;
@@ -1266,7 +1269,7 @@ footer .footer-second-block ul li a {
   color: #d1a593;
   vertical-align: top;
 }
-/* line 982, ../sass/screen.scss */
+/* line 985, ../sass/screen.scss */
 .wine-card .wine-card-item-block .wine-card-info-box div {
   position: relative;
   display: inline-block;
@@ -1283,13 +1286,13 @@ footer .footer-second-block ul li a {
   vertical-align: top;
   float: right;
 }
-/* line 1000, ../sass/screen.scss */
+/* line 1003, ../sass/screen.scss */
 .wine-card .wine-card-title-box {
   border-radius: 4px;
   background-color: rgba(80, 82, 161, 0.9);
   padding: 30px 10px;
 }
-/* line 1004, ../sass/screen.scss */
+/* line 1007, ../sass/screen.scss */
 .wine-card .wine-card-title-box h4 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1305,7 +1308,7 @@ footer .footer-second-block ul li a {
   padding-bottom: 16px;
   margin: 16px auto 0;
 }
-/* line 1019, ../sass/screen.scss */
+/* line 1022, ../sass/screen.scss */
 .wine-card .wine-card-title-box h5 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1318,7 +1321,7 @@ footer .footer-second-block ul li a {
   text-align: center;
   color: #ffd858;
 }
-/* line 1031, ../sass/screen.scss */
+/* line 1034, ../sass/screen.scss */
 .wine-card .wine-card-title-box .wine-card-title {
   position: relative;
   display: -webkit-flex;
@@ -1332,13 +1335,13 @@ footer .footer-second-block ul li a {
   height: 180px;
 }
 @media (max-width: 1170px) {
-  /* line 1031, ../sass/screen.scss */
+  /* line 1034, ../sass/screen.scss */
   .wine-card .wine-card-title-box .wine-card-title {
     width: 200px;
     padding: 0 10px;
   }
 }
-/* line 1046, ../sass/screen.scss */
+/* line 1049, ../sass/screen.scss */
 .wine-card .wine-card-title-box .wine-card-title h4 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1354,7 +1357,7 @@ footer .footer-second-block ul li a {
   padding-bottom: 16px;
   margin: 16px auto 0;
 }
-/* line 1061, ../sass/screen.scss */
+/* line 1064, ../sass/screen.scss */
 .wine-card .wine-card-title-box .wine-card-title h5 {
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1367,14 +1370,14 @@ footer .footer-second-block ul li a {
   text-align: center;
   color: #ffd858;
 }
-/* line 1075, ../sass/screen.scss */
+/* line 1078, ../sass/screen.scss */
 .wine-card .wine-card-activity-pic {
   height: 290px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
-/* line 1081, ../sass/screen.scss */
+/* line 1084, ../sass/screen.scss */
 .wine-card .wine-card-activity-box {
   position: relative;
   display: block;
@@ -1383,7 +1386,7 @@ footer .footer-second-block ul li a {
   background: #FFFFFF;
   padding: 12px;
 }
-/* line 1088, ../sass/screen.scss */
+/* line 1091, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-title {
   width: 100%;
   white-space: nowrap;
@@ -1400,7 +1403,7 @@ footer .footer-second-block ul li a {
   text-overflow: ellipsis;
   margin-bottom: 12px;
 }
-/* line 1104, ../sass/screen.scss */
+/* line 1107, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-info {
   position: relative;
   display: block;
@@ -1414,26 +1417,26 @@ footer .footer-second-block ul li a {
   text-align: left;
   color: #999999;
 }
-/* line 1113, ../sass/screen.scss */
+/* line 1116, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-info img {
   width: 18px;
   height: 18px;
   margin: 0 4px 0 0;
   vertical-align: top;
 }
-/* line 1120, ../sass/screen.scss */
+/* line 1123, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-favorite {
   position: relative;
   display: inline-block;
   height: 20px;
   margin: 18px 0 0;
 }
-/* line 1125, ../sass/screen.scss */
+/* line 1128, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-favorite img {
   height: 20px;
   width: auto;
 }
-/* line 1129, ../sass/screen.scss */
+/* line 1132, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-favorite span {
   color: #d1a593;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -1448,7 +1451,7 @@ footer .footer-second-block ul li a {
   text-align: left;
   color: #d1a593;
 }
-/* line 1142, ../sass/screen.scss */
+/* line 1145, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-hashtag {
   position: relative;
   display: inline-block;
@@ -1456,7 +1459,7 @@ footer .footer-second-block ul li a {
   height: 20px;
   margin: 18px 0 0;
 }
-/* line 1148, ../sass/screen.scss */
+/* line 1151, ../sass/screen.scss */
 .wine-card .wine-card-activity-box .wine-card-activity-hashtag span {
   color: #d1a593;
   font-family: "Noto Sans CJK TC", "kozgopr6n", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;

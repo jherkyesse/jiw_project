@@ -45,3 +45,10 @@ document.getElementById('wine-arrow-next').addEventListener('click',function(){
         document.querySelector('div.wine-card-block').style.marginLeft = -(toLeft1 * 25)+"%"
     }
 })
+Array.prototype.map.call(document.querySelectorAll('a.place-name-tag'),function(element,index){
+    element.onclick=function(){
+        let bgSrc = this.getAttribute('data-src')
+        document.getElementById('blur-style').innerHTML='.blur-container.blur-bg{ --bg:url('+bgSrc+');}'
+        document.querySelector('.country-head-name > span').textContent=this.textContent
+    }
+})

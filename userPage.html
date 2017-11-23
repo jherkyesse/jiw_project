@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=3">
-    <link rel="stylesheet" href="./stylesheets/screen.css?i=8">
-    <link rel="stylesheet" href="./stylesheets/userPage.css?i=1">
+    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=4">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=9">
+    <link rel="stylesheet" href="./stylesheets/userPageStyle.css?i=2">
+    <link rel="stylesheet" href="./stylesheets/searchPageStyle.css?i=2">
 </head>
 
 <body>
@@ -289,14 +290,85 @@
                 <li><a>搜酒單</a></li>
                 <li><a>找活動</a></li>
                 <li><a>來投資</a></li>
-                <li class="d-block d-md-none"><a>個人中心</a></li>
+                <li class="d-block d-md-none" id="user-list-span"><a>個人中心</a></li>
                 <li class="d-block d-md-none"><a>使用指南</a></li>                
             </ul>
         </div>
         <div class="navbar-cart">
-            <a href="" class="d-none d-sm-inline-block"><img src="./image/icon/heart.png"></a>
-            <a href="" class="d-none d-sm-inline-block"><img src="./image/icon/user.png"></a>
+            <a class="d-none d-sm-inline-block"><img src="./image/icon/heart.png"></a>
+            <a class="d-none d-sm-inline-block"><img src="./image/icon/user.png"></a>
             <a><img src="./image/icon/cart.png"><span id="navbar-cart-count">6</span></a>
+            <div class="favorite-list d-none">
+                <div class="favorite-list-box-block">
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="favorite-list-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="favorite-list-class">酒品</div>
+                        <div class="favorite-list-price">¥ 155.00</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/w1.jpg">
+                        <div class="favorite-list-name">2017 国际葡萄酒展 法国文化协会</div>
+                        <div class="favorite-list-class">活動</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="favorite-list-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="favorite-list-class">酒品</div>
+                        <div class="favorite-list-price">¥ 155.00</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/pic1.png">
+                        <div class="favorite-list-name">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                        <div class="favorite-list-class">酒單</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/w1.jpg">
+                        <div class="favorite-list-name">2017 国际葡萄酒展 法国文化协会</div>
+                        <div class="favorite-list-class">活動</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="favorite-list-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="favorite-list-class">酒品</div>
+                        <div class="favorite-list-price">¥ 155.00</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/pic1.png">
+                        <div class="favorite-list-name">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                        <div class="favorite-list-class">酒單</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                </div>
+                <div class="favorite-all-delete-btn"><img src="./image/icon/clear.png">全部清空</div>
+                <button class="favorite-list-more-btn">查看收藏夾</button>
+            </div>
+            <div class="user-list d-none">
+                <img class="d-block d-md-none" id="user-list-close" src="./image/icon/close-02.png">
+                <div class="row m-0 user-list-box-block">
+                    <div class="col-12 user-list-box d-flex">
+                        <div class="position-relative w-50 text-right"><img class="rounded-circle px-3" src="./image/picture/profilepic.jpg"></div>
+                        <div class="position-relative w-50">
+                            <div class="user-list-name py-1">李太太</div>
+                            <a href="" class="user-list-text">查看個人中心</a>
+                        </div>
+                    </div>
+                    <a href="" class="col-12 text-center user-list-box">最新消息</a>
+                    <a href="" class="col-12 text-center user-list-box">會員管理</a>
+                    <a href="./shoppingcartPage.html" class="col-12 text-center user-list-box">購物車/投資車</a>
+                    <a href="" class="col-12 text-center user-list-box">我的酒單</a>
+                    <a href="" class="col-12 text-center user-list-box">訂單管理</a>
+                    <a href="" class="col-12 text-center user-list-box">我的優惠</a>
+                    <a href="" class="col-12 text-center user-list-box">投資管理</a>
+                    <a href="" class="col-12 text-center user-list-box"> 登出</a>
+                </div>
+            </div>
             <div class="cart-list d-none">
                 <div class="cart-list-item-box-block">
                     <div class="cart-list-item-box">   
@@ -358,52 +430,833 @@
                 <div class="cart-list-item-total-price">¥ 9923.00</div>
                 <div class="cart-list-item-all-delete-btn"><img src="./image/icon/clear.png">全部清空</div>
                 <div class="cart-list-item-invest-btn"><img src="./image/icon/invest.png">切換投資車</div>
-                <button class="cart-item-list-more">查看購物車</div>
+                <button class="cart-item-list-more-btn">查看購物車</button>
             </div>
         </div>
     </div>
 </nav>
 
 <div class="user-head" style="background-image:url('./image/picture/mp5.jpg')"></div>
-
-<div class="row user-profile-block">
-    <div class="row">
-    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-        <div class="user-profile-img" style="background-image:url('./image/picture/profilepic.jpg')"></div>
-    </div>
-    <div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 user-profile-info">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div class="user-profile-name">李太太</div>
-                <img src="./image/icon/edit.png">
+<div class="user-profile-block">
+    <div class="container positioin-relative px-md-5">
+        <div class="row w-100 m-0 px-2">
+            <div class="col-3 col-md-2 d-inline-block p-0">
+                <div class="user-profile-img" style="background-image:url('./image/picture/profilepic.jpg')"></div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div class="user-profile-fan-box">
-                    <div class="user-profile-fan"><div>30</div><div>酒單</div></div>
-                    <div class="user-profile-fan"><div>94</div><div>粉絲</div></div>
-                    <div class="user-profile-fan"><div>2000</div><div>追蹤中</div></div>
+            <div class="col-9 col-md-10 d-line-block py-0 pr-0 pl-2">
+                <div class="col-12 col-md-6 d-inline-block p-0">
+                    <div class="user-profile-name">李太太</div>
+                    <img src="./image/icon/edit.png" id="edit-block-span">
+                </div>
+                <div class="col-12 col-md-6 d-inline-block p-0 float-none float-md-right">
+                    <div class="user-profile-fan-box">
+                        <div class="user-profile-fan"><div>30</div><div>酒單</div></div>
+                        <div class="user-profile-fan"><div>94</div><div>粉絲</div></div>
+                        <div class="user-profile-fan"><div>2000</div><div>追蹤中</div></div>
+                    </div>
+                </div>
+                <div class="d-block user-profile-intro mt-4">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National ParkThe state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park.</div> <div class="d-block user-profile-share d-flex align-items-center">
+                        分享連結
+                        <img src="./image/icon/qa.png">
+                        <input type="text" value="www.joinin.wine/litaitai">
+                        <button>複製</button>
+                    </div>
+                </div>
+                <div class="col-12 user-profile-menu-box p-0">
+                    <div class="user-profile-menu user-profile-menu-active">概覽</div>
+                    <div class="user-profile-menu">我的酒單</div>
+                    <div class="user-profile-menu">收藏酒品</div>
+                    <div class="user-profile-menu">收藏活動</div>
+                    <div class="user-profile-menu">我的表現</div>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 user-profile-intro">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National ParkThe state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park.</div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 user-profile-share">
-            分享連結
-            <img src="./image/icon/qa.png">
-            <input type="text" value="www.joinin.wine/litaitai">
-            <button>複製</button>
-        </div>
-    </div>
-    </div>
-    <div class="user-profile-menu-box">
-        <div class="user-profile-menu user-profile-menu-active">概覽</div>
-        <div class="user-profile-menu">我的酒單</div>
-        <div class="user-profile-menu">收藏酒品</div>
-        <div class="user-profile-menu">收藏活動</div>
-        <div class="user-profile-menu">我的表現</div>
     </div>
 </div>
 
+<div class="user-profile-edit-block d-none">
+    <div class="user-profile-edit-box">
+        <div class="row p-0 m-0 position-relative">
+            <div class="col-6 user-profile-edit-text p-4">修改資料</div>
+            <div class="col-6 p-4 text-right" id="edit-block-close"><img src="./image/icon/close-02.png"></div>
+            <div class="col-12 user-profile-edit-bg d-flex justify-content-center align-items-center" style="background-image:url('./image/picture/mp5.jpg')">
+                <div class="user-profile-edit-bg-btn d-flex justify-content-center align-items-center"><img src="./image/icon/photo.png"></div>
+                <div class="user-profile-edit-img" style="background-image:url('./image/picture/profilepic.jpg')">
+                    <div class="user-profile-edit-img-btn d-flex justify-content-center align-items-center"><img src="./image/icon/photo.png"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-inline-block">
+                <div class="col-12 p-0">顯示名稱</div>
+                <input class="col-12" placeholder="長度不超過10個字符">
+            </div>
+            <div class="col-12 col-md-6 d-inline-block">
+                <div class="col-12 p-0">個人短網址: joinin.wine/litaitai</div>
+                <input class="col-12" placeholder="litaitai">
+            </div>
+            <div class="col-12 d-block">
+                <div class="col-12 p-0">個人描述</div>
+                <textarea class="col-12" placeholder="請輸入自我介紹"></textarea>
+            </div>
+            <div class="col-12 m-0 d-flex justify-content-center align-items-center user-profile-edit-save-btn-box">
+                <button class="user-profile-edit-save-btn">保存</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container select-item-block">
+    <div class="select-item-head">
+        <div class="select-item-title">我的酒單</div>
+        <a class="select-item-more" href="">查看更多<img src="./image/icon/right.png"></a>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2 w-100 m-0">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container select-item-block">
+    <div class="select-item-head">
+        <div class="select-item-title">收藏酒單</div>
+        <a class="select-item-more" href="">查看更多<img src="./image/icon/right.png"></a>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2 w-100 m-0">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card p-2">
+            <div class="wine-card-story-pic card w-100 rounded-0" style="background-image: url('./image/picture/pic1.png')">
+                <img class="wine-card-author-pic" src="./image/picture/profilepic.jpg">
+                <div class="wine-card-article-title">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                <div class="wine-card-article-author">圓圓</div>
+                <div class="wine-card-article-content">打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统，與電台酒單，打造了极佳的消费积分系统打造了极佳的消费积分系统</div>
+            </div>
+            <div class="wine-card-item-block">
+                <div class="row m-0 wine-card-item-box-block">
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                    <div class="wine-card-item-box d-block">
+                        <img class="col-3 d-inline-block p-0" src="./image/picture/wine1.jpg">
+                        <div class="col-9 d-inline-block p-0 float-right">
+                            <div class="wine-card-item-title text-truncate">美國原裝原瓶進口紅酒富酒富酒富酒富</div>
+                            <div class="wine-card-item-price">¥ 155.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-card-info-box">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                    <div>#2017 #潮 #派對</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container select-item-block">
+    <div class="select-item-head">
+        <div class="select-item-title">收藏酒品</div>
+        <a class="select-item-more" href="">查看更多<img src="./image/icon/right.png"></a>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2 w-100 m-0">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2">
+            <div class="item-box d-block">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-score-box">
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-score-box">
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-1.png">
+                    <span class="item-info-star-rate">59%</span>
+                    <span class="item-btn-block">
+                                                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                    <div class="item-bonus-box">
+                        <span>預期獲利: 50%</span>
+                    </div>
+                </div>
+                <div class="item-score-box">
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                                    <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                    <div class="item-bonus-box">
+                        <span>預期獲利: 50%</span>
+                    </div>
+                </div>
+                <div class="item-score-box">
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                    <div class="item-score"><span>JS</span><span>93</span></div>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                                    <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container select-item-block">
+    <div class="select-item-head">
+        <div class="select-item-title">收藏活動</div>
+        <a class="select-item-more" href="">查看更多<img src="./image/icon/right.png"></a>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2 w-100 m-0">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card">
+            <div class="wine-card-activity-pic card w-100 rounded-0" style="background-image: url('./image/picture/w1.jpg')"></div>
+            <div class="wine-card-activity-box">
+                <div class="wine-card-activity-title">2017 国际葡萄酒展 法国文化协会</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/date.png">2017/10/10 ~ 2017/12/01</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/pin.png">上海市中心静安区延安西路1000号</div>
+                <div class="wine-card-activity-favorite">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                </div>
+                <div class="wine-card-activity-hashtag">
+                    <span>#2017    #大師    #法國</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card">
+            <div class="wine-card-activity-pic card w-100 rounded-0" style="background-image: url('./image/picture/w1.jpg')"></div>
+            <div class="wine-card-activity-box">
+                <div class="wine-card-activity-title">2017 国际葡萄酒展 法国文化协会</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/date.png">2017/10/10 ~ 2017/12/01</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/pin.png">上海市中心静安区延安西路1000号</div>
+                <div class="wine-card-activity-favorite">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                </div>
+                <div class="wine-card-activity-hashtag">
+                    <span>#2017    #大師    #法國</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card">
+            <div class="wine-card-activity-pic card w-100 rounded-0" style="background-image: url('./image/picture/w1.jpg')"></div>
+            <div class="wine-card-activity-box">
+                <div class="wine-card-activity-title">2017 国际葡萄酒展 法国文化协会</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/date.png">2017/10/10 ~ 2017/12/01</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/pin.png">上海市中心静安区延安西路1000号</div>
+                <div class="wine-card-activity-favorite">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                </div>
+                <div class="wine-card-activity-hashtag">
+                    <span>#2017    #大師    #法國</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-card">
+            <div class="wine-card-activity-pic card w-100 rounded-0" style="background-image: url('./image/picture/w1.jpg')"></div>
+            <div class="wine-card-activity-box">
+                <div class="wine-card-activity-title">2017 国际葡萄酒展 法国文化协会</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/date.png">2017/10/10 ~ 2017/12/01</div>
+                <div class="wine-card-activity-info"><img src="./image/icon/pin.png">上海市中心静安区延安西路1000号</div>
+                <div class="wine-card-activity-favorite">
+                    <img src="./image/icon/favorite.png">
+                    <span>30</span>
+                </div>
+                <div class="wine-card-activity-hashtag">
+                    <span>#2017    #大師    #法國</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container select-item-block">
+    <div class="select-item-head">
+        <div class="select-item-title">收藏品牌</div>
+        <a class="select-item-more" href="">查看更多<img src="./image/icon/right.png"></a>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2 w-100 m-0">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container select-item-block">
+    <div class="select-item-head">
+        <div class="select-item-title">行家</div>
+        <a class="select-item-more" href="">查看更多<img src="./image/icon/right.png"></a>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2 w-100 m-0">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 expert-card">
+            <div class="expert-card-content">
+                <img src="./image/picture/profilepic.jpg">
+                <div class="expert-card-text">
+                    <div class="expert-card-title">Kitty Wang</div>
+                    <div class="expert-card-intro">我是美國葡萄酒愛好者，我是美國葡萄酒愛好者。</div>
+                    <div class="expert-card-info">
+                        <img src="./image/icon/favorite.png">
+                        <span>80%</span>
+                    </div>
+                    <div class="expert-card-info expert-card-info-right">
+                        <img src="./image/icon/eye.png">
+                        <span>50,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 expert-card">
+            <div class="expert-card-content">
+                <img src="./image/picture/profilepic.jpg">
+                <div class="expert-card-text">
+                    <div class="expert-card-title">Kitty Wang</div>
+                    <div class="expert-card-intro">我是美國葡萄酒愛好者，我是美國葡萄酒愛好者。</div>
+                    <div class="expert-card-info">
+                        <img src="./image/icon/favorite.png">
+                        <span>80%</span>
+                    </div>
+                    <div class="expert-card-info expert-card-info-right">
+                        <img src="./image/icon/eye.png">
+                        <span>50,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 expert-card">
+            <div class="expert-card-content">
+                <img src="./image/picture/profilepic.jpg">
+                <div class="expert-card-text">
+                    <div class="expert-card-title">Kitty Wang</div>
+                    <div class="expert-card-intro">我是美國葡萄酒愛好者，我是美國葡萄酒愛好者。</div>
+                    <div class="expert-card-info">
+                        <img src="./image/icon/favorite.png">
+                        <span>80%</span>
+                    </div>
+                    <div class="expert-card-info expert-card-info-right">
+                        <img src="./image/icon/eye.png">
+                        <span>50,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 expert-card">
+            <div class="expert-card-content">
+                <img src="./image/picture/profilepic.jpg">
+                <div class="expert-card-text">
+                    <div class="expert-card-title">Kitty Wang</div>
+                    <div class="expert-card-intro">我是美國葡萄酒愛好者，我是美國葡萄酒愛好者。</div>
+                    <div class="expert-card-info">
+                        <img src="./image/icon/favorite.png">
+                        <span>80%</span>
+                    </div>
+                    <div class="expert-card-info expert-card-info-right">
+                        <img src="./image/icon/eye.png">
+                        <span>50,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container footer-first-block">
@@ -471,6 +1324,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="./js/menuInit.js?i=9"></script>
+<script src="./js/menuInit.js?i=10"></script>
+<script src="./js/userPage.js?i=2"></script>
 </body>
 </html>

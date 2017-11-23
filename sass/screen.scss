@@ -889,6 +889,7 @@ footer{
                 position: relative;
                 height: 240px;
                 overflow-y: auto;
+                overflow-x: hidden;
                 &::-webkit-scrollbar-track{
                     background: transparent;
                 }
@@ -914,6 +915,8 @@ footer{
                     object-fit: cover;
                 }
                 .wine-card-item-title{
+                    position: relative;
+                    width: 100% !important;
                     height: 25px;
                     font-size: 17px;
                     line-height: 25px;

@@ -1,6 +1,5 @@
 var allwinemenuclickCount=0;
-var allwinedropmenuclickCount=0
-
+var submenuActiveIndex
 document.getElementById('navmenustart').addEventListener('click',function(){
     document.getElementById('navmenuclose').onclick=function(){
         document.getElementById('nav-menu-icon').classList.toggle('navbar-menu-span')
@@ -14,7 +13,6 @@ document.getElementById('navmenustart').addEventListener('click',function(){
         document.getElementById('nav-menu-icon').classList.add('navbar-menu-span-all')
         document.getElementById('navmenuback').onclick = function () {
             allwinemenuclickCount = 0
-            allwinedropmenuclickCount = 0
             allwinemenuclickCount == 0 ? document.getElementById('nav-submenu').classList.toggle('hidden-xs') : ''
             allwinemenuclickCount == 0 ? document.querySelector('.navbar-menu ul li').style.marginTop = '0' : ''
             document.getElementById('nav-menu-icon').classList.toggle('navbar-menu-span-all')
@@ -22,12 +20,14 @@ document.getElementById('navmenustart').addEventListener('click',function(){
 
         Array.prototype.map.call(document.querySelectorAll('li#all-wine-dropmenu'), function (element, index) {
             element.onclick = function () {
+                submenuActiveIndex == index ? submenuActiveIndex = -1 : submenuActiveIndex = index
                 for(var i=0;i<6;i++){
                     i==index ? "" : document.querySelectorAll('li#all-wine-dropmenu')[i].children[2].classList.add('hidden-xs')
+                    i==index ? "" : document.querySelectorAll('li#all-wine-dropmenu')[i].children[1].style.transform = 'rotate(90deg)'
                 }
-                allwinedropmenuclickCount == 0 ? allwinedropmenuclickCount++ : allwinedropmenuclickCount--
                 document.querySelectorAll('li#all-wine-dropmenu')[index].children[2] ? document.querySelectorAll('li#all-wine-dropmenu')[index].children[2].classList.toggle('hidden-xs') : ""
-                document.querySelectorAll('li#all-wine-dropmenu')[index].children[1] && allwinedropmenuclickCount == 1 ? document.querySelectorAll('li#all-wine-dropmenu')[index].children[1].style.transform = 'rotate(-90deg)' : document.querySelectorAll('li#all-wine-dropmenu')[index].children[1].style.transform = 'rotate(90deg)'
+                submenuActiveIndex == -1 ? document.querySelectorAll('li#all-wine-dropmenu')[index].children[1].style.transform = 'rotate(90deg)' : document.querySelectorAll('li#all-wine-dropmenu')[index].children[1].style.transform = 'rotate(-90deg)'
+                
             }
         })
     }
@@ -51,10 +51,36 @@ Array.prototype.map.call(document.querySelectorAll('.cart-list-item-add'),functi
         document.querySelectorAll('.cart-list-item-count')[index].value++
     }
 })
+
+
 document.querySelector('.cart-list-item-all-delete-btn').onclick=function(){
     document.querySelector('.cart-list-item-box-block').innerHTML=''
     document.getElementById('navbar-cart-count').innerHTML=''
 }
-document.querySelector('.navbar-cart > a:nth-child(3)').onclick=function(){
-    document.querySelector('.cart-list').classList.toggle('d-none')
+document.getElementById('user-list-span').onclick=function(){
+    document.querySelector('.user-list').classList.toggle('d-none')
 }
+document.getElementById('user-list-close').onclick=function(){
+    document.querySelector('.user-list').classList.toggle('d-none')
+}
+
+Array.prototype.map.call(document.querySelectorAll('.navbar-cart > a'),function(element,index){
+    element.onclick=function(){
+        switch( index ){
+            case 0:
+                document.querySelector('.user-list').classList.add('d-none')
+                document.querySelector('.cart-list').classList.add('d-none') 
+                document.querySelector('.favorite-list').classList.toggle('d-none')
+                break;
+            case 1:
+                document.querySelector('.favorite-list').classList.add('d-none')
+                document.querySelector('.user-list').classList.toggle('d-none')
+                document.querySelector('.cart-list').classList.add('d-none')   
+                break;
+            case 2:
+                document.querySelector('.favorite-list').classList.add('d-none')
+                document.querySelector('.user-list').classList.add('d-none')
+                document.querySelector('.cart-list').classList.toggle('d-none')
+        }
+    }
+})

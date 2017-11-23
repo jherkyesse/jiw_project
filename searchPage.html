@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=10">
-    <link rel="stylesheet" href="./stylesheets/screen.css?i=10">
-    <link rel="stylesheet" href="./stylesheets/searchboxStyle.css?i=3">
-    <link rel="stylesheet" href="./stylesheets/searchPageStyle.css?i=9">
+    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=11">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=11">
+    <link rel="stylesheet" href="./stylesheets/searchboxStyle.css?i=4">
+    <link rel="stylesheet" href="./stylesheets/searchPageStyle.css?i=10">
 </head>
 
 <body>
@@ -290,14 +290,85 @@
                 <li><a>搜酒單</a></li>
                 <li><a>找活動</a></li>
                 <li><a>來投資</a></li>
-                <li class="d-block d-md-none"><a>個人中心</a></li>
+                <li class="d-block d-md-none" id="user-list-span"><a>個人中心</a></li>
                 <li class="d-block d-md-none"><a>使用指南</a></li>                
             </ul>
         </div>
         <div class="navbar-cart">
-            <a href="" class="d-none d-sm-inline-block"><img src="./image/icon/heart.png"></a>
-            <a href="" class="d-none d-sm-inline-block"><img src="./image/icon/user.png"></a>
+            <a class="d-none d-sm-inline-block"><img src="./image/icon/heart.png"></a>
+            <a class="d-none d-sm-inline-block"><img src="./image/icon/user.png"></a>
             <a><img src="./image/icon/cart.png"><span id="navbar-cart-count">6</span></a>
+            <div class="favorite-list d-none">
+                <div class="favorite-list-box-block">
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="favorite-list-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="favorite-list-class">酒品</div>
+                        <div class="favorite-list-price">¥ 155.00</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/w1.jpg">
+                        <div class="favorite-list-name">2017 国际葡萄酒展 法国文化协会</div>
+                        <div class="favorite-list-class">活動</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="favorite-list-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="favorite-list-class">酒品</div>
+                        <div class="favorite-list-price">¥ 155.00</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/pic1.png">
+                        <div class="favorite-list-name">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                        <div class="favorite-list-class">酒單</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/w1.jpg">
+                        <div class="favorite-list-name">2017 国际葡萄酒展 法国文化协会</div>
+                        <div class="favorite-list-class">活動</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/wine1.jpg">
+                        <div class="favorite-list-name">美國原裝原瓶進口紅酒富邑貝靈哲口紅酒富邑貝靈哲</div>
+                        <div class="favorite-list-class">酒品</div>
+                        <div class="favorite-list-price">¥ 155.00</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                    <div class="favorite-list-box">
+                        <img src="./image/picture/pic1.png">
+                        <div class="favorite-list-name">一次教你看懂餐廳的葡萄酒單酒單酒單酒單酒單酒單</div>
+                        <div class="favorite-list-class">酒單</div>
+                        <div class="favorite-list-delete"><img src="./image/icon/close-02.png"></div>
+                    </div>
+                </div>
+                <div class="favorite-all-delete-btn"><img src="./image/icon/clear.png">全部清空</div>
+                <button class="favorite-list-more-btn">查看收藏夾</button>
+            </div>
+            <div class="user-list d-none">
+                <img class="d-block d-md-none" id="user-list-close" src="./image/icon/close-02.png">
+                <div class="row m-0 user-list-box-block">
+                    <div class="col-12 user-list-box d-flex">
+                        <div class="position-relative w-50 text-right"><img class="rounded-circle px-3" src="./image/picture/profilepic.jpg"></div>
+                        <div class="position-relative w-50">
+                            <div class="user-list-name py-1">李太太</div>
+                            <a href="" class="user-list-text">查看個人中心</a>
+                        </div>
+                    </div>
+                    <a href="" class="col-12 text-center user-list-box">最新消息</a>
+                    <a href="" class="col-12 text-center user-list-box">會員管理</a>
+                    <a href="./shoppingcartPage.html" class="col-12 text-center user-list-box">購物車/投資車</a>
+                    <a href="" class="col-12 text-center user-list-box">我的酒單</a>
+                    <a href="" class="col-12 text-center user-list-box">訂單管理</a>
+                    <a href="" class="col-12 text-center user-list-box">我的優惠</a>
+                    <a href="" class="col-12 text-center user-list-box">投資管理</a>
+                    <a href="" class="col-12 text-center user-list-box"> 登出</a>
+                </div>
+            </div>
             <div class="cart-list d-none">
                 <div class="cart-list-item-box-block">
                     <div class="cart-list-item-box">   
@@ -359,7 +430,7 @@
                 <div class="cart-list-item-total-price">¥ 9923.00</div>
                 <div class="cart-list-item-all-delete-btn"><img src="./image/icon/clear.png">全部清空</div>
                 <div class="cart-list-item-invest-btn"><img src="./image/icon/invest.png">切換投資車</div>
-                <button class="cart-item-list-more">查看購物車</div>
+                <button class="cart-item-list-more-btn">查看購物車</button>
             </div>
         </div>
     </div>
@@ -1764,7 +1835,7 @@
     <!-- 活動 -->
     <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
-            <div class="row wine-card-block d-flex flex-row justify-content-start p-2 w-100 m-0" id="wine-activity-card-block">
+            <div class="row wine-card-block d-flex flex-row justify-content-between p-2 w-100 m-0" id="wine-activity-card-block">
                 <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 wine-card">
                     <div class="wine-card-activity-pic card w-100 rounded-0" style="background-image: url('./image/picture/w1.jpg')"></div>
                     <div class="wine-card-activity-box">
@@ -1861,7 +1932,7 @@
     <!-- 行家 -->
     <div class="d-none" id="select-subblock">
         <div class="container select-item-block">
-            <div class="row wine-card-block d-flex flex-row justify-content-start p-2 w-100 m-0" id="wine-activity-card-block">
+            <div class="row wine-card-block d-flex flex-row justify-content-between p-2 w-100 m-0" id="wine-activity-card-block">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 expert-card m-0">
                     <div class="expert-card-content">
                         <img src="./image/picture/profilepic.jpg">
@@ -2069,8 +2140,8 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="./js/searchPage.js?i=8"></script>
-<script src="./js/menuInit.js?i=10"></script>
+<script src="./js/searchPage.js?i=9"></script>
+<script src="./js/menuInit.js?i=11"></script>
 
 </body>
 </html>

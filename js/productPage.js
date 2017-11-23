@@ -11,9 +11,7 @@ document.querySelector('.product-new-winelist > img').onclick=function(){
 
 function scrollToRelatedWinelist(){
     scrollTo(document.documentElement, document.getElementById('related-winelist').offsetTop-120)
-    document.querySelector('.product-add-cart-btn').style.position='fixed'
-    document.querySelector('.product-add-cart-btn').style.top='110px'
-    document.querySelector('.product-add-cart-btn').style.right='10px'
+    document.querySelector('.product-add-cart-btn').classList.add('product-add-cart-btn-float')
 }
 function scrollTo(element, to) {
     if (element.scrollTop+10 >= to) return;

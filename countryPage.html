@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=4">
-    <link rel="stylesheet" href="./stylesheets/screen.css?i=9">
-    <link rel="stylesheet" href="./stylesheets/countryPageStyle.css?i=2">
+    <link rel="stylesheet" href="./stylesheets/navStyle.css?i=5">
+    <link rel="stylesheet" href="./stylesheets/screen.css?i=10">
+    <link rel="stylesheet" href="./stylesheets/countryPageStyle.css?i=3">
+    <link rel="stylesheet" href="./stylesheets/searchPageStyle.css?i=3">
 </head>
-
 <body>
 <nav>
     <div class="container navbar">
@@ -435,21 +435,23 @@
     </div>
 </nav>
 
-<div class="country-block blur-container blur-1">
+<div class="country-block blur-container blur-bg" data-src="../image/picture/mp1.jpeg">
     <div class="container country-head">
         <div class="yellow-text">指南介紹(專屬頁)</div>
-        <div class="country-head-name">美國:門多西諾</div>
+        <div class="country-head-name">美國:<span>門多西諾</span></div>
         <img class="country-head-icon" src="./image/icon/close-02.png">
         <div class="country-card-box blur-box">
             <div class="row country-card-bg m-0">
                 <div class="yellow-text d-inline-block p-3">國家</div>
                 <div class="yellow-text d-inline-block p-3">產區介紹</div>
                 <div class="w-100"></div>
-                <a href="" class="place-name-tag d-inline-block px-3">美國</a>
-                <a href="" class="place-name-tag d-inline-block px-3">門多西諾</a>
-                <a href="" class="place-name-tag d-inline-block px-3">索諾瑪縣</a>
-                <a href="" class="place-name-tag d-inline-block px-3">納帕谷</a>
-                <a href="" class="place-name-tag d-inline-block px-3">納帕谷</a>
+                <div>
+                    <a class="place-name-tag" data-src="../image/picture/mp1.jpeg">美國</a>
+                    <a class="place-name-tag" data-src="../image/picture/mp8.jpg">門多西諾</a>
+                    <a class="place-name-tag" data-src="../image/picture/mp2.jpg">索諾瑪縣</a>
+                    <a class="place-name-tag" data-src="../image/picture/mp5.jpg">納帕谷</a>
+                    <a class="place-name-tag" data-src="../image/picture/mp7.jpg">納帕谷</a>
+                </div>
                 <hr class="my-3">
                 <div class="row m-0 w-100 country-subcard">
                     <div class="col-12 col-sm-6 d-inline-block pl-0">
@@ -467,16 +469,15 @@
             <a href="" class="arrow-white"><img src="./image/icon/arrow-white.png"></a>
             <div class="blur-bottom"></div>
         </div>
-        <hr>
     </div>
 </div>
-
-<div class="container country-wine-block">
-    <div calss="intro-block-bg">
-        <img class="mw-100" src="./image/picture/wine.jpg">
+<style id="blur-style"></style>
+<div class="container country-wine-block px-0">
+    <div class="country-head py-2">
+        <div class="country-head-bg d-flex align-items-center p-2 p-md-5" style="background-image:url('./image/picture/wine.jpg')">
+            <div class="country-head-text">精選酒單</div>
+        </div>
     </div>
-
-    
     <div class="wine-block p-0">
         <div class="arrow-prev" id="wine-arrow-prev" ></div>
         <div class="arrow-next" id="wine-arrow-next" ></div>
@@ -690,6 +691,420 @@
     </div>
 </div>
 
+<div class="container country-wine-block px-0">
+    <div class="country-head">
+        <div class="country-head-bg d-flex align-items-center p-2 p-md-5" style="background-image:url('./image/picture/wine.jpg')">
+            <div class="country-head-text">品牌牆</div>
+        </div>
+    </div>
+    <div class="row p-1 p-md-2 d-flex justify-content-between brand-block">
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+        <div class="col-4 col-md-2 brand-box"><img src="./image/picture/bd1.jpg"></div>
+    </div>
+</div>
+
+<div class="container country-wine-block px-0">
+    <div class="country-head">
+        <div class="country-head-bg d-flex align-items-center p-2 p-md-5" style="background-image:url('./image/picture/wine.jpg')">
+            <div class="country-head-text">嚴選莊園</div>
+        </div>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wine-brand-card p-2">
+            <div class="wine-brand-content">
+                <img src="./image/picture/mp5.jpg">
+                <div class="wine-brand-text">
+                    <div class="wine-brand-title">V. Sattui Winery</div>
+                    <div class="wine-brand-intro">这是纳帕最受欢迎的酒庄，具有意大利老旧的魅力，超过60种不同的葡萄酒。</div>
+                    <div class="wine-brand-info">
+                        <img src="./image/icon/star-2.png">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container country-wine-block px-0">
+    <div class="country-head">
+        <div class="country-head-bg d-flex align-items-center p-2 p-md-5" style="background-image:url('./image/picture/wine.jpg')">
+            <div class="country-head-text">投資推薦</div>
+        </div>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-1.png">
+                    <span class="item-info-star-rate">59%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container country-wine-block px-0">
+    <div class="country-head">
+        <div class="country-head-bg d-flex align-items-center p-2 p-md-5" style="background-image:url('./image/picture/wine.jpg')">
+            <div class="country-head-text">限时抢购</div>
+        </div>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-1.png">
+                    <span class="item-info-star-rate">59%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container country-wine-block px-0">
+    <div class="country-head">
+        <div class="country-head-bg d-flex align-items-center p-2 p-md-5" style="background-image:url('./image/picture/wine.jpg')">
+            <div class="country-head-text">人氣推薦</div>
+        </div>
+    </div>
+    <div class="row f-flex justify-content-between-space p-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-1.png">
+                    <span class="item-info-star-rate">59%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-1.png">
+                    <span class="item-info-star-rate">59%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 item-box-block p-2 m-0">
+            <div class="item-box">
+                <img class="item-img" src="./image/picture/wine1.jpg">
+                <div class="item-title">美國原裝原瓶進口紅酒富邑貝靈哲紅酒</div>
+                <div class="item-subtitle">BERINGER VINEYARDS</div>
+                <div class="item-price-box">
+                    <span class="item-price">¥ 155.00</span>
+                    <span class="item-orginal-price">¥ 155.00</span>
+                    <span class="item-discount">-38%</span>
+                </div>
+                <div class="item-info-box">
+                    <img class="item-info-star-img" src="./image/icon/star-2.png">
+                    <span class="item-info-star-rate">80%</span>
+                    <span class="item-btn-block">
+                                            <span class="item-invest-btn">投資</span>
+                    <span class="item-presale-btn">預售</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
     <div class="container footer-first-block">
         <div class="row mw-100 mx-0">
@@ -756,7 +1171,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="./js/menuInit.js?i=10"></script>
-<script src="./js/countryPage.js?i=2"></script>
+<script src="./js/menuInit.js?i=11"></script>
+<script src="./js/countryPage.js?i=3"></script>
 </body>
 </html>
